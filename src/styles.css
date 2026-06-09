@@ -1,0 +1,112 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-bauhaus-blue: var(--bauhaus-blue);
+  --color-bauhaus-yellow: var(--bauhaus-yellow);
+  --color-bauhaus-red: var(--bauhaus-red);
+  --color-bauhaus-black: var(--bauhaus-black);
+  --color-bauhaus-paper: var(--bauhaus-paper);
+  --font-display: var(--font-display);
+  --font-sans: var(--font-sans);
+}
+
+:root {
+  --radius: 0;
+
+  /* Bauhaus palette */
+  --bauhaus-blue: oklch(0.45 0.18 254);
+  --bauhaus-yellow: oklch(0.88 0.18 95);
+  --bauhaus-red: oklch(0.55 0.22 27);
+  --bauhaus-black: oklch(0.14 0 0);
+  --bauhaus-paper: oklch(0.97 0.01 90);
+
+  --background: var(--bauhaus-paper);
+  --foreground: var(--bauhaus-black);
+  --card: oklch(1 0 0);
+  --card-foreground: var(--bauhaus-black);
+  --popover: oklch(1 0 0);
+  --popover-foreground: var(--bauhaus-black);
+  --primary: var(--bauhaus-red);
+  --primary-foreground: oklch(1 0 0);
+  --secondary: var(--bauhaus-yellow);
+  --secondary-foreground: var(--bauhaus-black);
+  --muted: oklch(0.94 0.01 90);
+  --muted-foreground: oklch(0.4 0 0);
+  --accent: var(--bauhaus-blue);
+  --accent-foreground: oklch(1 0 0);
+  --destructive: var(--bauhaus-red);
+  --destructive-foreground: oklch(1 0 0);
+  --border: var(--bauhaus-black);
+  --input: oklch(0.85 0 0);
+  --ring: var(--bauhaus-blue);
+
+  --font-display: "Archivo Black", "Helvetica Neue", sans-serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    font-feature-settings: "ss01";
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+    line-height: 0.95;
+  }
+}
+
+@layer utilities {
+  .grid-bauhaus {
+    background-image:
+      linear-gradient(to right, color-mix(in oklab, var(--bauhaus-black) 8%, transparent) 1px, transparent 1px),
+      linear-gradient(to bottom, color-mix(in oklab, var(--bauhaus-black) 8%, transparent) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+  .text-stroke {
+    -webkit-text-stroke: 2px var(--bauhaus-black);
+    color: transparent;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
