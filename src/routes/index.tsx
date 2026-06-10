@@ -642,25 +642,38 @@ function Index() {
       <BauhausRule n="​" label="YSL" tone="paper" />
 
       {/* YSL */}
-      <section id="ysl" className="scroll-mt-20 md:scroll-mt-24 border-b border-bauhaus-black bg-bauhaus-paper">
-        <div className="mx-auto max-w-6xl px-6 md:px-10 py-20 md:py-28 grid md:grid-cols-12 gap-10 md:gap-12 items-start">
+      <section id="ysl" className="relative overflow-hidden scroll-mt-20 md:scroll-mt-24 border-b border-bauhaus-black bg-bauhaus-paper">
+        {/* Mondrian-grid backdrop block */}
+        <div className="absolute inset-y-0 right-0 w-1/3 hidden md:grid grid-rows-3 grid-cols-2 opacity-[0.10]" aria-hidden>
+          <div style={{ backgroundColor: "var(--bauhaus-red)" }} />
+          <div style={{ backgroundColor: "var(--bauhaus-paper)" }} />
+          <div className="row-span-2" style={{ backgroundColor: "var(--bauhaus-blue)" }} />
+          <div style={{ backgroundColor: "var(--bauhaus-yellow)" }} />
+          <div style={{ backgroundColor: "var(--bauhaus-black)" }} />
+        </div>
+        <div className="relative mx-auto max-w-6xl px-6 md:px-10 py-20 md:py-28 grid md:grid-cols-12 gap-10 md:gap-12 items-start">
           <div className="md:col-span-5 order-2 md:order-1">
-            <div className="md:sticky md:top-24">
-              <PhotoFrame
-                id="ysl-mondrian"
-                src={yslMondrian}
-                alt="Vestido Mondrian de YSL"
-                caption="Coleção Outono · 1965"
-                width={768}
-                height={1024}
-              />
+            <div className="md:sticky md:top-24 relative">
+              {/* Color frame behind image */}
+              <div className="absolute -inset-3 md:-inset-5" style={{ backgroundColor: "var(--bauhaus-blue)" }} aria-hidden />
+              <div className="relative">
+                <PhotoFrame
+                  id="ysl-mondrian"
+                  src={yslMondrian}
+                  alt="Vestido Mondrian de YSL"
+                  caption="Coleção Outono · 1965"
+                  width={768}
+                  height={1024}
+                />
+              </div>
             </div>
           </div>
           <div className="md:col-span-7 order-1 md:order-2">
-            <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-blue">
+            <SectionMarker n="05" label="YSL" tone="blue" />
+            <p className="mt-6 font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-blue">
               Yves Saint Laurent
             </p>
-            <h2 className="mt-6 font-display text-3xl sm:text-4xl md:text-5xl uppercase leading-[0.9] tracking-tight">
+            <h2 className="mt-4 font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl uppercase leading-[0.85] tracking-tight">
               A coleção{" "}
               <span style={{ color: "var(--bauhaus-blue)" }}>Mondrian</span>.
             </h2>
