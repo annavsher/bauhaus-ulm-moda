@@ -216,7 +216,7 @@ function Index() {
                 <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-red">
                   A Escola
                 </p>
-                <h2 className="mt-6 text-3xl sm:text-4xl md:text-5xl uppercase leading-[0.95]">
+                <h2 className="mt-6 text-3xl sm:text-4xl uppercase leading-[0.95] md:text-xl">
                   A escola que unificou as artes.
                 </h2>
                 <p className="mt-4 text-lg md:text-xl italic font-normal" style={{ fontFamily: "'Instrument Serif', serif", color: "var(--bauhaus-blue)" }}>
