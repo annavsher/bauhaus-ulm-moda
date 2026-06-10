@@ -8,13 +8,13 @@ export const Route = createFileRoute("/jaqueta")({
   component: JaquetaPage,
   head: () => ({
     meta: [
-      { title: "ULM Mondrian System — Jaqueta protótipo · Bauhaus & Moda" },
+      { title: "Street Haus — Jaqueta protótipo · Bauhaus & Moda" },
       {
         name: "description",
         content:
           "Protótipo autoral de jaqueta inspirado na HfG Ulm e em Piet Mondrian: função, composição racional e redução essencial.",
       },
-      { property: "og:title", content: "ULM Mondrian System — Jaqueta protótipo" },
+      { property: "og:title", content: "Street Haus — Jaqueta protótipo" },
       {
         property: "og:description",
         content:
@@ -110,7 +110,7 @@ function JaquetaPage() {
             <div className="relative w-full aspect-[4/5] md:aspect-[3/4] bg-bauhaus-paper border border-bauhaus-black/10 flex items-center justify-center overflow-hidden">
               <img
                 src={jaqueta}
-                alt="Processo criativo do protótipo ULM Mondrian System — esboços da jaqueta com blocos vermelho, azul e amarelo, vistas frente e costas"
+                alt="Processo criativo do protótipo Street Haus — esboços da jaqueta com blocos vermelho, azul e amarelo, vistas frente e costas"
                 className="absolute inset-0 h-full w-full object-contain p-4 md:p-6"
               />
             </div>
@@ -120,7 +120,7 @@ function JaquetaPage() {
             <div className="relative w-full aspect-[16/9] bg-bauhaus-paper border border-bauhaus-black/10 flex items-center justify-center overflow-hidden">
               <img
                 src={jaquetaSketch.url}
-                alt="Sketch técnico da jaqueta ULM Mondrian System — vistas frente e costas com a distribuição final dos blocos primários e ortogonais"
+                alt="Sketch técnico da jaqueta Street Haus — vistas frente e costas com a distribuição final dos blocos primários e ortogonais"
                 className="absolute inset-0 h-full w-full object-contain p-4 md:p-6"
               />
             </div>
@@ -204,7 +204,7 @@ function JaquetaPage() {
           </div>
           <div className="md:col-span-7 lg:col-span-8 max-w-prose space-y-6 md:space-y-7 text-base md:text-lg leading-[1.75] md:leading-[1.8] text-muted-foreground">
             <p ref={p1.ref} className={`${revealBase} ${p1.visible ? shown : hidden}`}>
-              <span className="text-foreground font-medium">ULM Mondrian System</span>{" "}
+              <span className="text-foreground font-medium">Street Haus</span>{" "}
               parte de uma pergunta simples: o que aconteceria se a grade de
               Mondrian, o rigor sistêmico da Escola de Ulm e as cores primárias
               e ângulos exatos de Bauhaus fossem aplicados a uma peça
@@ -416,7 +416,7 @@ function JaquetaPage() {
             <span className="font-display text-xs uppercase tracking-[0.25em]">Bauhaus / Moda</span>
           </div>
           <p className="font-mono text-[11px] uppercase tracking-[0.25em] text-center text-muted-foreground">
-            ULM Mondrian System · Protótipo autoral
+            Street Haus · Protótipo autoral
           </p>
           <p className="font-mono text-[11px] uppercase tracking-[0.25em] md:text-right text-muted-foreground">
             funktion · klarheit · ordnung
