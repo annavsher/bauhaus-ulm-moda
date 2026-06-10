@@ -300,6 +300,9 @@ ULM</span>
               <span className="block italic text-foreground mt-2">"Die Reinheit der Geometrie, die dem Leben dient."</span>
               <span className="block text-sm md:text-base">(A pureza da geometria que serve à vida).</span>
             </p>
+            <p>
+              Com isso, apesar da inspiração visual pertencer às composições geométricas de Piet Mondrian, a ligação com Bauhaus e Ulm é clara: com o uso de cores primárias e organização visual foi possível unir arte, funcionalidade e design em uma única peça.
+            </p>
           </div>
         </div>
       </section>
