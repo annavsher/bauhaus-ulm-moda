@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { PhotoFrame } from "@/components/PhotoFrame";
 import { BauhausRule } from "@/components/BauhausRule";
+import { BauhausComposition, SectionMarker } from "@/components/BauhausComposition";
 import jaqueta from "@/assets/ulm-mondrian-system.jpeg";
 import jaquetaSketch from "@/assets/jaqueta-sketch.jpeg.asset.json";
 import heroBauhaus from "@/assets/hero-bauhaus.jpg";
