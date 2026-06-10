@@ -786,7 +786,7 @@ function Index() {
       {/* PROTÓTIPO — HERO com título sobre a imagem */}
       <section className="border-b border-bauhaus-black bg-bauhaus-black text-bauhaus-paper">
         <div className="relative w-full overflow-hidden">
-          <div className="relative w-full min-h-[100svh] md:min-h-[90vh] bg-bauhaus-paper">
+          <div className="relative w-full min-h-[100svh] md:min-h-[90vh]" style={{ backgroundColor: "#000000" }}>
             <img
               src={jaqueta}
               alt="Protótipo ULM Mondrian System — esboço da jaqueta autoral com blocos vermelho, azul e amarelo"
@@ -797,8 +797,8 @@ function Index() {
               sizes="(min-width: 1280px) 1280px, 100vw"
               className="absolute inset-0 h-full w-full object-contain p-2 sm:p-4 md:p-6"
             />
-            {/* overlay para legibilidade do título */}
-            <div className="absolute inset-0 bg-gradient-to-b from-bauhaus-black/85 via-bauhaus-black/40 to-transparent" />
+            {/* overlay sutil para legibilidade do título sobre o preto */}
+            <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/20 to-transparent pointer-events-none" />
             <div className="absolute inset-x-0 top-0 flex items-start">
               <div className="mx-auto max-w-6xl w-full px-6 md:px-12 pt-10 md:pt-16">
                 <p className="font-mono text-[11px] uppercase tracking-[0.3em] mb-4 md:mb-6 text-bauhaus-paper/80">
