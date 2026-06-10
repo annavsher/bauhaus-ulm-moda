@@ -620,7 +620,7 @@ function Index() {
 
       {/* YSL */}
       <section id="ysl" className="scroll-mt-20 md:scroll-mt-24 border-b border-bauhaus-black bg-bauhaus-paper">
-        <div className="mx-auto max-w-6xl px-6 py-24 grid md:grid-cols-12 gap-12 items-start">
+        <div className="mx-auto max-w-6xl px-6 md:px-10 py-20 md:py-28 grid md:grid-cols-12 gap-10 md:gap-12 items-start">
           <div className="md:col-span-5 order-2 md:order-1">
             <div className="md:sticky md:top-24">
               <PhotoFrame
