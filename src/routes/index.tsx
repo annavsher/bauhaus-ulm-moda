@@ -293,34 +293,30 @@ function Index() {
             </div>
             <div className="md:col-span-7 lg:col-span-8 max-w-prose space-y-6 text-base md:text-lg leading-[1.75] text-muted-foreground">
               <p>
-                Em 1953, quando a Bauhaus já era memória, nasceu em Ulm, Alemanha, a{" "}
+                A Escola de Ulm é lembrada como herdeira da Bauhaus. No pós-guerra, a Ulm retomou o projeto interrompido quando os nazistas fecharam a Bauhaus, em 1933. O que era essa escola? Imagine um lugar onde arquitetos, designers, cineastas, cientistas e músicos dividem o mesmo corredor, reunidos pela ideia de que projetar objetos para o mundo industrial também era uma forma de reconstruir a sociedade.
+              </p>
+              <p>
+                Foi assim que nasceu, na Alemanha de 1953, a{" "}
                 <span className="text-foreground font-medium">Hochschule für Gestaltung</span>{" "}
-                (Escola Superior de Design). Fundada por{" "}
+                — a Escola Superior da Forma, na cidade de Ulm.
+              </p>
+              <p>
+                Idealizada por{" "}
                 <span className="text-foreground font-medium">Inge Aicher-Scholl</span>,{" "}
                 <span className="text-foreground font-medium">Otl Aicher</span> e{" "}
-                <span className="text-foreground font-medium">Max Bill</span> — este último ex-aluno da Bauhaus —,
-                a escola herdou a pedagogia de Weimar e Dessau, mas a levou adiante.
+                <span className="text-foreground font-medium">Max Bill</span>{" "}
+                (ex-aluno da Bauhaus), a escola surgiu carregada de propósito: ajudar a construir uma sociedade mais democrática. Fundada por antifascistas, a escola foi sustentada nos primeiros anos por uma fundação criada em memória de Hans e Sophie Scholl, jovens executados pelo regime nazista.
               </p>
               <p>
-                Onde a Bauhaus pregava a unificação das artes, Ulm propunha algo mais radical:
-                o design como <span className="text-foreground font-medium">ciência</span>.
-                A forma não deveria ser ditada pelo gosto do designer, mas pelo sistema —
-                análise, método, rigor. O rigor matemático e o pensamento sistêmico
-                substituíram o gesto expressionista.
+                No início, a escola flertava com o espírito artístico da Bauhaus, mas logo criou sua própria identidade, pautada na ideia de que o designer é um membro de uma equipe, ao lado de engenheiros, cientistas e técnicos. Nascia ali o "modelo ulmiano", resumido no lema "da colher à cidade": pensar com o mesmo rigor o objeto mais simples e o desenho de uma cidade inteira. Dessa filosofia saíram trabalhos estudados até hoje, dos produtos da Braun ao logotipo da Lufthansa.
               </p>
               <p>
-                A pedagogia de Ulm foi decisiva para o que viria a ser o{" "}
-                <span className="text-foreground font-medium">design industrial</span>{" "}
-                e o <span className="text-foreground font-medium">design gráfico</span> modernos.
-                Cores primárias, grade modular, tipografia sem serifa, fundamento científico:
-                tudo ecoa Bauhaus, mas recalibrado para uma era de máquinas e comunicação de massa.
+                A escola durou apenas quinze anos, fechando em 1968. Por suas salas passaram pouco mais de seiscentos estudantes, mas a Ulm deixou um legado: criou um jeito novo de pensar o design. Um design mais metódico, crítico e consciente; uma visão que ganhou o mundo. No Brasil, seus ecos aparecem na criação da Esdi, no Rio de Janeiro, e em nomes como{" "}
+                <span className="text-foreground font-medium">Alexandre Wollner</span> e{" "}
+                <span className="text-foreground font-medium">Geraldo de Barros</span>, que estudaram lá.
               </p>
               <p>
-                A escola fechou em 1968, como sua antecessora, vítima de pressões políticas.
-                Mas seu legado vive em cada interface limpa, em cada identidade visual racional,
-                em cada peça de roupa pensada como sistema — como a{" "}
-                <span className="text-foreground font-medium">ULM Mondrian System</span>{" "}
-                apresentada neste ensaio.
+                A Ulm inaugurou a visão de que projetar bem é também um ato de responsabilidade com as pessoas e com o mundo.
               </p>
             </div>
           </div>
