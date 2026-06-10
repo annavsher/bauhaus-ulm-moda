@@ -6,6 +6,7 @@ import { BauhausComposition, SectionMarker } from "@/components/BauhausCompositi
 import jaqueta from "@/assets/ulm-mondrian-system.png";
 import jaquetaSketch from "@/assets/jaqueta-sketch.jpeg.asset.json";
 import processoCriativo from "@/assets/processo-criativo.png.asset.json";
+import bauhausSchool from "@/assets/bauhaus-school.png.asset.json";
 import heroBauhaus from "@/assets/hero-bauhaus.jpg";
 
 import schlemmer1 from "@/assets/schlemmer-1.jpg";
@@ -268,6 +269,18 @@ function Index() {
                 <h2 className="mt-4 font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl uppercase leading-[0.85] tracking-tight">
                   A escola que unificou as artes.
                 </h2>
+                <figure className="mt-6 w-40 md:w-48 border border-bauhaus-black bg-bauhaus-paper">
+                  <img
+                    src={bauhausSchool.url}
+                    alt="Edifício da Bauhaus em Dessau projetado por Walter Gropius"
+                    className="block w-full h-auto"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <figcaption className="font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground px-2 py-2 border-t border-bauhaus-black">
+                    Bauhaus · Dessau
+                  </figcaption>
+                </figure>
                 <div className="mt-6 h-2 w-24" style={{ backgroundColor: "var(--bauhaus-blue)" }} aria-hidden />
               </div>
             </div>
