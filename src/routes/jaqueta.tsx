@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import jaqueta from "@/assets/ulm-mondrian-system.jpeg";
+import jaqueta from "@/assets/ulm-mondrian-system.png";
 import jaquetaSketch from "@/assets/jaqueta-sketch.jpeg.asset.json";
 import { useReveal } from "@/hooks/use-reveal";
 
