@@ -212,10 +212,10 @@ function JaquetaPage() {
             </p>
             <p ref={p2.ref} className={`${revealBase} delay-75 ${p2.visible ? shown : hidden}`}>
               A jaqueta é construída como uma <span className="text-foreground font-medium">grade modular</span> de
-              painéis brancos cortados por linhas pretas ortogonais. Utilizando blocos de cor primária — vermelho, azul, amarelo, característica das obras de Piet Mondrian.
-              <br /><br />
-              Segue a ideia de funcionalidade, simplicidade e sem decoração excessiva, defendida por Mondrian.
-              <br /><br />
+              painéis brancos cortados por linhas pretas ortogonais. Utilizando blocos de cor primária — vermelho, azul, amarelo, característica das obras de Piet Mondrian.&nbsp;
+              <br /><br /><br />
+              Segue a ideia de funcionalidade, simplicidade e pouca decoração, defendida por Mondrian.
+              <br /><br /><br />
               Já com a aproximação ao aprendizado da Ulm, a organização em grade, com ordem visual e a funcionalidade estética e estrutural da jaqueta foi essencial para realização do protótipo.
             </p>
             <p ref={p3.ref} className={`${revealBase} delay-100 ${p3.visible ? shown : hidden}`}>
