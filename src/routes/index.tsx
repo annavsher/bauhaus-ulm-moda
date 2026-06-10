@@ -204,14 +204,6 @@ function Index() {
           <div className="md:col-span-5 relative bg-bauhaus-paper border-t md:border-t-0 md:border-l border-bauhaus-black flex items-center justify-center p-6 md:p-8 overflow-hidden">
             <div className="absolute top-0 right-0 h-24 w-24 md:h-32 md:w-32" style={{ backgroundColor: "var(--bauhaus-yellow)" }} aria-hidden />
             <div className="absolute bottom-0 left-0 h-20 w-20 md:h-28 md:w-28 rounded-full" style={{ backgroundColor: "var(--bauhaus-blue)" }} aria-hidden />
-            <img
-              src={heroJaquetaModelo.url}
-              alt="Modelo vestindo a jaqueta STREET HAUS"
-              width={853}
-              height={1280}
-              loading="eager"
-              className="relative w-full h-auto max-h-[70vh] object-contain"
-            />
           </div>
         </div>
       </section>
