@@ -60,6 +60,7 @@ function Index() {
     { id: "schlemmer", label: "Schlemmer" },
     { id: "ysl", label: "YSL" },
     { id: "cardin", label: "Cardin" },
+    { id: "jaqueta", label: "Jaqueta" },
 
   ];
   const [active, setActive] = useState<string>("");
