@@ -355,6 +355,18 @@ function Index() {
                 <h2 className="mt-4 mb-6 font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl uppercase leading-[1.05] tracking-tight">
                   A Escola de Ulm: onde o design encontrou método.
                 </h2>
+                <figure className="mt-2 w-40 md:w-48 border border-bauhaus-black bg-bauhaus-paper">
+                  <img
+                    src={ulmSchool.url}
+                    alt="Edifício da Hochschule für Gestaltung em Ulm"
+                    className="block w-full h-auto"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <figcaption className="font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground px-2 py-2 border-t border-bauhaus-black">
+                    HfG · Ulm
+                  </figcaption>
+                </figure>
                 <div className="mt-6 flex items-center gap-3">
                   <span className="h-3 w-3 rounded-full" style={{ backgroundColor: "var(--bauhaus-red)" }} />
                   <span className="h-3 w-3" style={{ backgroundColor: "var(--bauhaus-yellow)" }} />
