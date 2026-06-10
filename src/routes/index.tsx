@@ -889,40 +889,32 @@ function Index() {
               </h2>
             </div>
           </div>
-          <div className="md:col-span-7 lg:col-span-8 max-w-prose space-y-7 md:space-y-8 text-lg md:text-xl leading-[1.75] md:leading-[1.8] text-muted-foreground">
+          <div className="md:col-span-7 lg:col-span-8 max-w-prose space-y-8 md:space-y-10 text-lg md:text-xl leading-[1.75] md:leading-[1.85] text-muted-foreground">
             <p>
-              <span className="text-foreground font-medium">Street Haus</span>{" "}
-              parte de uma pergunta simples: o que aconteceria se a grade de
-              Mondrian, o rigor sistêmico da Escola de Ulm e as cores primárias
-              e ângulos exatos de Bauhaus fossem aplicados a uma peça
-              utilitária, vestida todos os dias?
+              A jaqueta é projetada como um{" "}
+              <span className="text-foreground font-medium">sistema modular de painéis brancos</span>,
+              delimitados por eixos ortogonais pretos de alta definição. A
+              inserção estratégica de blocos em cores primárias (vermelho,
+              azul e amarelo) evoca diretamente o purismo visual de Piet
+              Mondrian. O corte prescinde de ornamentos supérfluos,
+              orientando-se estritamente pelos princípios de funcionalidade,
+              clareza formal e economia de elementos.
             </p>
             <p>
-              A jaqueta é construída como uma{" "}
-              <span className="text-foreground font-medium">grade modular</span> de
-              painéis brancos cortados por linhas pretas ortogonais. Utilizando
-              blocos de cor primária — vermelho, azul, amarelo, característica das obras de Piet Mondrian.&nbsp;{"\n\n\n"}
-
-              Segue a ideia de funcionalidade, simplicidade e pouca decoração, defendida por Mondrian.{"\n\n\n"}
-
-              Já com a aproximação ao aprendizado da Ulm, a organização em grade, com ordem visual e a funcionalidade estética e estrutural da jaqueta foi essencial para realização do protótipo.
+              A influência da{" "}
+              <span className="text-foreground font-medium">Escola de Ulm</span>{" "}
+              manifesta-se na organização metodológica da grade. A busca por
+              ordem visual e a indissociabilidade entre estética e função
+              estrutural foram premissas determinantes para a viabilidade
+              técnica e a execução do protótipo. Não se trata de estampa, mas
+              de construção sistêmica.
             </p>
             <p>
-              Adicionadas no meio do processo, as legendas em alemão herdam a tipografia Universal de Herbert Bayer.
-            </p>
-            <p className="border-l-2 border-bauhaus-red pl-4 md:pl-6 space-y-3">
-              <span className="block italic text-foreground">"Form folgt Funktion, Kunst trifft Nutzen."</span>
-              <span className="block text-base md:text-lg">(A forma segue a função, a arte encontra a utilidade).</span>
-              <span className="block italic text-foreground mt-3">"Architektur für den Körper, Ordnung für den Alltag."</span>
-              <span className="block text-base md:text-lg">(Arquitetura para o corpo, ordem para o cotidiano).</span>
-              <span className="block italic text-foreground mt-3">"Die Reinheit der Geometrie, die dem Leben dient."</span>
-              <span className="block text-base md:text-lg">(A pureza da geometria que serve à vida).</span>
-            </p>
-            <p>
-              Com isso, apesar da inspiração visual pertencer às composições geométricas de Piet Mondrian, a ligação com Bauhaus e Ulm é clara: com o uso de cores primárias e organização visual foi possível unir arte, funcionalidade e design em uma única peça.
-            </p>
-            <p>
-              Por tanto faz referência à obra artística de Mondrian, transforma os conceitos em uma peça de uso cotidiano, promovendo a ideia de que a forma segue a função.
+              Como camada final de leitura do objeto, as legendas técnicas em
+              alemão integram-se à peça, herdando a{" "}
+              <span className="text-foreground font-medium">tipografia Universal de Herbert Bayer</span>{" "}
+              (Bauhaus), um manifesto de racionalidade aplicado à comunicação
+              visual do produto.
             </p>
           </div>
         </div>
