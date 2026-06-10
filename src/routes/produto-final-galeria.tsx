@@ -64,9 +64,6 @@ const photos = [
   galeria19,
   galeria20,
   galeria21,
-  galeria22,
-  galeria23,
-  galeria24,
 ];
 
 function ProdutoFinalGaleria() {
