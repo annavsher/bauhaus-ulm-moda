@@ -158,11 +158,19 @@ function Index() {
       </header>
 
 
-      {/* HERO */}
-      <section className="border-b border-bauhaus-black">
-        <div className="mx-auto max-w-6xl grid md:grid-cols-12 gap-0">
-          <div className="md:col-span-7 px-6 md:px-12 py-20 md:py-28">
-            <p className="font-mono text-[11px] uppercase tracking-[0.3em] mb-8 text-muted-foreground">
+      <section className="relative overflow-hidden border-b border-bauhaus-black">
+        {/* Composition backdrops — figure/ground tension */}
+        <BauhausComposition variant="a" pos="tr" opacity={18} className="hidden md:block" />
+        <BauhausComposition variant="e" pos="bl" opacity={22} />
+        <div className="relative mx-auto max-w-6xl grid md:grid-cols-12 gap-0">
+          {/* Side rail with oversized marker — vertical Bayer-style label */}
+          <aside className="hidden lg:flex md:col-span-1 border-r border-bauhaus-black/30 items-start justify-center pt-10">
+            <SectionMarker n="00" label="Abertura" />
+          </aside>
+          <div className="md:col-span-7 lg:col-span-6 px-6 md:px-12 py-20 md:py-28 relative">
+            {/* Block of red behind kicker */}
+            <div className="absolute -left-2 md:left-6 top-16 h-12 w-12 md:h-16 md:w-16" style={{ backgroundColor: "var(--bauhaus-red)" }} aria-hidden />
+            <p className="relative font-mono text-[11px] uppercase tracking-[0.3em] mb-8 text-foreground pl-16 md:pl-20">
               Weimar · Dessau · Berlim — 1919 / 1933
             </p>
             <h2 className="font-display uppercase leading-[0.85] tracking-tight text-[clamp(2.5rem,7vw,6rem)]">
@@ -190,17 +198,17 @@ function Index() {
                 </span>
               </span>
             </h2>
-            <p className="mt-10 max-w-xl text-base md:text-lg leading-relaxed text-muted-foreground font-normal">
-              ​
-            </p>
           </div>
-          <div className="md:col-span-5 relative bg-bauhaus-paper border-t md:border-t-0 md:border-l border-bauhaus-black flex items-center justify-center p-6 md:p-8">
+          <div className="md:col-span-5 relative bg-bauhaus-paper border-t md:border-t-0 md:border-l border-bauhaus-black flex items-center justify-center p-6 md:p-8 overflow-hidden">
+            {/* Yellow square anchor and small circle behind image */}
+            <div className="absolute top-0 right-0 h-24 w-24 md:h-32 md:w-32" style={{ backgroundColor: "var(--bauhaus-yellow)" }} aria-hidden />
+            <div className="absolute bottom-0 left-0 h-20 w-20 md:h-28 md:w-28 rounded-full" style={{ backgroundColor: "var(--bauhaus-blue)" }} aria-hidden />
             <img
               src={heroBauhaus}
               alt="Composição geométrica Bauhaus — círculo, quadrado e triângulo"
               width={1024}
               height={1024}
-              className="w-full h-auto max-h-[70vh] object-contain"
+              className="relative w-full h-auto max-h-[70vh] object-contain"
             />
           </div>
         </div>
