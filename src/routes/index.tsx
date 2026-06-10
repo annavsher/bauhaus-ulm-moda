@@ -216,7 +216,7 @@ function Index() {
                 <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-red">
                   A Escola
                 </p>
-                <h2 className="mt-6 text-3xl sm:text-4xl md:text-5xl uppercase leading-[0.95]">
+                <h2 className="mt-6 text-3xl sm:text-4xl uppercase leading-[0.95] md:text-xl">
                   A escola que unificou as artes.
                 </h2>
                 <p className="mt-4 text-lg md:text-xl italic font-normal" style={{ fontFamily: "'Instrument Serif', serif", color: "var(--bauhaus-blue)" }}>
@@ -283,7 +283,7 @@ function Index() {
                 <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-red">
                   Hochschule für Gestaltung
                 </p>
-                <h2 className="mt-6 text-3xl sm:text-4xl md:text-5xl uppercase leading-[0.95]">
+                <h2 className="mt-6 text-3xl sm:text-4xl uppercase leading-[0.95] md:text-xl">
                   A Escola de Ulm: onde o design encontrou método.
                 </h2>
                 <p className="mt-6 font-mono text-[11px] uppercase tracking-[0.25em] text-bauhaus-blue">
@@ -355,7 +355,7 @@ function Index() {
                 <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-red">
                   Fundamentos
                 </p>
-                <h2 className="mt-6 text-3xl sm:text-4xl md:text-5xl uppercase leading-[0.95]">
+                <h2 className="mt-6 text-3xl sm:text-4xl uppercase leading-[0.95] md:text-xl">
                   As oito leis da Gestalt.
                 </h2>
                 <p className="mt-6 font-mono text-[11px] uppercase tracking-[0.25em] text-bauhaus-blue">
@@ -569,7 +569,7 @@ function Index() {
                 <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-blue">
                   Bauhaus & Moda
                 </p>
-                <h2 className="mt-6 text-3xl sm:text-4xl md:text-5xl uppercase leading-[0.95]">
+                <h2 className="mt-6 text-3xl sm:text-4xl uppercase leading-[0.95] md:text-xl">
                   ​Da escola para a moda.
                 </h2>
               </div>
@@ -598,7 +598,7 @@ function Index() {
             <p className="font-mono text-[11px] uppercase tracking-[0.3em]" style={{ color: "var(--bauhaus-yellow)" }}>
               Oskar Schlemmer
             </p>
-            <h2 className="mt-6 text-4xl md:text-6xl uppercase">
+            <h2 className="mt-6 text-3xl sm:text-4xl uppercase leading-[0.95] md:text-xl">
               O corpo como{" "}
               <span style={{ color: "var(--bauhaus-yellow)" }}>geometria</span>.
             </h2>
@@ -637,7 +637,7 @@ function Index() {
             <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-blue">
               Yves Saint Laurent
             </p>
-            <h2 className="mt-6 text-4xl md:text-6xl uppercase">
+            <h2 className="mt-6 text-3xl sm:text-4xl uppercase leading-[0.95] md:text-xl">
               A coleção{" "}
               <span style={{ color: "var(--bauhaus-blue)" }}>Mondrian</span>.
             </h2>
@@ -687,7 +687,7 @@ function Index() {
             <p className="font-mono text-[11px] uppercase tracking-[0.3em]">
               Pierre Cardin
             </p>
-            <h2 className="mt-6 text-4xl md:text-6xl uppercase">
+            <h2 className="mt-6 text-3xl sm:text-4xl uppercase leading-[0.95] md:text-xl">
               Futurismo geométrico.
             </h2>
             <p className="mt-8 text-lg leading-relaxed">
@@ -937,7 +937,7 @@ ULM</span>
               <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-red">
                 Resultado
               </p>
-              <h2 className="mt-4 md:mt-6 text-3xl md:text-5xl uppercase leading-[0.95]">
+              <h2 className="mt-4 md:mt-6 text-3xl sm:text-4xl uppercase leading-[0.95] md:text-xl">
                 O produto final.
               </h2>
             </div>
@@ -999,7 +999,7 @@ ULM</span>
               <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-red">
                 Leitura visual
               </p>
-              <h2 className="mt-4 md:mt-6 text-3xl md:text-5xl uppercase leading-[0.95]">
+              <h2 className="mt-4 md:mt-6 text-3xl sm:text-4xl uppercase leading-[0.95] md:text-xl">
                 A jaqueta pelas <span style={{ color: "var(--bauhaus-blue)" }}>oito leis</span> da Gestalt.
               </h2>
             </div>
