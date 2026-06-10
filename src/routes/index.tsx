@@ -849,11 +849,11 @@ ULM</span>
       <section className="border-b border-bauhaus-black bg-bauhaus-paper">
         <div className="mx-auto max-w-6xl px-6 md:px-12 py-12 md:py-24 grid md:grid-cols-12 gap-8 md:gap-12">
           <div className="md:col-span-5 lg:col-span-4">
-            <div className="md:sticky md:top-8">
+            <div className="md:sticky md:top-24">
               <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-red">
                 O projeto
               </p>
-              <h2 className="mt-6 text-3xl md:text-5xl uppercase leading-[0.95]">
+              <h2 className="mt-6 font-display text-3xl sm:text-4xl md:text-5xl uppercase leading-[0.9] tracking-tight">
                 Da escola para o corpo.
               </h2>
             </div>
