@@ -36,6 +36,7 @@ import produtoFinal4 from "@/assets/produto-final-novo-4.jpeg.asset.json";
 import mondrian1 from "@/assets/mondrian-1.png.asset.json";
 import mondrian2 from "@/assets/mondrian-2.png.asset.json";
 import mondrian3 from "@/assets/mondrian-3.png.asset.json";
+import mondrianPortrait from "@/assets/mondrian-portrait.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -450,6 +451,33 @@ function Index() {
                 <p className="mt-6 font-mono text-[11px] uppercase tracking-[0.25em] text-bauhaus-blue">
                   Amersfoort · 1872 — 1944
                 </p>
+
+                {/* Portrait — small editorial visual beneath the title */}
+                <figure className="mt-8 max-w-[12rem] md:max-w-[14rem]">
+                  <div className="relative border-2 border-bauhaus-black bg-bauhaus-paper">
+                    <div
+                      className="pointer-events-none absolute -top-2 -left-2 h-3 w-3"
+                      style={{ backgroundColor: "var(--bauhaus-red)" }}
+                      aria-hidden
+                    />
+                    <div
+                      className="pointer-events-none absolute -bottom-2 -right-2 h-3 w-6"
+                      style={{ backgroundColor: "var(--bauhaus-yellow)" }}
+                      aria-hidden
+                    />
+                    <img
+                      src={mondrianPortrait.url}
+                      alt="Retrato em preto e branco de Piet Mondrian"
+                      width={448}
+                      height={560}
+                      loading="lazy"
+                      className="block w-full h-auto grayscale"
+                    />
+                  </div>
+                  <figcaption className="mt-3 font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground">
+                    Piet Mondrian · retrato
+                  </figcaption>
+                </figure>
               </div>
             </div>
 
@@ -466,8 +494,8 @@ function Index() {
             </div>
           </div>
 
-          {/* Photo gallery */}
-          <div className="mt-14 md:mt-20 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+          {/* Photo gallery — smaller, balanced editorial scale */}
+          <div className="mt-16 md:mt-24 mx-auto max-w-4xl grid grid-cols-1 sm:grid-cols-3 gap-5 md:gap-6">
             <PhotoFrame
               src={mondrian1.url}
               alt="Composição de Piet Mondrian com blocos de cores primárias e linhas pretas ortogonais"
