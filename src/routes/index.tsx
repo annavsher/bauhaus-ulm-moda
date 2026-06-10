@@ -404,11 +404,36 @@ function Index() {
         id="mondrian"
         className="relative overflow-hidden scroll-mt-20 md:scroll-mt-24 border-b border-bauhaus-black bg-bauhaus-paper"
       >
-        {/* De Stijl color blocks */}
-        <div className="absolute top-0 left-0 h-24 w-1/4 md:w-1/5" style={{ backgroundColor: "var(--bauhaus-red)" }} aria-hidden />
-        <div className="absolute top-0 right-0 h-3 w-2/3" style={{ backgroundColor: "var(--bauhaus-black)" }} aria-hidden />
-        <div className="absolute bottom-0 right-0 h-16 w-1/4 md:w-1/6" style={{ backgroundColor: "var(--bauhaus-yellow)" }} aria-hidden />
-        <BauhausComposition variant="d" pos="bl" opacity={10} className="hidden md:block" />
+        {/* Mondrian / De Stijl backdrop — full-section neoplasticist composition */}
+        <svg
+          viewBox="0 0 100 100"
+          preserveAspectRatio="none"
+          aria-hidden
+          className="pointer-events-none absolute inset-0 h-full w-full opacity-[0.18] md:opacity-25"
+        >
+          {/* Color planes */}
+          <rect x="0" y="0" width="22" height="34" fill="var(--bauhaus-red)" />
+          <rect x="78" y="0" width="22" height="14" fill="var(--bauhaus-yellow)" />
+          <rect x="78" y="66" width="22" height="34" fill="var(--bauhaus-blue)" />
+          <rect x="0" y="86" width="14" height="14" fill="var(--bauhaus-yellow)" />
+          <rect x="60" y="86" width="18" height="14" fill="var(--bauhaus-red)" />
+          {/* Black orthogonal grid lines */}
+          <line x1="22" y1="0" x2="22" y2="100" stroke="var(--bauhaus-black)" strokeWidth="1.2" vectorEffect="non-scaling-stroke" />
+          <line x1="60" y1="0" x2="60" y2="100" stroke="var(--bauhaus-black)" strokeWidth="1.2" vectorEffect="non-scaling-stroke" />
+          <line x1="78" y1="0" x2="78" y2="100" stroke="var(--bauhaus-black)" strokeWidth="1.2" vectorEffect="non-scaling-stroke" />
+          <line x1="0" y1="34" x2="100" y2="34" stroke="var(--bauhaus-black)" strokeWidth="1.2" vectorEffect="non-scaling-stroke" />
+          <line x1="0" y1="66" x2="100" y2="66" stroke="var(--bauhaus-black)" strokeWidth="1.2" vectorEffect="non-scaling-stroke" />
+          <line x1="0" y1="86" x2="100" y2="86" stroke="var(--bauhaus-black)" strokeWidth="1.2" vectorEffect="non-scaling-stroke" />
+        </svg>
+        {/* Paper veil to keep text readable over the composition */}
+        <div
+          className="pointer-events-none absolute inset-0"
+          style={{ background: "linear-gradient(to bottom, color-mix(in oklab, var(--bauhaus-paper) 78%, transparent), color-mix(in oklab, var(--bauhaus-paper) 88%, transparent))" }}
+          aria-hidden
+        />
+        {/* Accent edge strips */}
+        <div className="absolute top-0 right-0 h-2 w-2/3" style={{ backgroundColor: "var(--bauhaus-black)" }} aria-hidden />
+        <div className="absolute bottom-0 left-0 h-2 w-1/2" style={{ backgroundColor: "var(--bauhaus-black)" }} aria-hidden />
 
         <div className="relative mx-auto max-w-6xl px-6 md:px-10 py-20 md:py-28">
           <div className="grid md:grid-cols-12 gap-10 md:gap-12 lg:gap-16">
