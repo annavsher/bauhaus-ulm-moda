@@ -303,6 +303,9 @@ ULM</span>
             <p>
               Com isso, apesar da inspiração visual pertencer às composições geométricas de Piet Mondrian, a ligação com Bauhaus e Ulm é clara: com o uso de cores primárias e organização visual foi possível unir arte, funcionalidade e design em uma única peça.
             </p>
+            <p>
+              Por tanto faz referência à obra artística de Mondrian, transforma os conceitos em uma peça de uso cotidiano, promovendo a ideia de que a forma segue a função.
+            </p>
           </div>
         </div>
       </section>
