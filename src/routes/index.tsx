@@ -999,7 +999,7 @@ ULM</span>
               <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-red">
                 Leitura visual
               </p>
-              <h2 className="mt-4 md:mt-6 text-3xl sm:text-4xl uppercase leading-[0.95] md:text-xl">
+              <h2 className="mt-4 md:mt-6 font-display text-3xl sm:text-4xl md:text-5xl uppercase leading-[0.9] tracking-tight">
                 A jaqueta pelas <span style={{ color: "var(--bauhaus-blue)" }}>oito leis</span> da Gestalt.
               </h2>
             </div>
