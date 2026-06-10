@@ -284,20 +284,27 @@ function Index() {
       <BauhausRule n="​" label="Ulm" tone="black" />
 
       {/* ULM — HERDEIRA DA BAUHAUS */}
-      <section id="ulm" className="scroll-mt-20 md:scroll-mt-24 border-b border-bauhaus-black bg-background">
-        <div className="mx-auto max-w-6xl px-6 md:px-10 py-16 md:py-24">
+      <section id="ulm" className="relative overflow-hidden scroll-mt-20 md:scroll-mt-24 border-b border-bauhaus-black bg-background">
+        <BauhausComposition variant="d" pos="bl" opacity={12} />
+        <div className="relative mx-auto max-w-6xl px-6 md:px-10 py-16 md:py-24">
           <div className="grid md:grid-cols-12 gap-8 md:gap-12 lg:gap-16">
             <div className="md:col-span-5 lg:col-span-4">
               <div className="md:sticky md:top-24">
-                <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-red">
+                <SectionMarker n="02" label="Ulm" tone="blue" />
+                <p className="mt-6 font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-red">
                   Hochschule für Gestaltung
                 </p>
-                <h2 className="mt-6 font-display text-3xl sm:text-4xl md:text-5xl uppercase leading-[0.9] tracking-tight">
+                <h2 className="mt-4 font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl uppercase leading-[0.85] tracking-tight">
                   A Escola de Ulm: onde o design encontrou método.
                 </h2>
-                <p className="mt-6 font-mono text-[11px] uppercase tracking-[0.25em] text-bauhaus-blue">
-                  Ulm · 1953 — 1968
-                </p>
+                <div className="mt-6 flex items-center gap-3">
+                  <span className="h-3 w-3 rounded-full" style={{ backgroundColor: "var(--bauhaus-red)" }} />
+                  <span className="h-3 w-3" style={{ backgroundColor: "var(--bauhaus-yellow)" }} />
+                  <span className="block h-px w-16 bg-bauhaus-black" />
+                  <span className="font-mono text-[11px] uppercase tracking-[0.25em] text-bauhaus-blue">
+                    Ulm · 1953 — 1968
+                  </span>
+                </div>
               </div>
             </div>
             <div className="md:col-span-7 lg:col-span-8 max-w-prose space-y-6 text-base md:text-lg leading-[1.75] text-muted-foreground">
