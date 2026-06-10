@@ -682,7 +682,7 @@ function Index() {
 
       {/* CARDIN */}
       <section id="cardin" className="scroll-mt-20 md:scroll-mt-24 border-b border-bauhaus-black bg-bauhaus-yellow">
-        <div className="mx-auto max-w-6xl px-6 py-24">
+        <div className="mx-auto max-w-6xl px-6 md:px-10 py-20 md:py-28">
           <div className="max-w-3xl">
             <p className="font-mono text-[11px] uppercase tracking-[0.3em]">
               Pierre Cardin
