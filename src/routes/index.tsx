@@ -7,6 +7,7 @@ import jaqueta from "@/assets/ulm-mondrian-system.png";
 import jaquetaSketch from "@/assets/jaqueta-sketch.jpeg.asset.json";
 import processoCriativo from "@/assets/processo-criativo.png.asset.json";
 import bauhausSchool from "@/assets/bauhaus-school.png.asset.json";
+import ulmSchool from "@/assets/ulm-school.png.asset.json";
 import heroBauhaus from "@/assets/hero-bauhaus.jpg";
 
 import schlemmer1 from "@/assets/schlemmer-1.jpg";
