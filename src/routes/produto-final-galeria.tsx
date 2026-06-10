@@ -34,11 +34,11 @@ export const Route = createFileRoute("/produto-final-galeria")({
   component: ProdutoFinalGaleria,
   head: () => ({
     meta: [
-      { title: "Produto Final — Galeria · ULM Mondrian System" },
+      { title: "Produto Final — Galeria · Street Haus" },
       {
         name: "description",
         content:
-          "Galeria completa do produto final: a jaqueta ULM Mondrian System fotografada em detalhe e em movimento.",
+          "Galeria completa do produto final: a jaqueta Street Haus fotografada em detalhe e em movimento.",
       },
     ],
     links: [
@@ -95,7 +95,7 @@ function ProdutoFinalGaleria() {
               >
                 <img
                   src={p.url}
-                  alt={`ULM Mondrian System — galeria do produto final ${i + 1}`}
+                  alt={`Street Haus — galeria do produto final ${i + 1}`}
                   className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
                   loading="lazy"
                   decoding="async"

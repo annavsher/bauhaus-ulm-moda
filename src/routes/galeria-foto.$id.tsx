@@ -20,7 +20,7 @@ export const Route = createFileRoute("/galeria-foto/$id")({
     </div>
   ),
   head: () => ({
-    meta: [{ title: "Produto final — Foto · ULM Mondrian System" }],
+    meta: [{ title: "Produto final — Foto · Street Haus" }],
   }),
 });
 

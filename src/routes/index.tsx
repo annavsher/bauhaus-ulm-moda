@@ -776,7 +776,7 @@ function Index() {
           </p>
           <p className="mt-12 max-w-2xl mx-auto text-base md:text-lg leading-relaxed opacity-80">
             É essa construção — função, geometria e cor primária — que reaparece no protótipo da jaqueta{" "}
-            <span style={{ color: "var(--bauhaus-yellow)" }}>ULM Mondrian System</span> apresentada anteriormente.
+            <span style={{ color: "var(--bauhaus-yellow)" }}>Street Haus</span> apresentada anteriormente.
           </p>
         </div>
       </section>
@@ -798,7 +798,7 @@ function Index() {
           <div className="flex items-center justify-center order-2 md:-mr-12 lg:-mr-20">
             <img
               src={jaqueta}
-              alt="Protótipo ULM Mondrian System — esboço da jaqueta autoral com blocos vermelho, azul e amarelo"
+              alt="Protótipo Street Haus — esboço da jaqueta autoral com blocos vermelho, azul e amarelo"
               width={1600}
               height={1200}
               loading="lazy"
@@ -890,7 +890,7 @@ function Index() {
           </div>
           <div className="md:col-span-7 lg:col-span-8 max-w-prose space-y-6 md:space-y-7 text-base md:text-lg leading-[1.75] md:leading-[1.8] text-muted-foreground">
             <p>
-              <span className="text-foreground font-medium">ULM Mondrian System</span>{" "}
+              <span className="text-foreground font-medium">Street Haus</span>{" "}
               parte de uma pergunta simples: o que aconteceria se a grade de
               Mondrian, o rigor sistêmico da Escola de Ulm e as cores primárias
               e ângulos exatos de Bauhaus fossem aplicados a uma peça
@@ -949,7 +949,7 @@ function Index() {
             <div className="relative w-full aspect-[16/10] bg-bauhaus-paper border border-bauhaus-black/10 flex items-center justify-center overflow-hidden">
               <img
                 src={jaquetaSketch.url}
-                alt="Sketch técnico da jaqueta ULM Mondrian System — vistas frente e costas com a distribuição final dos blocos primários e ortogonais"
+                alt="Sketch técnico da jaqueta Street Haus — vistas frente e costas com a distribuição final dos blocos primários e ortogonais"
                 className="absolute inset-0 h-full w-full object-contain p-4 md:p-6"
                 loading="lazy"
                 decoding="async"
@@ -973,7 +973,7 @@ function Index() {
             </div>
             <div className="md:col-span-7 max-w-prose text-base md:text-lg leading-[1.7] text-muted-foreground">
               <p>
-                Do desenho técnico à peça vestida: a jaqueta ULM Mondrian System
+                Do desenho técnico à peça vestida: a jaqueta Street Haus
                 construída e fotografada.
               </p>
             </div>
@@ -983,7 +983,7 @@ function Index() {
             <div className="relative w-full aspect-[16/10] overflow-hidden border border-bauhaus-black bg-muted">
               <img
                 src={produtoFinal1.url}
-                alt="Jaqueta ULM Mondrian System — produto final 1"
+                alt="Jaqueta Street Haus — produto final 1"
                 className="absolute inset-0 h-full w-full object-cover"
                 loading="lazy"
                 decoding="async"
@@ -999,7 +999,7 @@ function Index() {
               >
                 <img
                   src={p.url}
-                  alt={`Jaqueta ULM Mondrian System — produto final ${i + 2}`}
+                  alt={`Jaqueta Street Haus — produto final ${i + 2}`}
                   className="absolute inset-0 h-full w-full object-cover"
                   loading="lazy"
                   decoding="async"
