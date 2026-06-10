@@ -983,56 +983,6 @@ function Index() {
             </div>
           </div>
         </div>
-
-        {/* PROCESSO CRIATIVO — texto + nova imagem */}
-        <div className="border-t border-bauhaus-black/15">
-          <div className="mx-auto max-w-6xl px-6 md:px-12 py-16 md:py-24 grid md:grid-cols-12 gap-8 md:gap-12 items-start">
-            <div className="md:col-span-5 lg:col-span-4">
-              <div className="md:sticky md:top-24">
-                <p className="font-mono text-xs md:text-sm uppercase tracking-[0.3em] text-bauhaus-red">
-                  Conceito
-                </p>
-                <h2 className="mt-6 font-display text-4xl sm:text-5xl md:text-6xl uppercase leading-[0.9] tracking-tight">
-                  Processo<br />criativo.
-                </h2>
-                <div className="mt-6 flex items-center gap-2" aria-hidden="true">
-                  <span className="h-3 w-3 bg-bauhaus-red" />
-                  <span className="h-3 w-3 rounded-full bg-bauhaus-blue" />
-                  <span className="h-3 w-3 bg-bauhaus-yellow" />
-                </div>
-              </div>
-            </div>
-            <div className="md:col-span-7 lg:col-span-8 space-y-6 text-base md:text-lg leading-[1.8] text-muted-foreground max-w-prose">
-              <p>
-                A evolução do design moderno no século XX conecta arte e funcionalidade em uma trajetória que passa por <span className="text-foreground font-medium">Piet Mondrian</span>, pela <span className="text-foreground font-medium">Bauhaus</span> e pela <span className="text-foreground font-medium">Escola de Ulm</span>. A jaqueta <span className="text-foreground font-medium">Street Haus</span> materializa essa herança, transformando conceitos históricos em uma peça utilitária e contemporânea.
-              </p>
-              <p>
-                Projetada como um sistema modular de painéis brancos delimitados por eixos ortogonais pretos, a peça incorpora blocos de cores primárias que remetem diretamente ao purismo visual de Mondrian. A simplicidade formal e a ausência de ornamentos seguem os princípios funcionais defendidos pela Bauhaus.
-              </p>
-              <p>
-                A influência da Escola de Ulm aparece na organização rigorosa da grade, onde a geometria deixa de ser apenas um elemento visual e passa a estruturar a própria construção da peça. Como camada final, legendas técnicas em alemão, inspiradas na tipografia Universal de <span className="text-foreground font-medium">Herbert Bayer</span>, reforçam a racionalidade e a clareza visual do projeto.
-              </p>
-              <p>
-                A Street Haus reúne, assim, os principais pilares do design moderno: geometria, funcionalidade e organização racional.
-              </p>
-            </div>
-          </div>
-
-          <div className="mx-auto max-w-6xl px-6 md:px-12 pb-16 md:pb-24">
-            <figure className="relative w-full aspect-[16/10] overflow-hidden border border-bauhaus-black bg-bauhaus-paper">
-              <img
-                src={processoCriativo.url}
-                alt="Estudo do processo criativo da jaqueta Street Haus — referências Bauhaus, Ulm e Mondrian aplicadas à construção da peça"
-                className="absolute inset-0 h-full w-full object-cover"
-                loading="lazy"
-                decoding="async"
-              />
-            </figure>
-            <figcaption className="mt-3 font-mono text-[11px] uppercase tracking-[0.3em] text-muted-foreground">
-              Street Haus · Bauhaus + Ulm + Mondrian
-            </figcaption>
-          </div>
-        </div>
       </section>
 
       {/* PRODUTO FINAL */}
