@@ -631,6 +631,9 @@ ULM</span>
                 <h2 className="mt-6 text-3xl sm:text-4xl md:text-5xl uppercase leading-[0.95]">
                   A escola que unificou as artes.
                 </h2>
+                <p className="mt-4 text-lg md:text-xl italic font-normal" style={{ fontFamily: "'Instrument Serif', serif", color: "var(--bauhaus-blue)" }}>
+                  Piet Mondrian em Bauhaus.
+                </p>
               </div>
             </div>
             <div className="md:col-span-7 lg:col-span-8 space-y-6 text-base md:text-lg leading-relaxed text-muted-foreground">
