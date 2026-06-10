@@ -598,7 +598,7 @@ function Index() {
             <p className="font-mono text-[11px] uppercase tracking-[0.3em]" style={{ color: "var(--bauhaus-yellow)" }}>
               Oskar Schlemmer
             </p>
-            <h2 className="mt-6 text-3xl sm:text-4xl uppercase leading-[0.95] md:text-xl">
+            <h2 className="mt-6 font-display text-3xl sm:text-4xl md:text-5xl uppercase leading-[0.9] tracking-tight">
               O corpo como{" "}
               <span style={{ color: "var(--bauhaus-yellow)" }}>geometria</span>.
             </h2>
