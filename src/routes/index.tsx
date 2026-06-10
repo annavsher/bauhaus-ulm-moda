@@ -212,11 +212,11 @@ function Index() {
         <div className="mx-auto max-w-6xl px-6 md:px-10 py-16 md:py-24">
           <div className="grid md:grid-cols-12 gap-8 md:gap-12 lg:gap-16">
             <div className="md:col-span-5 lg:col-span-4">
-              <div className="md:sticky md:top-8">
+              <div className="md:sticky md:top-24">
                 <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-red">
                   A Escola
                 </p>
-                <h2 className="mt-6 text-3xl sm:text-4xl uppercase leading-[0.95] md:text-xl">
+                <h2 className="mt-6 font-display text-3xl sm:text-4xl md:text-5xl uppercase leading-[0.9] tracking-tight">
                   A escola que unificou as artes.
                 </h2>
                 <p className="mt-4 text-lg md:text-xl italic font-normal" style={{ fontFamily: "'Instrument Serif', serif", color: "var(--bauhaus-blue)" }}>
@@ -283,7 +283,7 @@ function Index() {
                 <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-red">
                   Hochschule für Gestaltung
                 </p>
-                <h2 className="mt-6 text-3xl sm:text-4xl uppercase leading-[0.95] md:text-xl">
+                <h2 className="mt-6 font-display text-3xl sm:text-4xl md:text-5xl uppercase leading-[0.9] tracking-tight">
                   A Escola de Ulm: onde o design encontrou método.
                 </h2>
                 <p className="mt-6 font-mono text-[11px] uppercase tracking-[0.25em] text-bauhaus-blue">
@@ -355,7 +355,7 @@ function Index() {
                 <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-red">
                   Fundamentos
                 </p>
-                <h2 className="mt-6 text-3xl sm:text-4xl uppercase leading-[0.95] md:text-xl">
+                <h2 className="mt-6 font-display text-3xl sm:text-4xl md:text-5xl uppercase leading-[0.9] tracking-tight">
                   As oito leis da Gestalt.
                 </h2>
                 <p className="mt-6 font-mono text-[11px] uppercase tracking-[0.25em] text-bauhaus-blue">
@@ -565,11 +565,11 @@ function Index() {
         <div className="mx-auto max-w-6xl px-6 md:px-10 py-16 md:py-24">
           <div className="grid md:grid-cols-12 gap-8 md:gap-12 lg:gap-16">
             <div className="md:col-span-5 lg:col-span-4">
-              <div className="md:sticky md:top-8">
+              <div className="md:sticky md:top-24">
                 <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-blue">
                   Bauhaus & Moda
                 </p>
-                <h2 className="mt-6 text-3xl sm:text-4xl uppercase leading-[0.95] md:text-xl">
+                <h2 className="mt-6 font-display text-3xl sm:text-4xl md:text-5xl uppercase leading-[0.9] tracking-tight">
                   ​Da escola para a moda.
                 </h2>
               </div>
@@ -593,12 +593,12 @@ function Index() {
 
       {/* SCHLEMMER */}
       <section id="schlemmer" className="scroll-mt-20 md:scroll-mt-24 border-b border-bauhaus-black bg-bauhaus-black text-bauhaus-paper">
-        <div className="mx-auto max-w-6xl px-6 py-24 grid md:grid-cols-12 gap-12 items-start">
+        <div className="mx-auto max-w-6xl px-6 md:px-10 py-20 md:py-28 grid md:grid-cols-12 gap-10 md:gap-12 items-start">
           <div className="md:col-span-6">
             <p className="font-mono text-[11px] uppercase tracking-[0.3em]" style={{ color: "var(--bauhaus-yellow)" }}>
               Oskar Schlemmer
             </p>
-            <h2 className="mt-6 text-3xl sm:text-4xl uppercase leading-[0.95] md:text-xl">
+            <h2 className="mt-6 font-display text-3xl sm:text-4xl md:text-5xl uppercase leading-[0.9] tracking-tight">
               O corpo como{" "}
               <span style={{ color: "var(--bauhaus-yellow)" }}>geometria</span>.
             </h2>
@@ -620,7 +620,7 @@ function Index() {
 
       {/* YSL */}
       <section id="ysl" className="scroll-mt-20 md:scroll-mt-24 border-b border-bauhaus-black bg-bauhaus-paper">
-        <div className="mx-auto max-w-6xl px-6 py-24 grid md:grid-cols-12 gap-12 items-start">
+        <div className="mx-auto max-w-6xl px-6 md:px-10 py-20 md:py-28 grid md:grid-cols-12 gap-10 md:gap-12 items-start">
           <div className="md:col-span-5 order-2 md:order-1">
             <div className="md:sticky md:top-24">
               <PhotoFrame
@@ -637,7 +637,7 @@ function Index() {
             <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-blue">
               Yves Saint Laurent
             </p>
-            <h2 className="mt-6 text-3xl sm:text-4xl uppercase leading-[0.95] md:text-xl">
+            <h2 className="mt-6 font-display text-3xl sm:text-4xl md:text-5xl uppercase leading-[0.9] tracking-tight">
               A coleção{" "}
               <span style={{ color: "var(--bauhaus-blue)" }}>Mondrian</span>.
             </h2>
@@ -682,12 +682,12 @@ function Index() {
 
       {/* CARDIN */}
       <section id="cardin" className="scroll-mt-20 md:scroll-mt-24 border-b border-bauhaus-black bg-bauhaus-yellow">
-        <div className="mx-auto max-w-6xl px-6 py-24">
+        <div className="mx-auto max-w-6xl px-6 md:px-10 py-20 md:py-28">
           <div className="max-w-3xl">
             <p className="font-mono text-[11px] uppercase tracking-[0.3em]">
               Pierre Cardin
             </p>
-            <h2 className="mt-6 text-3xl sm:text-4xl uppercase leading-[0.95] md:text-xl">
+            <h2 className="mt-6 font-display text-3xl sm:text-4xl md:text-5xl uppercase leading-[0.9] tracking-tight">
               Futurismo geométrico.
             </h2>
             <p className="mt-8 text-lg leading-relaxed">
@@ -786,7 +786,7 @@ ULM</span>
             <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-red">
               Princípios
             </p>
-            <h2 className="mt-6 text-3xl md:text-4xl uppercase leading-[0.95]">
+            <h2 className="mt-6 font-display text-3xl sm:text-4xl md:text-5xl uppercase leading-[0.9] tracking-tight">
               Cinco regras de projeto.
             </h2>
             {/* PROXIMIDADE: itens colados num único bloco; SEMELHANÇA: mesma forma+tamanho em todos */}
@@ -818,7 +818,7 @@ ULM</span>
             <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-blue">
               Cores
             </p>
-            <h2 className="mt-6 text-3xl md:text-4xl uppercase leading-[0.95]">
+            <h2 className="mt-6 font-display text-3xl sm:text-4xl md:text-5xl uppercase leading-[0.9] tracking-tight">
               Paleta restrita.
             </h2>
             {/* PROXIMIDADE: paleta como uma única banda contínua de amostras coladas */}
@@ -849,11 +849,11 @@ ULM</span>
       <section className="border-b border-bauhaus-black bg-bauhaus-paper">
         <div className="mx-auto max-w-6xl px-6 md:px-12 py-12 md:py-24 grid md:grid-cols-12 gap-8 md:gap-12">
           <div className="md:col-span-5 lg:col-span-4">
-            <div className="md:sticky md:top-8">
+            <div className="md:sticky md:top-24">
               <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-red">
                 O projeto
               </p>
-              <h2 className="mt-6 text-3xl md:text-5xl uppercase leading-[0.95]">
+              <h2 className="mt-6 font-display text-3xl sm:text-4xl md:text-5xl uppercase leading-[0.9] tracking-tight">
                 Da escola para o corpo.
               </h2>
             </div>
@@ -901,14 +901,14 @@ ULM</span>
       <section className="border-b border-bauhaus-black bg-bauhaus-paper">
         <div className="mx-auto max-w-6xl px-6 md:px-12 py-16 md:py-24 grid md:grid-cols-12 gap-8 md:gap-12 items-start">
           <div className="md:col-span-5 lg:col-span-4">
-            <div className="md:sticky md:top-8">
+            <div className="md:sticky md:top-24">
               <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-blue">
                 Processo criativo
               </p>
-              <h2 className="mt-6 text-3xl md:text-5xl uppercase leading-[0.95]">
+              <h2 className="mt-6 font-display text-3xl sm:text-4xl md:text-5xl uppercase leading-[0.9] tracking-tight">
                 Da ideia à prática.
               </h2>
-              <p className="mt-6 max-w-sm text-base leading-relaxed text-muted-foreground">
+              <p className="mt-6 max-w-sm text-base md:text-[15px] leading-[1.7] text-muted-foreground">
                 Tradução do estudo em desenho técnico — base para o corte e a
                 montagem da peça, com a distribuição final dos blocos primários
                 e ortogonais.
@@ -937,7 +937,7 @@ ULM</span>
               <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-red">
                 Resultado
               </p>
-              <h2 className="mt-4 md:mt-6 text-3xl sm:text-4xl uppercase leading-[0.95] md:text-xl">
+              <h2 className="mt-4 md:mt-6 font-display text-3xl sm:text-4xl md:text-5xl uppercase leading-[0.9] tracking-tight">
                 O produto final.
               </h2>
             </div>
@@ -999,7 +999,7 @@ ULM</span>
               <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-red">
                 Leitura visual
               </p>
-              <h2 className="mt-4 md:mt-6 text-3xl sm:text-4xl uppercase leading-[0.95] md:text-xl">
+              <h2 className="mt-4 md:mt-6 font-display text-3xl sm:text-4xl md:text-5xl uppercase leading-[0.9] tracking-tight">
                 A jaqueta pelas <span style={{ color: "var(--bauhaus-blue)" }}>oito leis</span> da Gestalt.
               </h2>
             </div>
