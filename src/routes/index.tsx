@@ -602,7 +602,7 @@ ULM</span>
               </span>
             </h2>
             <p className="mt-10 max-w-xl text-base md:text-lg leading-relaxed text-muted-foreground font-normal">
-              A jaqueta apresentada acima não nasceu do acaso. Ela é o ponto de chegada de um século de pensamento: a Bauhaus não desenhou apenas cadeiras e edifícios — sua gramática geométrica (círculo, quadrado, triângulo) atravessou o século XX junto ao que a Ulm levou adiante após seu fechamento. Vamos conhecer a história dessas duas escolas.
+              ​
             </p>
           </div>
           <div className="md:col-span-5 relative bg-bauhaus-paper border-t md:border-t-0 md:border-l border-bauhaus-black flex items-center justify-center p-6 md:p-8">
