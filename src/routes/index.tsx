@@ -786,7 +786,7 @@ ULM</span>
             <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-red">
               Princípios
             </p>
-            <h2 className="mt-6 text-3xl md:text-4xl uppercase leading-[0.95]">
+            <h2 className="mt-6 font-display text-3xl sm:text-4xl md:text-5xl uppercase leading-[0.9] tracking-tight">
               Cinco regras de projeto.
             </h2>
             {/* PROXIMIDADE: itens colados num único bloco; SEMELHANÇA: mesma forma+tamanho em todos */}
