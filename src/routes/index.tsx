@@ -1137,8 +1137,33 @@ function Index() {
       </section>
 
       {/* MANIFESTO — frases em destaque sobre fundo vermelho */}
-      <section className="border-b border-bauhaus-black bg-bauhaus-red">
-        <div className="mx-auto max-w-6xl px-6 md:px-12 py-16 md:py-24">
+      <section className="relative overflow-hidden border-b border-bauhaus-black bg-bauhaus-red">
+        {/* Detalhes decorativos Bauhaus */}
+        <div className="pointer-events-none absolute inset-0" aria-hidden="true">
+          {/* círculo amarelo grande, topo-direita */}
+          <span className="absolute -top-20 -right-20 h-72 w-72 md:h-96 md:w-96 rounded-full bg-bauhaus-yellow opacity-90" />
+          {/* quadrado azul, inferior-esquerda */}
+          <span className="absolute -bottom-16 -left-16 h-56 w-56 md:h-72 md:w-72 bg-bauhaus-blue opacity-95" />
+          {/* triângulo preto, meio-direita */}
+          <svg
+            className="absolute right-8 md:right-24 bottom-10 md:bottom-16 w-28 md:w-40 h-28 md:h-40"
+            viewBox="0 0 100 100"
+            fill="none"
+          >
+            <polygon points="0,100 100,100 50,0" fill="var(--bauhaus-black)" />
+          </svg>
+          {/* pequeno quadrado amarelo, topo-esquerda */}
+          <span className="absolute top-10 left-10 h-10 w-10 md:h-14 md:w-14 bg-bauhaus-yellow" />
+          {/* pequeno círculo preto */}
+          <span className="absolute top-1/2 left-1/3 h-6 w-6 md:h-8 md:w-8 rounded-full bg-bauhaus-black" />
+          {/* linhas pretas horizontais finas */}
+          <span className="absolute top-1/4 left-0 right-0 h-px bg-bauhaus-black opacity-40" />
+          <span className="absolute bottom-1/3 left-0 right-0 h-px bg-bauhaus-black opacity-30" />
+          {/* linha preta vertical */}
+          <span className="absolute top-0 bottom-0 left-1/4 w-px bg-bauhaus-black opacity-30" />
+        </div>
+        <div className="relative mx-auto max-w-6xl px-6 md:px-12 py-16 md:py-24">
+
           <div className="flex items-center gap-3 mb-8 md:mb-12">
             <span className="h-3 w-3 bg-bauhaus-paper" aria-hidden="true" />
             <p className="font-mono text-[11px] md:text-sm uppercase tracking-[0.3em] text-bauhaus-paper">
