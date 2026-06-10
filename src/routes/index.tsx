@@ -632,7 +632,7 @@ ULM</span>
                   A escola que unificou as artes.
                 </h2>
                 <p className="mt-4 text-lg md:text-xl italic font-normal" style={{ fontFamily: "'Instrument Serif', serif", color: "var(--bauhaus-blue)" }}>
-                  Piet Mondrian em Bauhaus.
+                  ​
                 </p>
               </div>
             </div>
