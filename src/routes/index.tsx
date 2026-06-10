@@ -1004,22 +1004,16 @@ function Index() {
             </div>
             <div className="md:col-span-7 lg:col-span-8 space-y-6 text-base md:text-lg leading-[1.8] text-muted-foreground max-w-prose">
               <p>
-                A jaqueta <span className="text-foreground font-medium">Street Haus</span> materializa o conceito de
-                {" "}<span className="text-foreground font-medium">"arquitetura portátil"</span>, transformando a vestimenta
-                em um espaço onde a arte dialoga diretamente com a utilidade. O projeto converge a cultura urbana
-                e a sofisticação do design funcional, fundamentando-se em pilares da história da arte e do design moderno.
+                A evolução do design moderno no século XX conecta arte e funcionalidade em uma trajetória que passa por <span className="text-foreground font-medium">Piet Mondrian</span>, pela <span className="text-foreground font-medium">Bauhaus</span> e pela <span className="text-foreground font-medium">Escola de Ulm</span>. A jaqueta <span className="text-foreground font-medium">Street Haus</span> materializa essa herança, transformando conceitos históricos em uma peça utilitária e contemporânea.
               </p>
               <p>
-                O nome surge da fusão sinérgica entre o estilo <span className="text-foreground font-medium">streetwear</span>
-                {" "}e <span className="text-foreground font-medium">Bauhaus</span>, escola alemã pioneira na unificação
-                entre arte, artesanato e indústria. A junção sintetiza a proposta de transpor o rigor do design
-                moderno para a fluidez das ruas.
+                Projetada como um sistema modular de painéis brancos delimitados por eixos ortogonais pretos, a peça incorpora blocos de cores primárias que remetem diretamente ao purismo visual de Mondrian. A simplicidade formal e a ausência de ornamentos seguem os princípios funcionais defendidos pela Bauhaus.
               </p>
               <p>
-                Em sua composição, a identidade cromática apropria-se estritamente das cores primárias, uma
-                referência direta à obra <span className="italic text-foreground">Composição com Vermelho, Azul e Amarelo</span>,
-                de Piet Mondrian. E a estrutura visual conecta as teorias formais da Escola de Ulm e da Bauhaus
-                à tridimensionalidade do corpo humano.
+                A influência da Escola de Ulm aparece na organização rigorosa da grade, onde a geometria deixa de ser apenas um elemento visual e passa a estruturar a própria construção da peça. Como camada final, legendas técnicas em alemão, inspiradas na tipografia Universal de <span className="text-foreground font-medium">Herbert Bayer</span>, reforçam a racionalidade e a clareza visual do projeto.
+              </p>
+              <p>
+                A Street Haus reúne, assim, os principais pilares do design moderno: geometria, funcionalidade e organização racional.
               </p>
             </div>
           </div>
