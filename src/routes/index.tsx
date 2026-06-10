@@ -782,7 +782,7 @@ function Index() {
       </section>
 
       {/* PROTÓTIPO — texto à esquerda, imagem à direita */}
-      <section className="border-b border-bauhaus-black bg-black text-bauhaus-paper">
+      <section id="jaqueta" className="border-b border-bauhaus-black bg-black text-bauhaus-paper scroll-mt-20 md:scroll-mt-24">
         <div className="mx-auto max-w-[90rem] px-6 md:px-10 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center min-h-[100svh] py-12 md:py-0">
           {/* Texto */}
           <div className="flex flex-col justify-center order-1">
