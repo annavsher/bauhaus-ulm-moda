@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { PhotoFrame } from "@/components/PhotoFrame";
 import { BauhausRule } from "@/components/BauhausRule";
+import { BauhausComposition, SectionMarker } from "@/components/BauhausComposition";
 import jaqueta from "@/assets/ulm-mondrian-system.jpeg";
 import jaquetaSketch from "@/assets/jaqueta-sketch.jpeg.asset.json";
 import heroBauhaus from "@/assets/hero-bauhaus.jpg";
@@ -157,11 +158,19 @@ function Index() {
       </header>
 
 
-      {/* HERO */}
-      <section className="border-b border-bauhaus-black">
-        <div className="mx-auto max-w-6xl grid md:grid-cols-12 gap-0">
-          <div className="md:col-span-7 px-6 md:px-12 py-20 md:py-28">
-            <p className="font-mono text-[11px] uppercase tracking-[0.3em] mb-8 text-muted-foreground">
+      <section className="relative overflow-hidden border-b border-bauhaus-black">
+        {/* Composition backdrops — figure/ground tension */}
+        <BauhausComposition variant="a" pos="tr" opacity={18} className="hidden md:block" />
+        <BauhausComposition variant="e" pos="bl" opacity={22} />
+        <div className="relative mx-auto max-w-6xl grid md:grid-cols-12 gap-0">
+          {/* Side rail with oversized marker — vertical Bayer-style label */}
+          <aside className="hidden lg:flex md:col-span-1 border-r border-bauhaus-black/30 items-start justify-center pt-10">
+            <SectionMarker n="00" label="Abertura" />
+          </aside>
+          <div className="md:col-span-7 lg:col-span-6 px-6 md:px-12 py-20 md:py-28 relative">
+            {/* Block of red behind kicker */}
+            <div className="absolute -left-2 md:left-6 top-16 h-12 w-12 md:h-16 md:w-16" style={{ backgroundColor: "var(--bauhaus-red)" }} aria-hidden />
+            <p className="relative font-mono text-[11px] uppercase tracking-[0.3em] mb-8 text-foreground pl-16 md:pl-20">
               Weimar · Dessau · Berlim — 1919 / 1933
             </p>
             <h2 className="font-display uppercase leading-[0.85] tracking-tight text-[clamp(2.5rem,7vw,6rem)]">
@@ -189,17 +198,17 @@ function Index() {
                 </span>
               </span>
             </h2>
-            <p className="mt-10 max-w-xl text-base md:text-lg leading-relaxed text-muted-foreground font-normal">
-              ​
-            </p>
           </div>
-          <div className="md:col-span-5 relative bg-bauhaus-paper border-t md:border-t-0 md:border-l border-bauhaus-black flex items-center justify-center p-6 md:p-8">
+          <div className="md:col-span-5 relative bg-bauhaus-paper border-t md:border-t-0 md:border-l border-bauhaus-black flex items-center justify-center p-6 md:p-8 overflow-hidden">
+            {/* Yellow square anchor and small circle behind image */}
+            <div className="absolute top-0 right-0 h-24 w-24 md:h-32 md:w-32" style={{ backgroundColor: "var(--bauhaus-yellow)" }} aria-hidden />
+            <div className="absolute bottom-0 left-0 h-20 w-20 md:h-28 md:w-28 rounded-full" style={{ backgroundColor: "var(--bauhaus-blue)" }} aria-hidden />
             <img
               src={heroBauhaus}
               alt="Composição geométrica Bauhaus — círculo, quadrado e triângulo"
               width={1024}
               height={1024}
-              className="w-full h-auto max-h-[70vh] object-contain"
+              className="relative w-full h-auto max-h-[70vh] object-contain"
             />
           </div>
         </div>
@@ -208,20 +217,20 @@ function Index() {
       <BauhausRule n="​" label="Escola" tone="paper" />
 
       {/* ESCOLA */}
-      <section id="escola" className="scroll-mt-20 md:scroll-mt-24 border-b border-bauhaus-black bg-bauhaus-paper">
-        <div className="mx-auto max-w-6xl px-6 md:px-10 py-16 md:py-24">
+      <section id="escola" className="relative overflow-hidden scroll-mt-20 md:scroll-mt-24 border-b border-bauhaus-black bg-bauhaus-paper">
+        <BauhausComposition variant="b" pos="tr" opacity={14} />
+        <div className="relative mx-auto max-w-6xl px-6 md:px-10 py-16 md:py-24">
           <div className="grid md:grid-cols-12 gap-8 md:gap-12 lg:gap-16">
             <div className="md:col-span-5 lg:col-span-4">
               <div className="md:sticky md:top-24">
-                <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-red">
+                <SectionMarker n="01" label="A Escola" tone="red" />
+                <p className="mt-6 font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-red">
                   A Escola
                 </p>
-                <h2 className="mt-6 font-display text-3xl sm:text-4xl md:text-5xl uppercase leading-[0.9] tracking-tight">
+                <h2 className="mt-4 font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl uppercase leading-[0.85] tracking-tight">
                   A escola que unificou as artes.
                 </h2>
-                <p className="mt-4 text-lg md:text-xl italic font-normal" style={{ fontFamily: "'Instrument Serif', serif", color: "var(--bauhaus-blue)" }}>
-                  ​
-                </p>
+                <div className="mt-6 h-2 w-24" style={{ backgroundColor: "var(--bauhaus-blue)" }} aria-hidden />
               </div>
             </div>
             <div className="md:col-span-7 lg:col-span-8 space-y-6 text-base md:text-lg leading-relaxed text-muted-foreground">
@@ -275,20 +284,27 @@ function Index() {
       <BauhausRule n="​" label="Ulm" tone="black" />
 
       {/* ULM — HERDEIRA DA BAUHAUS */}
-      <section id="ulm" className="scroll-mt-20 md:scroll-mt-24 border-b border-bauhaus-black bg-background">
-        <div className="mx-auto max-w-6xl px-6 md:px-10 py-16 md:py-24">
+      <section id="ulm" className="relative overflow-hidden scroll-mt-20 md:scroll-mt-24 border-b border-bauhaus-black bg-background">
+        <BauhausComposition variant="d" pos="bl" opacity={12} />
+        <div className="relative mx-auto max-w-6xl px-6 md:px-10 py-16 md:py-24">
           <div className="grid md:grid-cols-12 gap-8 md:gap-12 lg:gap-16">
             <div className="md:col-span-5 lg:col-span-4">
               <div className="md:sticky md:top-24">
-                <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-red">
+                <SectionMarker n="02" label="Ulm" tone="blue" />
+                <p className="mt-6 font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-red">
                   Hochschule für Gestaltung
                 </p>
-                <h2 className="mt-6 font-display text-3xl sm:text-4xl md:text-5xl uppercase leading-[0.9] tracking-tight">
+                <h2 className="mt-4 font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl uppercase leading-[0.85] tracking-tight">
                   A Escola de Ulm: onde o design encontrou método.
                 </h2>
-                <p className="mt-6 font-mono text-[11px] uppercase tracking-[0.25em] text-bauhaus-blue">
-                  Ulm · 1953 — 1968
-                </p>
+                <div className="mt-6 flex items-center gap-3">
+                  <span className="h-3 w-3 rounded-full" style={{ backgroundColor: "var(--bauhaus-red)" }} />
+                  <span className="h-3 w-3" style={{ backgroundColor: "var(--bauhaus-yellow)" }} />
+                  <span className="block h-px w-16 bg-bauhaus-black" />
+                  <span className="font-mono text-[11px] uppercase tracking-[0.25em] text-bauhaus-blue">
+                    Ulm · 1953 — 1968
+                  </span>
+                </div>
               </div>
             </div>
             <div className="md:col-span-7 lg:col-span-8 max-w-prose space-y-6 text-base md:text-lg leading-[1.75] text-muted-foreground">
@@ -347,16 +363,19 @@ function Index() {
       <BauhausRule n="​" label="Gestalt" tone="paper" />
 
       {/* GESTALT — 8 leis aplicadas com paleta Bauhaus */}
-      <section id="gestalt" className="scroll-mt-20 md:scroll-mt-24 border-b border-bauhaus-black bg-background">
-        <div className="mx-auto max-w-6xl px-6 md:px-10 py-16 md:py-24">
+      <section id="gestalt" className="relative overflow-hidden scroll-mt-20 md:scroll-mt-24 border-b border-bauhaus-black bg-background">
+        <BauhausComposition variant="e" pos="tr" opacity={18} />
+        <BauhausComposition variant="c" pos="bl" opacity={10} className="hidden md:block" />
+        <div className="relative mx-auto max-w-6xl px-6 md:px-10 py-16 md:py-24">
           <div className="grid md:grid-cols-12 gap-8 md:gap-12 lg:gap-16">
             <div className="md:col-span-5 lg:col-span-4">
               <div className="md:sticky md:top-24">
-                <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-red">
+                <SectionMarker n="03" label="Gestalt" tone="black" />
+                <p className="mt-6 font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-red">
                   Fundamentos
                 </p>
-                <h2 className="mt-6 font-display text-3xl sm:text-4xl md:text-5xl uppercase leading-[0.9] tracking-tight">
-                  As oito leis da Gestalt.
+                <h2 className="mt-4 font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl uppercase leading-[0.85] tracking-tight">
+                  As oito leis da <span style={{ color: "var(--bauhaus-red)" }}>Gestalt</span>.
                 </h2>
                 <p className="mt-6 font-mono text-[11px] uppercase tracking-[0.25em] text-bauhaus-blue">
                   Berlim · 1910 — 1930
@@ -592,13 +611,17 @@ function Index() {
       <BauhausRule n="​" label="Schlemmer" tone="black" />
 
       {/* SCHLEMMER */}
-      <section id="schlemmer" className="scroll-mt-20 md:scroll-mt-24 border-b border-bauhaus-black bg-bauhaus-black text-bauhaus-paper">
-        <div className="mx-auto max-w-6xl px-6 md:px-10 py-20 md:py-28 grid md:grid-cols-12 gap-10 md:gap-12 items-start">
+      <section id="schlemmer" className="relative overflow-hidden scroll-mt-20 md:scroll-mt-24 border-b border-bauhaus-black bg-bauhaus-black text-bauhaus-paper">
+        <BauhausComposition variant="e" pos="tr" opacity={22} />
+        <div className="absolute top-0 left-0 h-20 w-1/3 md:w-1/4" style={{ backgroundColor: "var(--bauhaus-yellow)" }} aria-hidden />
+        <div className="absolute bottom-0 right-0 h-3 w-1/2" style={{ backgroundColor: "var(--bauhaus-red)" }} aria-hidden />
+        <div className="relative mx-auto max-w-6xl px-6 md:px-10 py-20 md:py-28 grid md:grid-cols-12 gap-10 md:gap-12 items-start">
           <div className="md:col-span-6">
+            <div className="mb-6"><SectionMarker n="04" label="Schlemmer" tone="yellow" /></div>
             <p className="font-mono text-[11px] uppercase tracking-[0.3em]" style={{ color: "var(--bauhaus-yellow)" }}>
               Oskar Schlemmer
             </p>
-            <h2 className="mt-6 font-display text-3xl sm:text-4xl md:text-5xl uppercase leading-[0.9] tracking-tight">
+            <h2 className="mt-4 font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl uppercase leading-[0.85] tracking-tight">
               O corpo como{" "}
               <span style={{ color: "var(--bauhaus-yellow)" }}>geometria</span>.
             </h2>
@@ -619,25 +642,38 @@ function Index() {
       <BauhausRule n="​" label="YSL" tone="paper" />
 
       {/* YSL */}
-      <section id="ysl" className="scroll-mt-20 md:scroll-mt-24 border-b border-bauhaus-black bg-bauhaus-paper">
-        <div className="mx-auto max-w-6xl px-6 md:px-10 py-20 md:py-28 grid md:grid-cols-12 gap-10 md:gap-12 items-start">
+      <section id="ysl" className="relative overflow-hidden scroll-mt-20 md:scroll-mt-24 border-b border-bauhaus-black bg-bauhaus-paper">
+        {/* Mondrian-grid backdrop block */}
+        <div className="absolute inset-y-0 right-0 w-1/3 hidden md:grid grid-rows-3 grid-cols-2 opacity-[0.10]" aria-hidden>
+          <div style={{ backgroundColor: "var(--bauhaus-red)" }} />
+          <div style={{ backgroundColor: "var(--bauhaus-paper)" }} />
+          <div className="row-span-2" style={{ backgroundColor: "var(--bauhaus-blue)" }} />
+          <div style={{ backgroundColor: "var(--bauhaus-yellow)" }} />
+          <div style={{ backgroundColor: "var(--bauhaus-black)" }} />
+        </div>
+        <div className="relative mx-auto max-w-6xl px-6 md:px-10 py-20 md:py-28 grid md:grid-cols-12 gap-10 md:gap-12 items-start">
           <div className="md:col-span-5 order-2 md:order-1">
-            <div className="md:sticky md:top-24">
-              <PhotoFrame
-                id="ysl-mondrian"
-                src={yslMondrian}
-                alt="Vestido Mondrian de YSL"
-                caption="Coleção Outono · 1965"
-                width={768}
-                height={1024}
-              />
+            <div className="md:sticky md:top-24 relative">
+              {/* Color frame behind image */}
+              <div className="absolute -inset-3 md:-inset-5" style={{ backgroundColor: "var(--bauhaus-blue)" }} aria-hidden />
+              <div className="relative">
+                <PhotoFrame
+                  id="ysl-mondrian"
+                  src={yslMondrian}
+                  alt="Vestido Mondrian de YSL"
+                  caption="Coleção Outono · 1965"
+                  width={768}
+                  height={1024}
+                />
+              </div>
             </div>
           </div>
           <div className="md:col-span-7 order-1 md:order-2">
-            <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-blue">
+            <SectionMarker n="05" label="YSL" tone="blue" />
+            <p className="mt-6 font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-blue">
               Yves Saint Laurent
             </p>
-            <h2 className="mt-6 font-display text-3xl sm:text-4xl md:text-5xl uppercase leading-[0.9] tracking-tight">
+            <h2 className="mt-4 font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl uppercase leading-[0.85] tracking-tight">
               A coleção{" "}
               <span style={{ color: "var(--bauhaus-blue)" }}>Mondrian</span>.
             </h2>
@@ -681,13 +717,17 @@ function Index() {
       <BauhausRule n="​" label="Cardin" tone="yellow" />
 
       {/* CARDIN */}
-      <section id="cardin" className="scroll-mt-20 md:scroll-mt-24 border-b border-bauhaus-black bg-bauhaus-yellow">
-        <div className="mx-auto max-w-6xl px-6 md:px-10 py-20 md:py-28">
+      <section id="cardin" className="relative overflow-hidden scroll-mt-20 md:scroll-mt-24 border-b border-bauhaus-black bg-bauhaus-yellow">
+        {/* Big black circle + red wedge — Cosmocorps energy */}
+        <div className="absolute -top-24 -right-24 h-[28rem] w-[28rem] rounded-full" style={{ backgroundColor: "var(--bauhaus-black)" }} aria-hidden />
+        <BauhausComposition variant="c" pos="bl" opacity={18} />
+        <div className="relative mx-auto max-w-6xl px-6 md:px-10 py-20 md:py-28">
           <div className="max-w-3xl">
-            <p className="font-mono text-[11px] uppercase tracking-[0.3em]">
+            <SectionMarker n="06" label="Cardin" tone="black" />
+            <p className="mt-6 font-mono text-[11px] uppercase tracking-[0.3em]">
               Pierre Cardin
             </p>
-            <h2 className="mt-6 font-display text-3xl sm:text-4xl md:text-5xl uppercase leading-[0.9] tracking-tight">
+            <h2 className="mt-4 font-display text-3xl sm:text-4xl md:text-6xl lg:text-7xl uppercase leading-[0.85] tracking-tight">
               Futurismo geométrico.
             </h2>
             <p className="mt-8 text-lg leading-relaxed">
