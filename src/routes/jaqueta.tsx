@@ -212,14 +212,10 @@ function JaquetaPage() {
             </p>
             <p ref={p2.ref} className={`${revealBase} delay-75 ${p2.visible ? shown : hidden}`}>
               A jaqueta é construída como uma <span className="text-foreground font-medium">grade modular</span> de
-              painéis brancos cortados por linhas pretas ortogonais. Os blocos
-              de cor primária — vermelho, azul, amarelo — funcionam como
-              marcadores funcionais: indicam zíperes, bolsos cargo e pontos de
-              ajuste. Nada é ornamento.
+              painéis brancos cortados por linhas pretas ortogonais. Utilizando blocos de cor primária — vermelho, azul, amarelo.&nbsp;{"\n\n\nA ideia principal do protótipo é, além de agrupar as duas escolas (Bauhaus e Ulm), juntar o trabalho de um dos precursores de Bauhaus (Piet Mondrian) em uma única peça. "}
             </p>
             <p ref={p3.ref} className={`${revealBase} delay-100 ${p3.visible ? shown : hidden}`}>
-              As legendas em alemão (<em>funktion · klarheit · ordnung</em>)
-              herdam a tipografia Universal de Herbert Bayer e o uso apenas
+              Adicionadas no meio do processo, as legendas em alemão herdam a tipografia Universal de Herbert Bayer e o uso apenas
               de minúsculas, em diálogo direto com as <em>variações</em> que
               YSL propôs em 1965.
             </p>
