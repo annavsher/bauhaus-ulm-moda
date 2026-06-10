@@ -352,7 +352,7 @@ function Index() {
                 <p className="mt-6 font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-red">
                   Hochschule für Gestaltung
                 </p>
-                <h2 className="mt-4 mb-6 font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl uppercase leading-[1.05] tracking-tight">
+                <h2 className="mt-4 mb-6 font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl uppercase leading-[1.05] tracking-tight">
                   A Escola de Ulm: onde o design encontrou método.
                 </h2>
                 <figure className="mt-2 w-40 md:w-48 border border-bauhaus-black bg-bauhaus-paper">
