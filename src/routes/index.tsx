@@ -718,8 +718,6 @@ function Index() {
 
       {/* CARDIN */}
       <section id="cardin" className="relative overflow-hidden scroll-mt-20 md:scroll-mt-24 border-b border-bauhaus-black bg-bauhaus-yellow">
-        {/* Big black circle + red wedge — Cosmocorps energy */}
-        <div className="absolute -top-24 -right-24 h-[28rem] w-[28rem] rounded-full" style={{ backgroundColor: "var(--bauhaus-black)" }} aria-hidden />
         <BauhausComposition variant="c" pos="bl" opacity={18} />
         <div className="relative mx-auto max-w-6xl px-6 md:px-10 py-20 md:py-28">
           <div className="max-w-3xl">
