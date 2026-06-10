@@ -565,11 +565,11 @@ function Index() {
         <div className="mx-auto max-w-6xl px-6 md:px-10 py-16 md:py-24">
           <div className="grid md:grid-cols-12 gap-8 md:gap-12 lg:gap-16">
             <div className="md:col-span-5 lg:col-span-4">
-              <div className="md:sticky md:top-8">
+              <div className="md:sticky md:top-24">
                 <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-blue">
                   Bauhaus & Moda
                 </p>
-                <h2 className="mt-6 text-3xl sm:text-4xl uppercase leading-[0.95] md:text-xl">
+                <h2 className="mt-6 font-display text-3xl sm:text-4xl md:text-5xl uppercase leading-[0.9] tracking-tight">
                   ​Da escola para a moda.
                 </h2>
               </div>
