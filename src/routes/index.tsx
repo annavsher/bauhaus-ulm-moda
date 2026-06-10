@@ -569,7 +569,7 @@ function Index() {
                 <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-blue">
                   Bauhaus & Moda
                 </p>
-                <h2 className="mt-6 text-3xl sm:text-4xl md:text-5xl uppercase leading-[0.95]">
+                <h2 className="mt-6 text-3xl sm:text-4xl uppercase leading-[0.95] md:text-xl">
                   ​Da escola para a moda.
                 </h2>
               </div>
