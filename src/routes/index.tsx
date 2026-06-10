@@ -156,428 +156,6 @@ function Index() {
         </div>
       </header>
 
-      {/* PROTÓTIPO — HERO com título sobre a imagem */}
-      <section className="border-b border-bauhaus-black bg-bauhaus-black text-bauhaus-paper">
-        <div className="relative w-full overflow-hidden">
-          <div className="relative w-full min-h-[100svh] md:min-h-[90vh] bg-bauhaus-paper">
-            <img
-              src={jaqueta}
-              alt="Protótipo ULM Mondrian System — esboço da jaqueta autoral com blocos vermelho, azul e amarelo"
-              width={1600}
-              height={1200}
-              loading="lazy"
-              decoding="async"
-              sizes="(min-width: 1280px) 1280px, 100vw"
-              className="absolute inset-0 h-full w-full object-contain p-2 sm:p-4 md:p-6"
-            />
-            {/* overlay para legibilidade do título */}
-            <div className="absolute inset-0 bg-gradient-to-b from-bauhaus-black/85 via-bauhaus-black/40 to-transparent" />
-            <div className="absolute inset-x-0 top-0 flex items-start">
-              <div className="mx-auto max-w-6xl w-full px-6 md:px-12 pt-10 md:pt-16">
-                <p className="font-mono text-[11px] uppercase tracking-[0.3em] mb-4 md:mb-6 text-bauhaus-paper/80">
-                  Protótipo autoral · 2026
-                </p>
-                <h1 className="font-display uppercase leading-[0.85] tracking-tight text-[clamp(3.5rem,12vw,9rem)] text-bauhaus-paper drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]">
-                  <span className="block">
-ULM</span>
-                  <span className="block" style={{ color: "var(--bauhaus-red)" }}>Mondrian</span>
-                  <span className="block">System</span>
-                </h1>
-                <p className="mt-6 md:mt-8 max-w-md text-base md:text-lg leading-relaxed text-bauhaus-paper/90 text-black bg-transparent">
-                  
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* PROTÓTIPO — PRINCÍPIOS + CORES */}
-      <section className="border-b border-bauhaus-black">
-        <div className="mx-auto max-w-6xl px-6 md:px-12 py-16 md:py-24 grid md:grid-cols-12 gap-12">
-          <div className="md:col-span-6">
-            <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-red">
-              Princípios
-            </p>
-            <h2 className="mt-6 text-3xl md:text-4xl uppercase leading-[0.95]">
-              Cinco regras de projeto.
-            </h2>
-            {/* PROXIMIDADE: itens colados num único bloco; SEMELHANÇA: mesma forma+tamanho em todos */}
-            <ul className="mt-10 border border-bauhaus-black divide-y divide-bauhaus-black/20">
-              {[
-                { c: "var(--bauhaus-red)", t: "função antes da forma" },
-                { c: "var(--bauhaus-blue)", t: "composição racional" },
-                { c: "var(--bauhaus-black)", t: "modularidade" },
-                { c: "var(--bauhaus-paper)", t: "clareza visual", border: true },
-                { c: "var(--bauhaus-red)", t: "redução essencial" },
-              ].map((p) => (
-                <li key={p.t} className="flex items-center gap-4 px-4 py-3 bg-background">
-                  <span
-                    className="h-4 w-4 shrink-0"
-                    style={{
-                      backgroundColor: p.c,
-                      boxShadow: p.border ? "inset 0 0 0 1px var(--bauhaus-black)" : undefined,
-                    }}
-                  />
-                  <span className="font-mono text-xs md:text-sm uppercase tracking-[0.2em]">
-                    {p.t}
-                  </span>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="md:col-span-6">
-            <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-blue">
-              Cores
-            </p>
-            <h2 className="mt-6 text-3xl md:text-4xl uppercase leading-[0.95]">
-              Paleta restrita.
-            </h2>
-            {/* PROXIMIDADE: paleta como uma única banda contínua de amostras coladas */}
-            <ul className="mt-10 grid grid-cols-5 border border-bauhaus-black">
-              {[
-                { c: "#0A0A0A", n: "preto" },
-                { c: "#FFFFFF", n: "branco" },
-                { c: "#D72638", n: "vermelho" },
-                { c: "#1E4D9B", n: "azul" },
-                { c: "#F4C82D", n: "amarelo" },
-              ].map((c, i) => (
-                <li key={c.n} className={`flex flex-col ${i < 4 ? "border-r border-bauhaus-black" : ""}`}>
-                  <span
-                    className="block aspect-square w-full"
-                    style={{ backgroundColor: c.c }}
-                  />
-                  <span className="font-mono text-[9px] md:text-[10px] uppercase tracking-[0.2em] text-center py-2 border-t border-bauhaus-black bg-background">
-                    {c.n}
-                  </span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      {/* PROTÓTIPO — DA ESCOLA PARA O CORPO */}
-      <section className="border-b border-bauhaus-black bg-bauhaus-paper">
-        <div className="mx-auto max-w-6xl px-6 md:px-12 py-12 md:py-24 grid md:grid-cols-12 gap-8 md:gap-12">
-          <div className="md:col-span-5 lg:col-span-4">
-            <div className="md:sticky md:top-8">
-              <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-red">
-                O projeto
-              </p>
-              <h2 className="mt-6 text-3xl md:text-5xl uppercase leading-[0.95]">
-                Da escola para o corpo.
-              </h2>
-            </div>
-          </div>
-          <div className="md:col-span-7 lg:col-span-8 max-w-prose space-y-6 md:space-y-7 text-base md:text-lg leading-[1.75] md:leading-[1.8] text-muted-foreground">
-            <p>
-              <span className="text-foreground font-medium">ULM Mondrian System</span>{" "}
-              parte de uma pergunta simples: o que aconteceria se a grade de
-              Mondrian, o rigor sistêmico da Escola de Ulm e as cores primárias
-              e ângulos exatos de Bauhaus fossem aplicados a uma peça
-              utilitária, vestida todos os dias?
-            </p>
-            <p>
-              A jaqueta é construída como uma{" "}
-              <span className="text-foreground font-medium">grade modular</span> de
-              painéis brancos cortados por linhas pretas ortogonais. Utilizando
-              blocos de cor primária — vermelho, azul, amarelo, característica das obras de Piet Mondrian.&nbsp;{"\n\n\n"}
-
-              Segue a ideia de funcionalidade, simplicidade e pouca decoração, defendida por Mondrian.{"\n\n\n"}
-
-              Já com a aproximação ao aprendizado da Ulm, a organização em grade, com ordem visual e a funcionalidade estética e estrutural da jaqueta foi essencial para realização do protótipo.
-            </p>
-            <p>
-              Adicionadas no meio do processo, as legendas em alemão herdam a tipografia Universal de Herbert Bayer.
-            </p>
-            <p className="border-l-2 border-bauhaus-red pl-4 md:pl-6 space-y-2">
-              <span className="block italic text-foreground">"Form folgt Funktion, Kunst trifft Nutzen."</span>
-              <span className="block text-sm md:text-base">(A forma segue a função, a arte encontra a utilidade).</span>
-              <span className="block italic text-foreground mt-2">"Architektur für den Körper, Ordnung für den Alltag."</span>
-              <span className="block text-sm md:text-base">(Arquitetura para o corpo, ordem para o cotidiano).</span>
-              <span className="block italic text-foreground mt-2">"Die Reinheit der Geometrie, die dem Leben dient."</span>
-              <span className="block text-sm md:text-base">(A pureza da geometria que serve à vida).</span>
-            </p>
-            <p>
-              Com isso, apesar da inspiração visual pertencer às composições geométricas de Piet Mondrian, a ligação com Bauhaus e Ulm é clara: com o uso de cores primárias e organização visual foi possível unir arte, funcionalidade e design em uma única peça.
-            </p>
-            <p>
-              Por tanto faz referência à obra artística de Mondrian, transforma os conceitos em uma peça de uso cotidiano, promovendo a ideia de que a forma segue a função.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* PROTÓTIPO — SKETCH TÉCNICO */}
-      <section className="border-b border-bauhaus-black bg-bauhaus-paper">
-        <div className="mx-auto max-w-6xl px-6 md:px-12 py-16 md:py-24 grid md:grid-cols-12 gap-8 md:gap-12 items-start">
-          <div className="md:col-span-5 lg:col-span-4">
-            <div className="md:sticky md:top-8">
-              <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-blue">
-                Processo criativo
-              </p>
-              <h2 className="mt-6 text-3xl md:text-5xl uppercase leading-[0.95]">
-                Da ideia à prática.
-              </h2>
-              <p className="mt-6 max-w-sm text-base leading-relaxed text-muted-foreground">
-                Tradução do estudo em desenho técnico — base para o corte e a
-                montagem da peça, com a distribuição final dos blocos primários
-                e ortogonais.
-              </p>
-            </div>
-          </div>
-          <div className="md:col-span-7 lg:col-span-8">
-            <div className="relative w-full aspect-[16/10] bg-bauhaus-paper border border-bauhaus-black/10 flex items-center justify-center overflow-hidden">
-              <img
-                src={jaquetaSketch.url}
-                alt="Sketch técnico da jaqueta ULM Mondrian System — vistas frente e costas com a distribuição final dos blocos primários e ortogonais"
-                className="absolute inset-0 h-full w-full object-contain p-4 md:p-6"
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* PRODUTO FINAL */}
-      <section id="produto-final" className="border-b border-bauhaus-black bg-background scroll-mt-24">
-        <div className="mx-auto max-w-6xl px-6 md:px-12 py-16 md:py-24">
-          <div className="grid md:grid-cols-12 gap-8 md:gap-12 items-end mb-10 md:mb-14">
-            <div className="md:col-span-5">
-              <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-red">
-                Resultado
-              </p>
-              <h2 className="mt-4 md:mt-6 text-3xl md:text-5xl uppercase leading-[0.95]">
-                O produto final.
-              </h2>
-            </div>
-            <div className="md:col-span-7 max-w-prose text-base md:text-lg leading-[1.7] text-muted-foreground">
-              <p>
-                Do desenho técnico à peça vestida: a jaqueta ULM Mondrian System
-                construída e fotografada.
-              </p>
-            </div>
-          </div>
-
-          <div className="mb-4 md:mb-6">
-            <div className="relative w-full aspect-[16/10] overflow-hidden border border-bauhaus-black bg-muted">
-              <img
-                src={produtoFinal1.url}
-                alt="Jaqueta ULM Mondrian System — produto final 1"
-                className="absolute inset-0 h-full w-full object-cover"
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6">
-            {[produtoFinal2, produtoFinal3, produtoFinal4].map((p, i) => (
-              <div
-                key={`grid-${i}`}
-                className="relative w-full aspect-[3/4] overflow-hidden border border-bauhaus-black bg-muted"
-              >
-                <img
-                  src={p.url}
-                  alt={`Jaqueta ULM Mondrian System — produto final ${i + 2}`}
-                  className="absolute inset-0 h-full w-full object-cover"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-10 md:mt-14 flex justify-center">
-            <Link
-              to="/produto-final-galeria"
-              className="inline-flex items-center gap-3 border border-bauhaus-black px-6 py-3 font-mono text-[11px] uppercase tracking-[0.3em] text-foreground hover:bg-bauhaus-black hover:text-bauhaus-paper transition-colors"
-            >
-              Galeria produto final <span aria-hidden="true">→</span>
-            </Link>
-          </div>
-
-        </div>
-      </section>
-
-
-      {/* PROTÓTIPO — A JAQUETA PELAS OITO LEIS DA GESTALT */}
-      <section className="border-b border-bauhaus-black bg-background">
-        <div className="mx-auto max-w-6xl px-6 md:px-12 py-16 md:py-24">
-          <div className="grid md:grid-cols-12 gap-8 md:gap-12 items-end mb-10 md:mb-14">
-            <div className="md:col-span-5">
-              <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-red">
-                Leitura visual
-              </p>
-              <h2 className="mt-4 md:mt-6 text-3xl md:text-5xl uppercase leading-[0.95]">
-                A jaqueta pelas <span style={{ color: "var(--bauhaus-blue)" }}>oito leis</span> da Gestalt.
-              </h2>
-            </div>
-            <div className="md:col-span-7 max-w-prose text-base md:text-lg leading-[1.7] text-muted-foreground">
-              <p>
-                Cada lei abaixo isola um princípio aplicado à construção da peça —
-                vermelho, azul, amarelo e preto sobre branco funcionam como vocabulário
-                comum, costurando Bauhaus e Gestalt no mesmo gesto.
-              </p>
-            </div>
-          </div>
-
-          <ul className="grid grid-cols-2 md:grid-cols-4 gap-px bg-bauhaus-black border border-bauhaus-black">
-            {[
-              {
-                n: "01",
-                t: "Proximidade",
-                d: "Blocos amarelos e azul agrupados.",
-                svg: (
-                  <g>
-                    {[12, 24, 36].map((cx) => (
-                      <circle key={`a${cx}`} cx={cx} cy={30} r={4} fill="var(--bauhaus-black)" />
-                    ))}
-                    {[64, 76, 88].map((cx) => (
-                      <circle key={`b${cx}`} cx={cx} cy={30} r={4} fill="var(--bauhaus-black)" />
-                    ))}
-                  </g>
-                ),
-              },
-              {
-                n: "02",
-                t: "Semelhança",
-                d: "Retângulos, vermelho e azul repetem-se.",
-                svg: (
-                  <g>
-                    {[10, 30, 50, 70, 90].map((x, i) => (
-                      <rect
-                        key={x}
-                        x={x - 5}
-                        y={25}
-                        width={10}
-                        height={10}
-                        fill={i % 2 === 0 ? "var(--bauhaus-red)" : "var(--bauhaus-blue)"}
-                      />
-                    ))}
-                  </g>
-                ),
-              },
-              {
-                n: "03",
-                t: "Continuidade",
-                d: "A curva da gola conduz o olhar pela silhueta até a barra.",
-                svg: (
-                  <g>
-                    <path d="M5 50 Q 50 5 95 50" stroke="var(--bauhaus-blue)" strokeWidth={2} fill="none" />
-                    <line x1={5} y1={50} x2={95} y2={50} stroke="var(--bauhaus-red)" strokeWidth={2} />
-                  </g>
-                ),
-              },
-              {
-                n: "04",
-                t: "Fechamento",
-                d: "Produz contornos que não estão explicitamente desenhados.",
-                svg: (
-                  <g stroke="var(--bauhaus-black)" strokeWidth={2} fill="none">
-                    <path d="M15 18 L15 10 L35 10" />
-                    <path d="M65 10 L85 10 L85 18" />
-                    <path d="M15 42 L15 50 L35 50" />
-                    <path d="M65 50 L85 50 L85 42" />
-                  </g>
-                ),
-              },
-              {
-                n: "05",
-                t: "SEGREGAÇÃO",
-                d: "Blocos coloridos destacam-se sobre a base branca da peça.",
-                svg: (
-                  <g>
-                    <rect x={0} y={0} width={100} height={60} fill="var(--bauhaus-paper)" stroke="var(--bauhaus-black)" strokeWidth={0.5} />
-                    <rect x={20} y={15} width={25} height={30} fill="var(--bauhaus-red)" />
-                    <circle cx={70} cy={30} r={18} fill="var(--bauhaus-blue)" />
-                  </g>
-                ),
-              },
-              {
-                n: "06",
-                t: "UNIDADE",
-                d: "Costuras paralelas indicam a mesma direção de movimento.",
-                svg: (
-                  <g stroke="var(--bauhaus-red)" strokeWidth={2}>
-                    <line x1={10} y1={15} x2={85} y2={15} />
-                    <line x1={10} y1={30} x2={85} y2={30} />
-                    <line x1={10} y1={45} x2={85} y2={45} />
-                    <polygon points="85,12 92,30 85,48" fill="var(--bauhaus-red)" stroke="none" />
-                  </g>
-                ),
-              },
-              {
-                n: "07",
-                t: "Pregnância",
-                d: "A silhueta reduz-se à geometria simples.",
-                svg: (
-                  <g>
-                    <rect x={15} y={15} width={30} height={30} fill="var(--bauhaus-red)" />
-                    <circle cx={70} cy={30} r={15} fill="var(--bauhaus-blue)" />
-                  </g>
-                ),
-              },
-              {
-                n: "08",
-                t: "UNIFICAÇÃO",
-                d: "Painéis de cor delimitam áreas como territórios distintos da peça.",
-                svg: (
-                  <g>
-                    <rect x={8} y={10} width={36} height={40} fill="none" stroke="var(--bauhaus-blue)" strokeWidth={2} />
-                    <rect x={56} y={10} width={36} height={40} fill="none" stroke="var(--bauhaus-blue)" strokeWidth={2} />
-                    <circle cx={26} cy={30} r={3} fill="var(--bauhaus-black)" />
-                    <circle cx={74} cy={30} r={3} fill="var(--bauhaus-black)" />
-                  </g>
-                ),
-              },
-            ].map((item) => (
-              <li key={item.t} className="bg-background p-5 md:p-6 flex flex-col gap-4">
-                <div className="flex items-center justify-between">
-                  <span className="font-mono text-[10px] uppercase tracking-[0.3em] bg-bauhaus-black text-bauhaus-paper px-2 py-1">
-                    {item.n}
-                  </span>
-                  <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground">
-                    lei
-                  </span>
-                </div>
-                <div className="w-full aspect-[5/3] bg-bauhaus-paper border border-bauhaus-black/20 flex items-center justify-center">
-                  <svg viewBox="0 0 100 60" className="w-full h-full">
-                    {item.svg}
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="font-display uppercase text-base md:text-lg tracking-tight">
-                    {item.t}
-                  </h3>
-                  <p className="mt-1 text-xs md:text-sm leading-relaxed text-muted-foreground">
-                    {item.d}
-                  </p>
-                </div>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
-
-      {/* PONTE — do protótipo de volta ao ensaio */}
-      <section className="bg-bauhaus-black text-bauhaus-paper">
-        <div className="mx-auto max-w-6xl px-6 md:px-12 py-32 md:py-44 text-center">
-          <p className="font-mono text-sm uppercase tracking-[0.4em] opacity-70 mb-10 md:mb-14 whitespace-pre-line md:text-lg">
-            ↓ MAS DE ONDE VEM ESSA IDEIA?
-          </p>
-          <p className="font-display text-5xl md:text-7xl lg:text-8xl uppercase leading-[1.05]">
-            
-          </p>
-          <p className="mt-14 max-w-3xl mx-auto text-lg md:text-2xl leading-relaxed opacity-80">
-            
-          </p>
-        </div>
-        <div className="mx-auto max-w-4xl border-b border-bauhaus-paper/20" />
-      </section>
 
       {/* HERO */}
       <section className="border-b border-bauhaus-black">
@@ -1166,6 +744,413 @@ ULM</span>
             É essa construção — função, geometria e cor primária — que reaparece no protótipo da jaqueta{" "}
             <span style={{ color: "var(--bauhaus-yellow)" }}>ULM Mondrian System</span> apresentada anteriormente.
           </p>
+        </div>
+      </section>
+
+      {/* PROTÓTIPO — HERO com título sobre a imagem */}
+      <section className="border-b border-bauhaus-black bg-bauhaus-black text-bauhaus-paper">
+        <div className="relative w-full overflow-hidden">
+          <div className="relative w-full min-h-[100svh] md:min-h-[90vh] bg-bauhaus-paper">
+            <img
+              src={jaqueta}
+              alt="Protótipo ULM Mondrian System — esboço da jaqueta autoral com blocos vermelho, azul e amarelo"
+              width={1600}
+              height={1200}
+              loading="lazy"
+              decoding="async"
+              sizes="(min-width: 1280px) 1280px, 100vw"
+              className="absolute inset-0 h-full w-full object-contain p-2 sm:p-4 md:p-6"
+            />
+            {/* overlay para legibilidade do título */}
+            <div className="absolute inset-0 bg-gradient-to-b from-bauhaus-black/85 via-bauhaus-black/40 to-transparent" />
+            <div className="absolute inset-x-0 top-0 flex items-start">
+              <div className="mx-auto max-w-6xl w-full px-6 md:px-12 pt-10 md:pt-16">
+                <p className="font-mono text-[11px] uppercase tracking-[0.3em] mb-4 md:mb-6 text-bauhaus-paper/80">
+                  Protótipo autoral · 2026
+                </p>
+                <h1 className="font-display uppercase leading-[0.85] tracking-tight text-[clamp(3.5rem,12vw,9rem)] text-bauhaus-paper drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]">
+                  <span className="block">
+ULM</span>
+                  <span className="block" style={{ color: "var(--bauhaus-red)" }}>Mondrian</span>
+                  <span className="block">System</span>
+                </h1>
+                <p className="mt-6 md:mt-8 max-w-md text-base md:text-lg leading-relaxed text-bauhaus-paper/90 text-black bg-transparent">
+                  
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* PROTÓTIPO — PRINCÍPIOS + CORES */}
+      <section className="border-b border-bauhaus-black">
+        <div className="mx-auto max-w-6xl px-6 md:px-12 py-16 md:py-24 grid md:grid-cols-12 gap-12">
+          <div className="md:col-span-6">
+            <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-red">
+              Princípios
+            </p>
+            <h2 className="mt-6 text-3xl md:text-4xl uppercase leading-[0.95]">
+              Cinco regras de projeto.
+            </h2>
+            {/* PROXIMIDADE: itens colados num único bloco; SEMELHANÇA: mesma forma+tamanho em todos */}
+            <ul className="mt-10 border border-bauhaus-black divide-y divide-bauhaus-black/20">
+              {[
+                { c: "var(--bauhaus-red)", t: "função antes da forma" },
+                { c: "var(--bauhaus-blue)", t: "composição racional" },
+                { c: "var(--bauhaus-black)", t: "modularidade" },
+                { c: "var(--bauhaus-paper)", t: "clareza visual", border: true },
+                { c: "var(--bauhaus-red)", t: "redução essencial" },
+              ].map((p) => (
+                <li key={p.t} className="flex items-center gap-4 px-4 py-3 bg-background">
+                  <span
+                    className="h-4 w-4 shrink-0"
+                    style={{
+                      backgroundColor: p.c,
+                      boxShadow: p.border ? "inset 0 0 0 1px var(--bauhaus-black)" : undefined,
+                    }}
+                  />
+                  <span className="font-mono text-xs md:text-sm uppercase tracking-[0.2em]">
+                    {p.t}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="md:col-span-6">
+            <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-blue">
+              Cores
+            </p>
+            <h2 className="mt-6 text-3xl md:text-4xl uppercase leading-[0.95]">
+              Paleta restrita.
+            </h2>
+            {/* PROXIMIDADE: paleta como uma única banda contínua de amostras coladas */}
+            <ul className="mt-10 grid grid-cols-5 border border-bauhaus-black">
+              {[
+                { c: "#0A0A0A", n: "preto" },
+                { c: "#FFFFFF", n: "branco" },
+                { c: "#D72638", n: "vermelho" },
+                { c: "#1E4D9B", n: "azul" },
+                { c: "#F4C82D", n: "amarelo" },
+              ].map((c, i) => (
+                <li key={c.n} className={`flex flex-col ${i < 4 ? "border-r border-bauhaus-black" : ""}`}>
+                  <span
+                    className="block aspect-square w-full"
+                    style={{ backgroundColor: c.c }}
+                  />
+                  <span className="font-mono text-[9px] md:text-[10px] uppercase tracking-[0.2em] text-center py-2 border-t border-bauhaus-black bg-background">
+                    {c.n}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* PROTÓTIPO — DA ESCOLA PARA O CORPO */}
+      <section className="border-b border-bauhaus-black bg-bauhaus-paper">
+        <div className="mx-auto max-w-6xl px-6 md:px-12 py-12 md:py-24 grid md:grid-cols-12 gap-8 md:gap-12">
+          <div className="md:col-span-5 lg:col-span-4">
+            <div className="md:sticky md:top-8">
+              <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-red">
+                O projeto
+              </p>
+              <h2 className="mt-6 text-3xl md:text-5xl uppercase leading-[0.95]">
+                Da escola para o corpo.
+              </h2>
+            </div>
+          </div>
+          <div className="md:col-span-7 lg:col-span-8 max-w-prose space-y-6 md:space-y-7 text-base md:text-lg leading-[1.75] md:leading-[1.8] text-muted-foreground">
+            <p>
+              <span className="text-foreground font-medium">ULM Mondrian System</span>{" "}
+              parte de uma pergunta simples: o que aconteceria se a grade de
+              Mondrian, o rigor sistêmico da Escola de Ulm e as cores primárias
+              e ângulos exatos de Bauhaus fossem aplicados a uma peça
+              utilitária, vestida todos os dias?
+            </p>
+            <p>
+              A jaqueta é construída como uma{" "}
+              <span className="text-foreground font-medium">grade modular</span> de
+              painéis brancos cortados por linhas pretas ortogonais. Utilizando
+              blocos de cor primária — vermelho, azul, amarelo, característica das obras de Piet Mondrian.&nbsp;{"\n\n\n"}
+
+              Segue a ideia de funcionalidade, simplicidade e pouca decoração, defendida por Mondrian.{"\n\n\n"}
+
+              Já com a aproximação ao aprendizado da Ulm, a organização em grade, com ordem visual e a funcionalidade estética e estrutural da jaqueta foi essencial para realização do protótipo.
+            </p>
+            <p>
+              Adicionadas no meio do processo, as legendas em alemão herdam a tipografia Universal de Herbert Bayer.
+            </p>
+            <p className="border-l-2 border-bauhaus-red pl-4 md:pl-6 space-y-2">
+              <span className="block italic text-foreground">"Form folgt Funktion, Kunst trifft Nutzen."</span>
+              <span className="block text-sm md:text-base">(A forma segue a função, a arte encontra a utilidade).</span>
+              <span className="block italic text-foreground mt-2">"Architektur für den Körper, Ordnung für den Alltag."</span>
+              <span className="block text-sm md:text-base">(Arquitetura para o corpo, ordem para o cotidiano).</span>
+              <span className="block italic text-foreground mt-2">"Die Reinheit der Geometrie, die dem Leben dient."</span>
+              <span className="block text-sm md:text-base">(A pureza da geometria que serve à vida).</span>
+            </p>
+            <p>
+              Com isso, apesar da inspiração visual pertencer às composições geométricas de Piet Mondrian, a ligação com Bauhaus e Ulm é clara: com o uso de cores primárias e organização visual foi possível unir arte, funcionalidade e design em uma única peça.
+            </p>
+            <p>
+              Por tanto faz referência à obra artística de Mondrian, transforma os conceitos em uma peça de uso cotidiano, promovendo a ideia de que a forma segue a função.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* PROTÓTIPO — SKETCH TÉCNICO */}
+      <section className="border-b border-bauhaus-black bg-bauhaus-paper">
+        <div className="mx-auto max-w-6xl px-6 md:px-12 py-16 md:py-24 grid md:grid-cols-12 gap-8 md:gap-12 items-start">
+          <div className="md:col-span-5 lg:col-span-4">
+            <div className="md:sticky md:top-8">
+              <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-blue">
+                Processo criativo
+              </p>
+              <h2 className="mt-6 text-3xl md:text-5xl uppercase leading-[0.95]">
+                Da ideia à prática.
+              </h2>
+              <p className="mt-6 max-w-sm text-base leading-relaxed text-muted-foreground">
+                Tradução do estudo em desenho técnico — base para o corte e a
+                montagem da peça, com a distribuição final dos blocos primários
+                e ortogonais.
+              </p>
+            </div>
+          </div>
+          <div className="md:col-span-7 lg:col-span-8">
+            <div className="relative w-full aspect-[16/10] bg-bauhaus-paper border border-bauhaus-black/10 flex items-center justify-center overflow-hidden">
+              <img
+                src={jaquetaSketch.url}
+                alt="Sketch técnico da jaqueta ULM Mondrian System — vistas frente e costas com a distribuição final dos blocos primários e ortogonais"
+                className="absolute inset-0 h-full w-full object-contain p-4 md:p-6"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* PRODUTO FINAL */}
+      <section id="produto-final" className="border-b border-bauhaus-black bg-background scroll-mt-24">
+        <div className="mx-auto max-w-6xl px-6 md:px-12 py-16 md:py-24">
+          <div className="grid md:grid-cols-12 gap-8 md:gap-12 items-end mb-10 md:mb-14">
+            <div className="md:col-span-5">
+              <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-red">
+                Resultado
+              </p>
+              <h2 className="mt-4 md:mt-6 text-3xl md:text-5xl uppercase leading-[0.95]">
+                O produto final.
+              </h2>
+            </div>
+            <div className="md:col-span-7 max-w-prose text-base md:text-lg leading-[1.7] text-muted-foreground">
+              <p>
+                Do desenho técnico à peça vestida: a jaqueta ULM Mondrian System
+                construída e fotografada.
+              </p>
+            </div>
+          </div>
+
+          <div className="mb-4 md:mb-6">
+            <div className="relative w-full aspect-[16/10] overflow-hidden border border-bauhaus-black bg-muted">
+              <img
+                src={produtoFinal1.url}
+                alt="Jaqueta ULM Mondrian System — produto final 1"
+                className="absolute inset-0 h-full w-full object-cover"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6">
+            {[produtoFinal2, produtoFinal3, produtoFinal4].map((p, i) => (
+              <div
+                key={`grid-${i}`}
+                className="relative w-full aspect-[3/4] overflow-hidden border border-bauhaus-black bg-muted"
+              >
+                <img
+                  src={p.url}
+                  alt={`Jaqueta ULM Mondrian System — produto final ${i + 2}`}
+                  className="absolute inset-0 h-full w-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-10 md:mt-14 flex justify-center">
+            <Link
+              to="/produto-final-galeria"
+              className="inline-flex items-center gap-3 border border-bauhaus-black px-6 py-3 font-mono text-[11px] uppercase tracking-[0.3em] text-foreground hover:bg-bauhaus-black hover:text-bauhaus-paper transition-colors"
+            >
+              Galeria produto final <span aria-hidden="true">→</span>
+            </Link>
+          </div>
+
+        </div>
+      </section>
+
+
+      {/* PROTÓTIPO — A JAQUETA PELAS OITO LEIS DA GESTALT */}
+      <section className="border-b border-bauhaus-black bg-background">
+        <div className="mx-auto max-w-6xl px-6 md:px-12 py-16 md:py-24">
+          <div className="grid md:grid-cols-12 gap-8 md:gap-12 items-end mb-10 md:mb-14">
+            <div className="md:col-span-5">
+              <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-red">
+                Leitura visual
+              </p>
+              <h2 className="mt-4 md:mt-6 text-3xl md:text-5xl uppercase leading-[0.95]">
+                A jaqueta pelas <span style={{ color: "var(--bauhaus-blue)" }}>oito leis</span> da Gestalt.
+              </h2>
+            </div>
+            <div className="md:col-span-7 max-w-prose text-base md:text-lg leading-[1.7] text-muted-foreground">
+              <p>
+                Cada lei abaixo isola um princípio aplicado à construção da peça —
+                vermelho, azul, amarelo e preto sobre branco funcionam como vocabulário
+                comum, costurando Bauhaus e Gestalt no mesmo gesto.
+              </p>
+            </div>
+          </div>
+
+          <ul className="grid grid-cols-2 md:grid-cols-4 gap-px bg-bauhaus-black border border-bauhaus-black">
+            {[
+              {
+                n: "01",
+                t: "Proximidade",
+                d: "Blocos amarelos e azul agrupados.",
+                svg: (
+                  <g>
+                    {[12, 24, 36].map((cx) => (
+                      <circle key={`a${cx}`} cx={cx} cy={30} r={4} fill="var(--bauhaus-black)" />
+                    ))}
+                    {[64, 76, 88].map((cx) => (
+                      <circle key={`b${cx}`} cx={cx} cy={30} r={4} fill="var(--bauhaus-black)" />
+                    ))}
+                  </g>
+                ),
+              },
+              {
+                n: "02",
+                t: "Semelhança",
+                d: "Retângulos, vermelho e azul repetem-se.",
+                svg: (
+                  <g>
+                    {[10, 30, 50, 70, 90].map((x, i) => (
+                      <rect
+                        key={x}
+                        x={x - 5}
+                        y={25}
+                        width={10}
+                        height={10}
+                        fill={i % 2 === 0 ? "var(--bauhaus-red)" : "var(--bauhaus-blue)"}
+                      />
+                    ))}
+                  </g>
+                ),
+              },
+              {
+                n: "03",
+                t: "Continuidade",
+                d: "A curva da gola conduz o olhar pela silhueta até a barra.",
+                svg: (
+                  <g>
+                    <path d="M5 50 Q 50 5 95 50" stroke="var(--bauhaus-blue)" strokeWidth={2} fill="none" />
+                    <line x1={5} y1={50} x2={95} y2={50} stroke="var(--bauhaus-red)" strokeWidth={2} />
+                  </g>
+                ),
+              },
+              {
+                n: "04",
+                t: "Fechamento",
+                d: "Produz contornos que não estão explicitamente desenhados.",
+                svg: (
+                  <g stroke="var(--bauhaus-black)" strokeWidth={2} fill="none">
+                    <path d="M15 18 L15 10 L35 10" />
+                    <path d="M65 10 L85 10 L85 18" />
+                    <path d="M15 42 L15 50 L35 50" />
+                    <path d="M65 50 L85 50 L85 42" />
+                  </g>
+                ),
+              },
+              {
+                n: "05",
+                t: "SEGREGAÇÃO",
+                d: "Blocos coloridos destacam-se sobre a base branca da peça.",
+                svg: (
+                  <g>
+                    <rect x={0} y={0} width={100} height={60} fill="var(--bauhaus-paper)" stroke="var(--bauhaus-black)" strokeWidth={0.5} />
+                    <rect x={20} y={15} width={25} height={30} fill="var(--bauhaus-red)" />
+                    <circle cx={70} cy={30} r={18} fill="var(--bauhaus-blue)" />
+                  </g>
+                ),
+              },
+              {
+                n: "06",
+                t: "UNIDADE",
+                d: "Costuras paralelas indicam a mesma direção de movimento.",
+                svg: (
+                  <g stroke="var(--bauhaus-red)" strokeWidth={2}>
+                    <line x1={10} y1={15} x2={85} y2={15} />
+                    <line x1={10} y1={30} x2={85} y2={30} />
+                    <line x1={10} y1={45} x2={85} y2={45} />
+                    <polygon points="85,12 92,30 85,48" fill="var(--bauhaus-red)" stroke="none" />
+                  </g>
+                ),
+              },
+              {
+                n: "07",
+                t: "Pregnância",
+                d: "A silhueta reduz-se à geometria simples.",
+                svg: (
+                  <g>
+                    <rect x={15} y={15} width={30} height={30} fill="var(--bauhaus-red)" />
+                    <circle cx={70} cy={30} r={15} fill="var(--bauhaus-blue)" />
+                  </g>
+                ),
+              },
+              {
+                n: "08",
+                t: "UNIFICAÇÃO",
+                d: "Painéis de cor delimitam áreas como territórios distintos da peça.",
+                svg: (
+                  <g>
+                    <rect x={8} y={10} width={36} height={40} fill="none" stroke="var(--bauhaus-blue)" strokeWidth={2} />
+                    <rect x={56} y={10} width={36} height={40} fill="none" stroke="var(--bauhaus-blue)" strokeWidth={2} />
+                    <circle cx={26} cy={30} r={3} fill="var(--bauhaus-black)" />
+                    <circle cx={74} cy={30} r={3} fill="var(--bauhaus-black)" />
+                  </g>
+                ),
+              },
+            ].map((item) => (
+              <li key={item.t} className="bg-background p-5 md:p-6 flex flex-col gap-4">
+                <div className="flex items-center justify-between">
+                  <span className="font-mono text-[10px] uppercase tracking-[0.3em] bg-bauhaus-black text-bauhaus-paper px-2 py-1">
+                    {item.n}
+                  </span>
+                  <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground">
+                    lei
+                  </span>
+                </div>
+                <div className="w-full aspect-[5/3] bg-bauhaus-paper border border-bauhaus-black/20 flex items-center justify-center">
+                  <svg viewBox="0 0 100 60" className="w-full h-full">
+                    {item.svg}
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="font-display uppercase text-base md:text-lg tracking-tight">
+                    {item.t}
+                  </h3>
+                  <p className="mt-1 text-xs md:text-sm leading-relaxed text-muted-foreground">
+                    {item.d}
+                  </p>
+                </div>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
