@@ -937,7 +937,7 @@ ULM</span>
               <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-red">
                 Resultado
               </p>
-              <h2 className="mt-4 md:mt-6 text-3xl md:text-5xl uppercase leading-[0.95]">
+              <h2 className="mt-4 md:mt-6 text-3xl sm:text-4xl uppercase leading-[0.95] md:text-xl">
                 O produto final.
               </h2>
             </div>
