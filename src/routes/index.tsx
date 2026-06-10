@@ -783,13 +783,13 @@ function Index() {
 
       {/* PROTÓTIPO — texto à esquerda, imagem à direita */}
       <section className="border-b border-bauhaus-black bg-black text-bauhaus-paper">
-        <div className="mx-auto max-w-[100rem] px-6 md:px-10 grid grid-cols-1 md:grid-cols-[1.6fr_1fr] gap-8 md:gap-10 items-center min-h-[100svh] py-12 md:py-0">
+        <div className="mx-auto max-w-[90rem] px-6 md:px-10 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center min-h-[100svh] py-12 md:py-0">
           {/* Texto */}
           <div className="flex flex-col justify-center order-1">
             <p className="font-mono text-xs md:text-sm uppercase tracking-[0.3em] mb-4 md:mb-6 text-bauhaus-paper/80">
               Protótipo autoral · 2026
             </p>
-            <h1 className="font-display uppercase leading-[0.78] tracking-[-0.04em] text-[clamp(6rem,22vw,22rem)] text-bauhaus-paper">
+            <h1 className="font-display uppercase leading-[0.82] tracking-[-0.04em] text-[clamp(3.5rem,11vw,11rem)] text-bauhaus-paper">
               <span className="block">STREET</span>
               <span className="block" style={{ color: "var(--bauhaus-red)" }}>HAUS</span>
             </h1>
