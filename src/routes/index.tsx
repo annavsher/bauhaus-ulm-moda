@@ -6,6 +6,7 @@ import { BauhausComposition, SectionMarker } from "@/components/BauhausCompositi
 import jaqueta from "@/assets/ulm-mondrian-system.png";
 import jaquetaSketch from "@/assets/jaqueta-sketch.jpeg.asset.json";
 import heroBauhaus from "@/assets/hero-bauhaus.jpg";
+import heroJaquetaModelo from "@/assets/hero-jaqueta-modelo.png.asset.json";
 import schlemmer1 from "@/assets/schlemmer-1.jpg";
 import schlemmer2 from "@/assets/schlemmer-2.jpg";
 import schlemmerFig from "@/assets/schlemmer-fig.jpg";
@@ -200,17 +201,33 @@ function Index() {
               </span>
             </h2>
           </div>
-          <div className="md:col-span-5 relative bg-bauhaus-paper border-t md:border-t-0 md:border-l border-bauhaus-black flex items-center justify-center p-6 md:p-8 overflow-hidden">
-            {/* Yellow square anchor and small circle behind image */}
+          <div className="md:col-span-5 relative bg-bauhaus-paper border-t md:border-t-0 md:border-l border-bauhaus-black p-6 md:p-8 overflow-hidden min-h-[28rem] md:min-h-[36rem]">
+            {/* Geometric anchors — figure/ground composition */}
             <div className="absolute top-0 right-0 h-24 w-24 md:h-32 md:w-32" style={{ backgroundColor: "var(--bauhaus-yellow)" }} aria-hidden />
             <div className="absolute bottom-0 left-0 h-20 w-20 md:h-28 md:w-28 rounded-full" style={{ backgroundColor: "var(--bauhaus-blue)" }} aria-hidden />
-            <img
-              src={heroBauhaus}
-              alt="Composição geométrica Bauhaus — círculo, quadrado e triângulo"
-              width={1024}
-              height={1024}
-              className="relative w-full h-auto max-h-[70vh] object-contain"
-            />
+            {/* Cross-axis grid lines à la Mondrian */}
+            <div className="absolute left-0 right-0 top-1/3 h-px bg-bauhaus-black/40" aria-hidden />
+            <div className="absolute top-0 bottom-0 left-2/3 w-px bg-bauhaus-black/40" aria-hidden />
+
+            {/* Framed portrait — modular panel inside the composition */}
+            <figure className="relative h-full w-full flex items-center justify-center">
+              <div className="relative w-[78%] md:w-[72%] aspect-[3/4] border-2 border-bauhaus-black bg-bauhaus-black shadow-[10px_10px_0_var(--bauhaus-red)] md:shadow-[14px_14px_0_var(--bauhaus-red)]">
+                <img
+                  src={heroJaquetaModelo.url}
+                  alt="Modelo vestindo a jaqueta STREET HAUS — composição modular Bauhaus em branco, vermelho, amarelo e azul"
+                  width={853}
+                  height={1280}
+                  loading="eager"
+                  className="absolute inset-0 h-full w-full object-cover"
+                />
+                {/* Red corner block overlapping the frame */}
+                <div className="absolute -top-3 -left-3 h-10 w-10 md:h-14 md:w-14" style={{ backgroundColor: "var(--bauhaus-red)" }} aria-hidden />
+                {/* Caption tag */}
+                <figcaption className="absolute -bottom-4 left-4 bg-bauhaus-paper border border-bauhaus-black px-2 py-1 font-mono text-[9px] md:text-[10px] uppercase tracking-[0.25em] text-bauhaus-black">
+                  Street Haus · Nº 01
+                </figcaption>
+              </div>
+            </figure>
           </div>
         </div>
       </section>
