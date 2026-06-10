@@ -1453,142 +1453,125 @@ function Index() {
 
       {/* REFERÊNCIAS */}
       <section className="border-b border-bauhaus-black bg-bauhaus-paper text-bauhaus-black">
-        <div className="mx-auto max-w-6xl px-6 py-20 md:py-28">
-          {/* Cabeçalho com elementos geométricos */}
-          <header className="grid grid-cols-12 gap-4 items-end mb-12 md:mb-16">
-            <div className="col-span-12 md:col-span-8">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="h-3 w-3" style={{ backgroundColor: "var(--bauhaus-red)" }} />
-                <div className="h-3 w-3 rounded-full" style={{ backgroundColor: "var(--bauhaus-blue)" }} />
-                <div className="h-3 w-3 rotate-45" style={{ backgroundColor: "var(--bauhaus-yellow)" }} />
-                <span className="font-mono text-[10px] uppercase tracking-[0.35em] text-muted-foreground">
-                  §
-                </span>
-              </div>
-              <h2 className="font-display text-4xl md:text-6xl lg:text-7xl uppercase tracking-tight leading-[0.95]">
+        <div className="mx-auto max-w-4xl px-6 py-24 md:py-32">
+          {/* Cabeçalho minimalista */}
+          <header className="mb-16 md:mb-20">
+            <div className="flex items-center gap-2 mb-8">
+              <div className="h-2 w-2" style={{ backgroundColor: "var(--bauhaus-red)" }} />
+              <div className="h-2 w-2 rounded-full" style={{ backgroundColor: "var(--bauhaus-blue)" }} />
+              <div className="h-2 w-2 rotate-45" style={{ backgroundColor: "var(--bauhaus-yellow)" }} />
+            </div>
+            <div className="flex items-baseline justify-between gap-6 flex-wrap">
+              <h2 className="font-display text-3xl md:text-5xl uppercase tracking-tight leading-none">
                 Referências
               </h2>
-              <p className="mt-4 font-mono text-[11px] uppercase tracking-[0.3em] text-muted-foreground">
-                Fontes · ABNT NBR 6023
+              <p className="font-mono text-[10px] uppercase tracking-[0.35em] text-muted-foreground">
+                § Fontes consultadas
               </p>
-            </div>
-            <div className="col-span-12 md:col-span-4 hidden md:block">
-              <div className="grid grid-cols-4 gap-2">
-                <div className="aspect-square border border-bauhaus-black" />
-                <div className="aspect-square" style={{ backgroundColor: "var(--bauhaus-red)" }} />
-                <div className="aspect-square border border-bauhaus-black" />
-                <div className="aspect-square" style={{ backgroundColor: "var(--bauhaus-black)" }} />
-                <div className="aspect-square" style={{ backgroundColor: "var(--bauhaus-yellow)" }} />
-                <div className="aspect-square border border-bauhaus-black" />
-                <div className="aspect-square" style={{ backgroundColor: "var(--bauhaus-blue)" }} />
-                <div className="aspect-square border border-bauhaus-black" />
-              </div>
             </div>
           </header>
 
-          {/* Linha divisória dupla */}
-          <div className="border-t-2 border-bauhaus-black" />
-          <div className="border-t border-bauhaus-black mt-1" />
-
-          {/* Painel de referências */}
-          <div className="mt-10 md:mt-14 grid grid-cols-12 gap-x-6 gap-y-8">
+          {/* Lista agrupada por tema */}
+          <div className="space-y-12 md:space-y-14">
             {[
               {
-                tag: "01",
                 tema: "Bauhaus",
-                url: "https://www.todamateria.com.br/escola-de-bauhaus/",
+                links: [
+                  "https://www.todamateria.com.br/escola-de-bauhaus/",
+                  "https://conhecimentocientifico.r7.com/movimento-bauhaus/",
+                ],
               },
               {
-                tag: "02",
-                tema: "Bauhaus",
-                url: "https://conhecimentocientifico.r7.com/movimento-bauhaus/",
-              },
-              {
-                tag: "03",
                 tema: "Escola de Ulm",
-                url: "https://enciclopedia.itaucultural.org.br/instituicoes/75180-hochschule-fur-gestaltung-ulm-hfg",
+                links: [
+                  "https://enciclopedia.itaucultural.org.br/instituicoes/75180-hochschule-fur-gestaltung-ulm-hfg",
+                ],
               },
               {
-                tag: "04",
                 tema: "Piet Mondrian",
-                url: "https://www.todamateria.com.br/piet-mondrian-obras-biografia/",
+                links: [
+                  "https://www.todamateria.com.br/piet-mondrian-obras-biografia/",
+                  "https://artsandculture.google.com/entity/piet-mondrian/m0crnb5?hl=pt-BR",
+                  "https://arteeartistas.com.br/piet-mondrian-biografia-obras-analise-obras-primas",
+                ],
               },
               {
-                tag: "05",
-                tema: "Piet Mondrian",
-                url: "https://artsandculture.google.com/entity/piet-mondrian/m0crnb5?hl=pt-BR",
-              },
-              {
-                tag: "06",
-                tema: "Piet Mondrian",
-                url: "https://arteeartistas.com.br/piet-mondrian-biografia-obras-analise-obras-primas",
-              },
-              {
-                tag: "07",
                 tema: "Dieter Rams",
-                url: "https://abra.com.br/artigos/dieter-rams-o-homem-que-criou-os-principios-do-bom-design",
+                links: [
+                  "https://abra.com.br/artigos/dieter-rams-o-homem-que-criou-os-principios-do-bom-design",
+                ],
               },
               {
-                tag: "08",
                 tema: "Gestalt",
-                url: "https://maestrovirtuale.com/teoria-da-gestalt-leis-e-principios-fundamentais/",
+                links: [
+                  "https://maestrovirtuale.com/teoria-da-gestalt-leis-e-principios-fundamentais/",
+                  "https://www.psicanaliseclinica.com/leis-da-gestalt/",
+                ],
               },
               {
-                tag: "09",
-                tema: "Gestalt",
-                url: "https://www.psicanaliseclinica.com/leis-da-gestalt/",
-              },
-              {
-                tag: "10",
                 tema: "Pierre Cardin",
-                url: "https://www.theatlantic.com/entertainment/archive/2019/07/pierre-cardin-future-fashion-brooklyn-museum/594577/",
+                links: [
+                  "https://www.theatlantic.com/entertainment/archive/2019/07/pierre-cardin-future-fashion-brooklyn-museum/594577/",
+                ],
               },
               {
-                tag: "11",
                 tema: "The Triadic Ballet",
-                url: "https://www.theatlantic.com/entertainment/archive/2019/07/pierre-cardin-future-fashion-brooklyn-museum/594577/",
+                links: [
+                  "https://www.theatlantic.com/entertainment/archive/2019/07/pierre-cardin-future-fashion-brooklyn-museum/594577/",
+                ],
               },
               {
-                tag: "12",
-                tema: "YSL",
-                url: "https://kelseyyrose.substack.com/p/mondrian-ysl",
+                tema: "Yves Saint Laurent",
+                links: [
+                  "https://kelseyyrose.substack.com/p/mondrian-ysl",
+                ],
               },
-            ].map((ref) => (
+            ].map((group, idx) => (
               <article
-                key={ref.tag}
-                className="col-span-12 md:col-span-6 grid grid-cols-[auto_1fr] gap-4 border-t border-bauhaus-black pt-4"
+                key={group.tema}
+                className="grid grid-cols-12 gap-x-6 gap-y-4 border-t border-bauhaus-black/80 pt-6"
               >
-                <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground pt-1">
-                  {ref.tag}
-                </span>
-                <div>
-                  <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-muted-foreground mb-1">
-                    {ref.tema}
-                  </p>
-                  <a
-                    href={ref.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="font-mono text-[12px] md:text-[13px] leading-relaxed text-bauhaus-black break-words underline decoration-bauhaus-black/30 hover:decoration-bauhaus-black transition-colors"
-                  >
-                    {ref.url}
-                  </a>
+                <div className="col-span-12 md:col-span-4">
+                  <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground block mb-2">
+                    {String(idx + 1).padStart(2, "0")}
+                  </span>
+                  <h3 className="font-display text-lg md:text-xl uppercase tracking-tight leading-tight">
+                    {group.tema}
+                  </h3>
                 </div>
+                <ul className="col-span-12 md:col-span-8 space-y-2">
+                  {group.links.map((url) => {
+                    const domain = url.replace(/^https?:\/\/(www\.)?/, "").split("/")[0];
+                    return (
+                      <li key={url}>
+                        <a
+                          href={url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="group inline-flex items-baseline gap-3 font-mono text-[12px] md:text-[13px] text-bauhaus-black/80 hover:text-bauhaus-black transition-colors"
+                        >
+                          <span className="text-muted-foreground group-hover:text-bauhaus-black transition-colors">→</span>
+                          <span className="underline decoration-bauhaus-black/20 underline-offset-4 group-hover:decoration-bauhaus-black break-all">
+                            {domain}
+                          </span>
+                        </a>
+                      </li>
+                    );
+                  })}
+                </ul>
               </article>
             ))}
           </div>
 
           {/* Rodapé da seção */}
-          <div className="mt-14 md:mt-20 grid grid-cols-12 gap-4 items-center">
-            <div className="col-span-12 md:col-span-8 border-t border-bauhaus-black pt-4">
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
-                Compilação editorial · Bauhaus + Ulm · 2026
-              </p>
-            </div>
-            <div className="col-span-12 md:col-span-4 flex md:justify-end gap-2">
-              <div className="h-4 w-12" style={{ backgroundColor: "var(--bauhaus-red)" }} />
-              <div className="h-4 w-4 rounded-full" style={{ backgroundColor: "var(--bauhaus-blue)" }} />
-              <div className="h-4 w-4" style={{ backgroundColor: "var(--bauhaus-yellow)" }} />
+          <div className="mt-20 md:mt-24 pt-6 border-t border-bauhaus-black/80 flex items-center justify-between gap-4">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
+              Compilação editorial · 2026
+            </p>
+            <div className="flex items-center gap-1.5">
+              <div className="h-1.5 w-6" style={{ backgroundColor: "var(--bauhaus-red)" }} />
+              <div className="h-1.5 w-1.5 rounded-full" style={{ backgroundColor: "var(--bauhaus-blue)" }} />
+              <div className="h-1.5 w-1.5" style={{ backgroundColor: "var(--bauhaus-yellow)" }} />
             </div>
           </div>
         </div>
