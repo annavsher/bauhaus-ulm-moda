@@ -20,7 +20,15 @@ import galeria18 from "@/assets/galeria-pf-18.jpeg.asset.json";
 import galeria19 from "@/assets/galeria-pf-19.jpeg.asset.json";
 import galeria20 from "@/assets/galeria-pf-20.jpeg.asset.json";
 import galeria21 from "@/assets/galeria-pf-21.jpeg.asset.json";
-
+import galeria22 from "@/assets/galeria-pf-22.png.asset.json";
+import galeria23 from "@/assets/galeria-pf-23.png.asset.json";
+import galeria24 from "@/assets/galeria-pf-24.png.asset.json";
+import galeria25 from "@/assets/galeria-pf-25.png.asset.json";
+import galeria26 from "@/assets/galeria-pf-26.png.asset.json";
+import galeria27 from "@/assets/galeria-pf-27.png.asset.json";
+import galeria28 from "@/assets/galeria-pf-28.png.asset.json";
+import galeria29 from "@/assets/galeria-pf-29.png.asset.json";
+import galeria30 from "@/assets/galeria-pf-30.png.asset.json";
 
 export const Route = createFileRoute("/produto-final-galeria")({
   component: ProdutoFinalGaleria,
@@ -42,28 +50,13 @@ export const Route = createFileRoute("/produto-final-galeria")({
   }),
 });
 
-const photos = [
-  galeria1,
-  galeria2,
-  galeria3,
-  galeria4,
-  galeria5,
-  galeria6,
-  galeria7,
-  galeria8,
-  galeria9,
-  galeria10,
-  galeria11,
-  galeria12,
-  galeria13,
-  galeria14,
-  galeria15,
-  galeria16,
-  galeria17,
-  galeria18,
-  galeria19,
-  galeria20,
-  galeria21,
+// Ordem embaralhada (determinística) — compartilhada com /galeria-foto/$id
+export const photos = [
+  galeria17, galeria3, galeria25, galeria8, galeria14, galeria28, galeria1,
+  galeria22, galeria11, galeria6, galeria19, galeria30, galeria4, galeria26,
+  galeria13, galeria9, galeria21, galeria16, galeria2, galeria27, galeria12,
+  galeria5, galeria23, galeria18, galeria10, galeria29, galeria7, galeria20,
+  galeria15, galeria24,
 ];
 
 function ProdutoFinalGaleria() {
