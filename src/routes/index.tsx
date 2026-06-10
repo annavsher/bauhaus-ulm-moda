@@ -9,6 +9,7 @@ import processoCriativo from "@/assets/processo-criativo.png.asset.json";
 import bauhausSchool from "@/assets/bauhaus-school.png.asset.json";
 import ulmSchool from "@/assets/ulm-school.png.asset.json";
 import heroBauhaus from "@/assets/hero-bauhaus.jpg";
+import qrCodeAsset from "@/assets/qr-code.png.asset.json";
 
 import schlemmer1 from "@/assets/schlemmer-1.jpg";
 import schlemmer2 from "@/assets/schlemmer-2.jpg";
@@ -247,9 +248,40 @@ function Index() {
               </span>
             </h2>
           </div>
-          <div className="md:col-span-5 relative bg-bauhaus-paper border-t md:border-t-0 md:border-l border-bauhaus-black flex items-center justify-center p-6 md:p-8 overflow-hidden">
+          <div className="md:col-span-5 relative bg-bauhaus-paper border-t md:border-t-0 md:border-l border-bauhaus-black flex items-center justify-center p-6 md:p-10 overflow-hidden">
             <div className="absolute top-0 right-0 h-24 w-24 md:h-32 md:w-32" style={{ backgroundColor: "var(--bauhaus-yellow)" }} aria-hidden />
             <div className="absolute bottom-0 left-0 h-20 w-20 md:h-28 md:w-28 rounded-full" style={{ backgroundColor: "var(--bauhaus-blue)" }} aria-hidden />
+
+            {/* QR card — composição Bauhaus */}
+            <figure className="relative z-10 w-[68%] max-w-[260px] bg-bauhaus-paper border border-bauhaus-black p-3 md:p-4 shadow-[0.5rem_0.5rem_0_var(--bauhaus-red)]">
+              <div
+                aria-hidden
+                className="absolute -top-2 -left-2 h-3 w-3"
+                style={{ backgroundColor: "var(--bauhaus-black)" }}
+              />
+              <div className="flex items-center justify-between mb-3">
+                <span className="font-mono text-[9px] uppercase tracking-[0.3em] text-bauhaus-black/70">
+                  Scan · 01
+                </span>
+                <span
+                  className="h-2 w-2 rounded-full"
+                  style={{ backgroundColor: "var(--bauhaus-red)" }}
+                  aria-hidden
+                />
+              </div>
+              <img
+                src={qrCodeAsset.url}
+                alt="QR code de acesso ao projeto"
+                width={400}
+                height={400}
+                loading="eager"
+                decoding="async"
+                className="block w-full h-auto"
+              />
+              <figcaption className="mt-3 pt-2 border-t border-bauhaus-black/20 font-mono text-[9px] uppercase tracking-[0.25em] text-bauhaus-black/70 text-center">
+                Acesso ao projeto
+              </figcaption>
+            </figure>
           </div>
         </div>
       </section>
