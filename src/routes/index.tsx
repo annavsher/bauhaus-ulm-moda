@@ -494,8 +494,8 @@ function Index() {
             </div>
           </div>
 
-          {/* Photo gallery */}
-          <div className="mt-14 md:mt-20 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+          {/* Photo gallery — smaller, balanced editorial scale */}
+          <div className="mt-16 md:mt-24 mx-auto max-w-4xl grid grid-cols-1 sm:grid-cols-3 gap-5 md:gap-6">
             <PhotoFrame
               src={mondrian1.url}
               alt="Composição de Piet Mondrian com blocos de cores primárias e linhas pretas ortogonais"
