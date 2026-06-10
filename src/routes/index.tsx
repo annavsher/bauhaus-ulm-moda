@@ -611,13 +611,17 @@ function Index() {
       <BauhausRule n="​" label="Schlemmer" tone="black" />
 
       {/* SCHLEMMER */}
-      <section id="schlemmer" className="scroll-mt-20 md:scroll-mt-24 border-b border-bauhaus-black bg-bauhaus-black text-bauhaus-paper">
-        <div className="mx-auto max-w-6xl px-6 md:px-10 py-20 md:py-28 grid md:grid-cols-12 gap-10 md:gap-12 items-start">
+      <section id="schlemmer" className="relative overflow-hidden scroll-mt-20 md:scroll-mt-24 border-b border-bauhaus-black bg-bauhaus-black text-bauhaus-paper">
+        <BauhausComposition variant="e" pos="tr" opacity={22} />
+        <div className="absolute top-0 left-0 h-20 w-1/3 md:w-1/4" style={{ backgroundColor: "var(--bauhaus-yellow)" }} aria-hidden />
+        <div className="absolute bottom-0 right-0 h-3 w-1/2" style={{ backgroundColor: "var(--bauhaus-red)" }} aria-hidden />
+        <div className="relative mx-auto max-w-6xl px-6 md:px-10 py-20 md:py-28 grid md:grid-cols-12 gap-10 md:gap-12 items-start">
           <div className="md:col-span-6">
+            <div className="mb-6"><SectionMarker n="04" label="Schlemmer" tone="yellow" /></div>
             <p className="font-mono text-[11px] uppercase tracking-[0.3em]" style={{ color: "var(--bauhaus-yellow)" }}>
               Oskar Schlemmer
             </p>
-            <h2 className="mt-6 font-display text-3xl sm:text-4xl md:text-5xl uppercase leading-[0.9] tracking-tight">
+            <h2 className="mt-4 font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl uppercase leading-[0.85] tracking-tight">
               O corpo como{" "}
               <span style={{ color: "var(--bauhaus-yellow)" }}>geometria</span>.
             </h2>
