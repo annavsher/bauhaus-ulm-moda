@@ -989,7 +989,7 @@ ULM</span>
             </div>
             <div className="md:col-span-7 lg:col-span-8 space-y-6 text-base md:text-lg leading-relaxed text-muted-foreground font-normal">
               <p>
-                A jaqueta apresentada acima não nasceu do acaso. Ela é o ponto de chegada de um século de pensamento: a Bauhaus não desenhou apenas cadeiras e edifícios — sua gramática geométrica (círculo, quadrado, triângulo) atravessou o século XX junto ao que a Ulm levou adiante após seu fechamento. Vamos conhecer a história dessas duas escolas.
+                ​
               </p>
               <p>
                 Três princípios apresentados na escola são: a redução geométrica (círculo, triângulo e quadrado como vocabulário); aplicação de cores primárias puras e o uso coerente de linhas nítidas.
