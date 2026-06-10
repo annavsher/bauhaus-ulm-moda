@@ -36,6 +36,7 @@ import produtoFinal4 from "@/assets/produto-final-novo-4.jpeg.asset.json";
 import mondrian1 from "@/assets/mondrian-1.png.asset.json";
 import mondrian2 from "@/assets/mondrian-2.png.asset.json";
 import mondrian3 from "@/assets/mondrian-3.png.asset.json";
+import mondrianPortrait from "@/assets/mondrian-portrait.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   component: Index,
