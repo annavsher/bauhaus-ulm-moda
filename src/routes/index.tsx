@@ -284,7 +284,7 @@ function Index() {
                   Hochschule für Gestaltung
                 </p>
                 <h2 className="mt-6 text-3xl sm:text-4xl md:text-5xl uppercase leading-[0.95]">
-                  Ulm: a Bauhaus do pós-guerra.
+                  A Escola de Ulm: onde o design encontrou método.
                 </h2>
                 <p className="mt-6 font-mono text-[11px] uppercase tracking-[0.25em] text-bauhaus-blue">
                   Ulm · 1953 — 1968
