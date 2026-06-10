@@ -783,10 +783,22 @@ function Index() {
         </div>
       </section>
 
-      {/* PROTÓTIPO — HERO com título sobre a imagem */}
-      <section className="border-b border-bauhaus-black bg-bauhaus-black text-bauhaus-paper">
-        <div className="relative w-full overflow-hidden">
-          <div className="relative w-full min-h-[100svh] md:min-h-[90vh]" style={{ backgroundColor: "#000000" }}>
+      {/* PROTÓTIPO — texto à esquerda, imagem à direita */}
+      <section className="border-b border-bauhaus-black bg-black text-bauhaus-paper">
+        <div className="mx-auto max-w-7xl px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center min-h-[100svh] md:min-h-[90vh] py-16 md:py-0">
+          {/* Texto */}
+          <div className="flex flex-col justify-center order-1">
+            <p className="font-mono text-[11px] uppercase tracking-[0.3em] mb-4 md:mb-6 text-bauhaus-paper/80">
+              Protótipo autoral · 2026
+            </p>
+            <h1 className="font-display uppercase leading-[0.85] tracking-tight text-[clamp(2.5rem,7vw,5.5rem)] text-bauhaus-paper">
+              <span className="block">ULM</span>
+              <span className="block" style={{ color: "var(--bauhaus-red)" }}>Mondrian</span>
+              <span className="block">System</span>
+            </h1>
+          </div>
+          {/* Imagem */}
+          <div className="flex items-center justify-center order-2">
             <img
               src={jaqueta}
               alt="Protótipo ULM Mondrian System — esboço da jaqueta autoral com blocos vermelho, azul e amarelo"
@@ -794,27 +806,8 @@ function Index() {
               height={1200}
               loading="lazy"
               decoding="async"
-              sizes="(min-width: 1280px) 1280px, 100vw"
-              className="absolute inset-0 h-full w-full object-contain p-2 sm:p-4 md:p-6"
+              className="w-full h-auto max-h-[75vh] object-contain"
             />
-            {/* overlay sutil para legibilidade do título sobre o preto */}
-            <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/20 to-transparent pointer-events-none" />
-            <div className="absolute inset-x-0 top-0 flex items-start">
-              <div className="mx-auto max-w-6xl w-full px-6 md:px-12 pt-10 md:pt-16">
-                <p className="font-mono text-[11px] uppercase tracking-[0.3em] mb-4 md:mb-6 text-bauhaus-paper/80">
-                  Protótipo autoral · 2026
-                </p>
-                <h1 className="font-display uppercase leading-[0.85] tracking-tight text-[clamp(3.5rem,12vw,9rem)] text-bauhaus-paper drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]">
-                  <span className="block">
-ULM</span>
-                  <span className="block" style={{ color: "var(--bauhaus-red)" }}>Mondrian</span>
-                  <span className="block">System</span>
-                </h1>
-                <p className="mt-6 md:mt-8 max-w-md text-base md:text-lg leading-relaxed text-bauhaus-paper/90 text-black bg-transparent">
-                  
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </section>
