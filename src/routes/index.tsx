@@ -593,7 +593,7 @@ function Index() {
 
       {/* SCHLEMMER */}
       <section id="schlemmer" className="scroll-mt-20 md:scroll-mt-24 border-b border-bauhaus-black bg-bauhaus-black text-bauhaus-paper">
-        <div className="mx-auto max-w-6xl px-6 py-24 grid md:grid-cols-12 gap-12 items-start">
+        <div className="mx-auto max-w-6xl px-6 md:px-10 py-20 md:py-28 grid md:grid-cols-12 gap-10 md:gap-12 items-start">
           <div className="md:col-span-6">
             <p className="font-mono text-[11px] uppercase tracking-[0.3em]" style={{ color: "var(--bauhaus-yellow)" }}>
               Oskar Schlemmer
