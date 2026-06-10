@@ -293,6 +293,12 @@ function Index() {
               <p>
                 Seus mestres levaram a pedagogia até Chicago, Tel Aviv, Ulm e São Paulo. Em apenas quatorze anos, reescreveu a gramática visual do século.
               </p>
+              <p>
+                A Bauhaus institucionalizou o design ao unificar arte e indústria sob uma lógica racional. <span className="text-foreground font-medium">Dieter Rams</span> tornou-se o maior herdeiro desse legado na Braun, provando que o design deve ser discreto, lógico e útil.
+              </p>
+              <p>
+                Sua máxima, <span className="text-foreground font-medium">"Menos, porém melhor"</span>, evolui o "menos é mais" da Bauhaus ao propor que a forma desapareça em favor da função. Assim, Rams conectou o rigor acadêmico ao minimalismo industrial contemporâneo.
+              </p>
             </div>
           </div>
 
