@@ -783,9 +783,9 @@ function Index() {
 
       {/* PROTÓTIPO — texto à esquerda, imagem à direita */}
       <section className="border-b border-bauhaus-black bg-black text-bauhaus-paper">
-        <div className="mx-auto max-w-7xl px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center min-h-[100svh] md:min-h-[90vh] py-16 md:py-0">
+        <div className="mx-auto max-w-[90rem] px-6 md:px-12 grid grid-cols-1 md:grid-cols-[1fr_1.35fr] gap-10 md:gap-12 items-center min-h-[100svh] md:min-h-[95vh] py-16 md:py-0">
           {/* Texto */}
-          <div className="flex flex-col justify-center order-1">
+          <div className="flex flex-col justify-center order-1 md:pr-4">
             <p className="font-mono text-[11px] uppercase tracking-[0.3em] mb-4 md:mb-6 text-bauhaus-paper/80">
               Protótipo autoral · 2026
             </p>
@@ -796,7 +796,7 @@ function Index() {
             </h1>
           </div>
           {/* Imagem */}
-          <div className="flex items-center justify-center order-2">
+          <div className="flex items-center justify-center order-2 md:-mr-12 lg:-mr-20">
             <img
               src={jaqueta}
               alt="Protótipo ULM Mondrian System — esboço da jaqueta autoral com blocos vermelho, azul e amarelo"
@@ -804,7 +804,7 @@ function Index() {
               height={1200}
               loading="lazy"
               decoding="async"
-              className="w-full h-auto max-h-[75vh] object-contain"
+              className="w-full h-auto max-h-[85vh] md:max-h-[92vh] object-contain"
             />
           </div>
         </div>
