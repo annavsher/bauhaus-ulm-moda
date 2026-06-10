@@ -20,9 +20,6 @@ import galeria18 from "@/assets/galeria-pf-18.jpeg.asset.json";
 import galeria19 from "@/assets/galeria-pf-19.jpeg.asset.json";
 import galeria20 from "@/assets/galeria-pf-20.jpeg.asset.json";
 import galeria21 from "@/assets/galeria-pf-21.jpeg.asset.json";
-import galeria22 from "@/assets/galeria-pf-22.jpeg.asset.json";
-import galeria23 from "@/assets/galeria-pf-23.jpeg.asset.json";
-import galeria24 from "@/assets/galeria-pf-24.jpeg.asset.json";
 
 
 const photos = [
@@ -47,9 +44,6 @@ const photos = [
   galeria19,
   galeria20,
   galeria21,
-  galeria22,
-  galeria23,
-  galeria24,
 ];
 
 export const Route = createFileRoute("/galeria-foto/$id")({
