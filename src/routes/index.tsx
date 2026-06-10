@@ -880,15 +880,15 @@ function Index() {
         <div className="mx-auto max-w-6xl px-6 md:px-12 py-12 md:py-24 grid md:grid-cols-12 gap-8 md:gap-12">
           <div className="md:col-span-5 lg:col-span-4">
             <div className="md:sticky md:top-24">
-              <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-red">
+              <p className="font-mono text-xs md:text-sm uppercase tracking-[0.3em] text-bauhaus-red">
                 O projeto
               </p>
-              <h2 className="mt-6 font-display text-3xl sm:text-4xl md:text-5xl uppercase leading-[0.9] tracking-tight">
+              <h2 className="mt-6 font-display text-4xl sm:text-5xl md:text-6xl uppercase leading-[0.9] tracking-tight">
                 Da escola para o corpo.
               </h2>
             </div>
           </div>
-          <div className="md:col-span-7 lg:col-span-8 max-w-prose space-y-6 md:space-y-7 text-base md:text-lg leading-[1.75] md:leading-[1.8] text-muted-foreground">
+          <div className="md:col-span-7 lg:col-span-8 max-w-prose space-y-7 md:space-y-8 text-lg md:text-xl leading-[1.75] md:leading-[1.8] text-muted-foreground">
             <p>
               <span className="text-foreground font-medium">Street Haus</span>{" "}
               parte de uma pergunta simples: o que aconteceria se a grade de
@@ -909,13 +909,13 @@ function Index() {
             <p>
               Adicionadas no meio do processo, as legendas em alemão herdam a tipografia Universal de Herbert Bayer.
             </p>
-            <p className="border-l-2 border-bauhaus-red pl-4 md:pl-6 space-y-2">
+            <p className="border-l-2 border-bauhaus-red pl-4 md:pl-6 space-y-3">
               <span className="block italic text-foreground">"Form folgt Funktion, Kunst trifft Nutzen."</span>
-              <span className="block text-sm md:text-base">(A forma segue a função, a arte encontra a utilidade).</span>
-              <span className="block italic text-foreground mt-2">"Architektur für den Körper, Ordnung für den Alltag."</span>
-              <span className="block text-sm md:text-base">(Arquitetura para o corpo, ordem para o cotidiano).</span>
-              <span className="block italic text-foreground mt-2">"Die Reinheit der Geometrie, die dem Leben dient."</span>
-              <span className="block text-sm md:text-base">(A pureza da geometria que serve à vida).</span>
+              <span className="block text-base md:text-lg">(A forma segue a função, a arte encontra a utilidade).</span>
+              <span className="block italic text-foreground mt-3">"Architektur für den Körper, Ordnung für den Alltag."</span>
+              <span className="block text-base md:text-lg">(Arquitetura para o corpo, ordem para o cotidiano).</span>
+              <span className="block italic text-foreground mt-3">"Die Reinheit der Geometrie, die dem Leben dient."</span>
+              <span className="block text-base md:text-lg">(A pureza da geometria que serve à vida).</span>
             </p>
             <p>
               Com isso, apesar da inspiração visual pertencer às composições geométricas de Piet Mondrian, a ligação com Bauhaus e Ulm é clara: com o uso de cores primárias e organização visual foi possível unir arte, funcionalidade e design em uma única peça.
