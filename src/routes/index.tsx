@@ -397,7 +397,77 @@ function Index() {
       </section>
 
 
+      <BauhausRule n="​" label="Mondrian" tone="black" />
+
+      {/* MONDRIAN */}
+      <section
+        id="mondrian"
+        className="relative overflow-hidden scroll-mt-20 md:scroll-mt-24 border-b border-bauhaus-black bg-bauhaus-paper"
+      >
+        {/* De Stijl color blocks */}
+        <div className="absolute top-0 left-0 h-24 w-1/4 md:w-1/5" style={{ backgroundColor: "var(--bauhaus-red)" }} aria-hidden />
+        <div className="absolute top-0 right-0 h-3 w-2/3" style={{ backgroundColor: "var(--bauhaus-black)" }} aria-hidden />
+        <div className="absolute bottom-0 right-0 h-16 w-1/4 md:w-1/6" style={{ backgroundColor: "var(--bauhaus-yellow)" }} aria-hidden />
+        <BauhausComposition variant="d" pos="bl" opacity={10} className="hidden md:block" />
+
+        <div className="relative mx-auto max-w-6xl px-6 md:px-10 py-20 md:py-28">
+          <div className="grid md:grid-cols-12 gap-10 md:gap-12 lg:gap-16">
+            <div className="md:col-span-5 lg:col-span-4">
+              <div className="md:sticky md:top-24">
+                <SectionMarker n="03" label="Mondrian" tone="red" />
+                <p className="mt-6 font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-red">
+                  De Stijl · Neoplasticismo
+                </p>
+                <h2 className="mt-4 font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl uppercase leading-[0.85] tracking-tight">
+                  Piet{" "}
+                  <span style={{ color: "var(--bauhaus-blue)" }}>Mondrian</span>.
+                </h2>
+                <p className="mt-6 font-mono text-[11px] uppercase tracking-[0.25em] text-bauhaus-blue">
+                  Amersfoort · 1872 — 1944
+                </p>
+              </div>
+            </div>
+
+            <div className="md:col-span-7 lg:col-span-8 max-w-prose space-y-5 text-base md:text-lg leading-[1.75] text-muted-foreground">
+              <p>
+                <span className="text-foreground font-medium">Piet Mondrian</span> (1872–1944) foi um pintor holandês e uma das principais referências da arte moderna. Suas obras são marcadas pelo uso de linhas pretas, formas geométricas e cores primárias, criando composições equilibradas e organizadas.
+              </p>
+              <p>
+                Embora não tenha integrado a Bauhaus, suas ideias influenciaram diretamente o movimento ao defender a <span className="text-foreground font-medium">simplicidade</span>, a <span className="text-foreground font-medium">clareza visual</span> e a redução dos elementos ao essencial. Esses mesmos princípios também dialogam com a Escola de Ulm, que mais tarde aplicaria a lógica da organização e da racionalidade ao design de produtos e sistemas.
+              </p>
+              <p>
+                O legado de Mondrian ultrapassou a pintura, tornando-se uma importante referência para a arquitetura, o design e a comunicação visual contemporânea.
+              </p>
+            </div>
+          </div>
+
+          {/* Photo gallery */}
+          <div className="mt-14 md:mt-20 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+            <PhotoFrame
+              src={mondrian1.url}
+              alt="Composição de Piet Mondrian com blocos de cores primárias e linhas pretas ortogonais"
+              caption="Composição · Mondrian"
+              ratio="portrait"
+            />
+            <PhotoFrame
+              src={mondrian2.url}
+              alt="Obra neoplasticista de Mondrian com grade preta e retângulos vermelho, amarelo e azul"
+              caption="Neoplasticismo · De Stijl"
+              ratio="portrait"
+            />
+            <PhotoFrame
+              src={mondrian3.url}
+              alt="Pintura de Mondrian estruturada por linhas retas e planos de cor primária"
+              caption="Forma e cor primária"
+              ratio="portrait"
+            />
+          </div>
+        </div>
+      </section>
+
+
       <BauhausRule n="​" label="Gestalt" tone="paper" />
+
 
       {/* GESTALT — 8 leis aplicadas com paleta Bauhaus */}
       <section id="gestalt" className="relative overflow-hidden scroll-mt-20 md:scroll-mt-24 border-b border-bauhaus-black bg-background">
