@@ -217,20 +217,20 @@ function Index() {
       <BauhausRule n="​" label="Escola" tone="paper" />
 
       {/* ESCOLA */}
-      <section id="escola" className="scroll-mt-20 md:scroll-mt-24 border-b border-bauhaus-black bg-bauhaus-paper">
-        <div className="mx-auto max-w-6xl px-6 md:px-10 py-16 md:py-24">
+      <section id="escola" className="relative overflow-hidden scroll-mt-20 md:scroll-mt-24 border-b border-bauhaus-black bg-bauhaus-paper">
+        <BauhausComposition variant="b" pos="tr" opacity={14} />
+        <div className="relative mx-auto max-w-6xl px-6 md:px-10 py-16 md:py-24">
           <div className="grid md:grid-cols-12 gap-8 md:gap-12 lg:gap-16">
             <div className="md:col-span-5 lg:col-span-4">
               <div className="md:sticky md:top-24">
-                <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-red">
+                <SectionMarker n="01" label="A Escola" tone="red" />
+                <p className="mt-6 font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-red">
                   A Escola
                 </p>
-                <h2 className="mt-6 font-display text-3xl sm:text-4xl md:text-5xl uppercase leading-[0.9] tracking-tight">
+                <h2 className="mt-4 font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl uppercase leading-[0.85] tracking-tight">
                   A escola que unificou as artes.
                 </h2>
-                <p className="mt-4 text-lg md:text-xl italic font-normal" style={{ fontFamily: "'Instrument Serif', serif", color: "var(--bauhaus-blue)" }}>
-                  ​
-                </p>
+                <div className="mt-6 h-2 w-24" style={{ backgroundColor: "var(--bauhaus-blue)" }} aria-hidden />
               </div>
             </div>
             <div className="md:col-span-7 lg:col-span-8 space-y-6 text-base md:text-lg leading-relaxed text-muted-foreground">
