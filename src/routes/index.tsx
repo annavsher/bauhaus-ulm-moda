@@ -164,6 +164,44 @@ function Index() {
         {/* Composition backdrops — figure/ground tension */}
         <BauhausComposition variant="a" pos="tr" opacity={18} className="hidden md:block" />
         <BauhausComposition variant="e" pos="bl" opacity={22} />
+
+        {/* Subtle left-side Bauhaus/Ulm decorations */}
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-y-0 left-0 hidden md:block w-10 lg:w-16 xl:w-24 z-0"
+        >
+          <div className="absolute top-10 bottom-10 left-4 lg:left-6 w-px bg-bauhaus-black/25" />
+          <svg
+            className="absolute top-16 left-2 lg:left-3 opacity-30 text-bauhaus-black"
+            width="36"
+            height="48"
+            viewBox="0 0 36 48"
+            fill="none"
+          >
+            {[0, 12, 24, 36, 48].map((y) => (
+              <line key={`h${y}`} x1="0" y1={y} x2="36" y2={y} stroke="currentColor" strokeWidth="0.5" />
+            ))}
+            {[0, 12, 24, 36].map((x) => (
+              <line key={`v${x}`} x1={x} y1="0" x2={x} y2="48" stroke="currentColor" strokeWidth="0.5" />
+            ))}
+          </svg>
+          <div
+            className="absolute top-1/3 left-5 lg:left-7 h-2 w-2"
+            style={{ backgroundColor: "var(--bauhaus-red)" }}
+          />
+          <div
+            className="absolute top-1/2 left-3 lg:left-4 h-5 w-5 rounded-full border"
+            style={{ borderColor: "var(--bauhaus-blue)", opacity: 0.55 }}
+          />
+          <div
+            className="absolute bottom-24 left-5 lg:left-7 h-10 w-[3px]"
+            style={{ backgroundColor: "var(--bauhaus-yellow)", opacity: 0.75 }}
+          />
+          <div className="absolute bottom-8 left-2 lg:left-3 font-mono text-[9px] tracking-[0.3em] text-bauhaus-black/45 [writing-mode:vertical-rl] rotate-180">
+            BAUHAUS · 1919
+          </div>
+        </div>
+
         <div className="relative mx-auto max-w-6xl grid md:grid-cols-12 gap-0">
           {/* Side rail with oversized marker — vertical Bayer-style label */}
           <aside className="hidden lg:flex md:col-span-1 border-r border-bauhaus-black/30 items-start justify-center pt-10">
