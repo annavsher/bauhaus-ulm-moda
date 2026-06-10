@@ -1451,6 +1451,110 @@ function Index() {
         </div>
       </section>
 
+      {/* REFERÊNCIAS */}
+      <section className="border-b border-bauhaus-black bg-bauhaus-paper text-bauhaus-black">
+        <div className="mx-auto max-w-6xl px-6 py-20 md:py-28">
+          {/* Cabeçalho com elementos geométricos */}
+          <header className="grid grid-cols-12 gap-4 items-end mb-12 md:mb-16">
+            <div className="col-span-12 md:col-span-8">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="h-3 w-3" style={{ backgroundColor: "var(--bauhaus-red)" }} />
+                <div className="h-3 w-3 rounded-full" style={{ backgroundColor: "var(--bauhaus-blue)" }} />
+                <div className="h-3 w-3 rotate-45" style={{ backgroundColor: "var(--bauhaus-yellow)" }} />
+                <span className="font-mono text-[10px] uppercase tracking-[0.35em] text-muted-foreground">
+                  §
+                </span>
+              </div>
+              <h2 className="font-display text-4xl md:text-6xl lg:text-7xl uppercase tracking-tight leading-[0.95]">
+                Referências
+              </h2>
+              <p className="mt-4 font-mono text-[11px] uppercase tracking-[0.3em] text-muted-foreground">
+                Fontes · ABNT NBR 6023
+              </p>
+            </div>
+            <div className="col-span-12 md:col-span-4 hidden md:block">
+              <div className="grid grid-cols-4 gap-2">
+                <div className="aspect-square border border-bauhaus-black" />
+                <div className="aspect-square" style={{ backgroundColor: "var(--bauhaus-red)" }} />
+                <div className="aspect-square border border-bauhaus-black" />
+                <div className="aspect-square" style={{ backgroundColor: "var(--bauhaus-black)" }} />
+                <div className="aspect-square" style={{ backgroundColor: "var(--bauhaus-yellow)" }} />
+                <div className="aspect-square border border-bauhaus-black" />
+                <div className="aspect-square" style={{ backgroundColor: "var(--bauhaus-blue)" }} />
+                <div className="aspect-square border border-bauhaus-black" />
+              </div>
+            </div>
+          </header>
+
+          {/* Linha divisória dupla */}
+          <div className="border-t-2 border-bauhaus-black" />
+          <div className="border-t border-bauhaus-black mt-1" />
+
+          {/* Painel de referências */}
+          <div className="mt-10 md:mt-14 grid grid-cols-12 gap-x-6 gap-y-8">
+            {[
+              {
+                tag: "01",
+                text: "DROSTE, Magdalena. Bauhaus, 1919-1933: reforma e vanguarda. Köln: Taschen, 2015.",
+              },
+              {
+                tag: "02",
+                text: "WICK, Rainer K. Pedagogia da Bauhaus. São Paulo: Martins Fontes, 1989.",
+              },
+              {
+                tag: "03",
+                text: "BÜRDEK, Bernhard E. História, teoria e prática do design de produtos. São Paulo: Edgard Blücher, 2006.",
+              },
+              {
+                tag: "04",
+                text: "LINDINGER, Herbert (org.). Hochschule für Gestaltung Ulm: a moral dos objetos. Berlin: Ernst & Sohn, 1991.",
+              },
+              {
+                tag: "05",
+                text: "MALDONADO, Tomás. Design industrial. Lisboa: Edições 70, 2006.",
+              },
+              {
+                tag: "06",
+                text: "ITTEN, Johannes. Arte da cor: exercícios práticos para compreensão da teoria das cores. São Paulo: Martins Fontes, 2002.",
+              },
+              {
+                tag: "07",
+                text: "KANDINSKY, Wassily. Ponto e linha sobre plano. São Paulo: Martins Fontes, 1997.",
+              },
+              {
+                tag: "08",
+                text: "FIELL, Charlotte; FIELL, Peter. Design do século XX. Köln: Taschen, 2005.",
+              },
+            ].map((ref) => (
+              <article
+                key={ref.tag}
+                className="col-span-12 md:col-span-6 grid grid-cols-[auto_1fr] gap-4 border-t border-bauhaus-black pt-4"
+              >
+                <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground pt-1">
+                  {ref.tag}
+                </span>
+                <p className="font-mono text-[12px] md:text-[13px] leading-relaxed text-bauhaus-black break-words hyphens-auto">
+                  {ref.text}
+                </p>
+              </article>
+            ))}
+          </div>
+
+          {/* Rodapé da seção */}
+          <div className="mt-14 md:mt-20 grid grid-cols-12 gap-4 items-center">
+            <div className="col-span-12 md:col-span-8 border-t border-bauhaus-black pt-4">
+              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
+                Compilação editorial · Bauhaus + Ulm · 2026
+              </p>
+            </div>
+            <div className="col-span-12 md:col-span-4 flex md:justify-end gap-2">
+              <div className="h-4 w-12" style={{ backgroundColor: "var(--bauhaus-red)" }} />
+              <div className="h-4 w-4 rounded-full" style={{ backgroundColor: "var(--bauhaus-blue)" }} />
+              <div className="h-4 w-4" style={{ backgroundColor: "var(--bauhaus-yellow)" }} />
+            </div>
+          </div>
+        </div>
+      </section>
 
 
       {/* VOLTAR AO INÍCIO */}
