@@ -61,6 +61,7 @@ function Index() {
   const sections = [
     { id: "escola", label: "Bauhaus" },
     { id: "ulm", label: "Ulm" },
+    { id: "mondrian", label: "Mondrian" },
     { id: "gestalt", label: "Gestalt" },
     { id: "schlemmer", label: "Schlemmer" },
     { id: "ysl", label: "YSL" },
