@@ -786,10 +786,10 @@ function Index() {
         <div className="mx-auto max-w-[90rem] px-6 md:px-12 grid grid-cols-1 md:grid-cols-[1fr_1.35fr] gap-10 md:gap-12 items-center min-h-[100svh] md:min-h-[95vh] py-16 md:py-0">
           {/* Texto */}
           <div className="flex flex-col justify-center order-1 md:pr-4">
-            <p className="font-mono text-[11px] uppercase tracking-[0.3em] mb-4 md:mb-6 text-bauhaus-paper/80">
+            <p className="font-mono text-xs md:text-sm uppercase tracking-[0.3em] mb-6 md:mb-8 text-bauhaus-paper/80">
               Protótipo autoral · 2026
             </p>
-            <h1 className="font-display uppercase leading-[0.85] tracking-tight text-[clamp(2.5rem,7vw,5.5rem)] text-bauhaus-paper">
+            <h1 className="font-display uppercase leading-[0.85] tracking-tight text-[clamp(3.5rem,10vw,9rem)] text-bauhaus-paper">
               <span className="block">STREET</span>
               <span className="block" style={{ color: "var(--bauhaus-red)" }}>HAUS</span>
             </h1>
@@ -813,10 +813,10 @@ function Index() {
       <section className="border-b border-bauhaus-black">
         <div className="mx-auto max-w-6xl px-6 md:px-12 py-16 md:py-24 grid md:grid-cols-12 gap-12">
           <div className="md:col-span-6">
-            <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-red">
+            <p className="font-mono text-xs md:text-sm uppercase tracking-[0.3em] text-bauhaus-red">
               Princípios
             </p>
-            <h2 className="mt-6 font-display text-3xl sm:text-4xl md:text-5xl uppercase leading-[0.9] tracking-tight">
+            <h2 className="mt-6 font-display text-4xl sm:text-5xl md:text-6xl uppercase leading-[0.9] tracking-tight">
               Cinco regras de projeto.
             </h2>
             {/* PROXIMIDADE: itens colados num único bloco; SEMELHANÇA: mesma forma+tamanho em todos */}
@@ -828,15 +828,15 @@ function Index() {
                 { c: "var(--bauhaus-paper)", t: "clareza visual", border: true },
                 { c: "var(--bauhaus-red)", t: "redução essencial" },
               ].map((p) => (
-                <li key={p.t} className="flex items-center gap-4 px-4 py-3 bg-background">
+                <li key={p.t} className="flex items-center gap-4 px-4 py-4 bg-background">
                   <span
-                    className="h-4 w-4 shrink-0"
+                    className="h-5 w-5 shrink-0"
                     style={{
                       backgroundColor: p.c,
                       boxShadow: p.border ? "inset 0 0 0 1px var(--bauhaus-black)" : undefined,
                     }}
                   />
-                  <span className="font-mono text-xs md:text-sm uppercase tracking-[0.2em]">
+                  <span className="font-mono text-sm md:text-base uppercase tracking-[0.2em]">
                     {p.t}
                   </span>
                 </li>
@@ -845,10 +845,10 @@ function Index() {
           </div>
 
           <div className="md:col-span-6">
-            <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-blue">
+            <p className="font-mono text-xs md:text-sm uppercase tracking-[0.3em] text-bauhaus-blue">
               Cores
             </p>
-            <h2 className="mt-6 font-display text-3xl sm:text-4xl md:text-5xl uppercase leading-[0.9] tracking-tight">
+            <h2 className="mt-6 font-display text-4xl sm:text-5xl md:text-6xl uppercase leading-[0.9] tracking-tight">
               Paleta restrita.
             </h2>
             {/* PROXIMIDADE: paleta como uma única banda contínua de amostras coladas */}
@@ -865,7 +865,7 @@ function Index() {
                     className="block aspect-square w-full"
                     style={{ backgroundColor: c.c }}
                   />
-                  <span className="font-mono text-[9px] md:text-[10px] uppercase tracking-[0.2em] text-center py-2 border-t border-bauhaus-black bg-background">
+                  <span className="font-mono text-[10px] md:text-xs uppercase tracking-[0.2em] text-center py-3 border-t border-bauhaus-black bg-background">
                     {c.n}
                   </span>
                 </li>
@@ -880,15 +880,15 @@ function Index() {
         <div className="mx-auto max-w-6xl px-6 md:px-12 py-12 md:py-24 grid md:grid-cols-12 gap-8 md:gap-12">
           <div className="md:col-span-5 lg:col-span-4">
             <div className="md:sticky md:top-24">
-              <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-red">
+              <p className="font-mono text-xs md:text-sm uppercase tracking-[0.3em] text-bauhaus-red">
                 O projeto
               </p>
-              <h2 className="mt-6 font-display text-3xl sm:text-4xl md:text-5xl uppercase leading-[0.9] tracking-tight">
+              <h2 className="mt-6 font-display text-4xl sm:text-5xl md:text-6xl uppercase leading-[0.9] tracking-tight">
                 Da escola para o corpo.
               </h2>
             </div>
           </div>
-          <div className="md:col-span-7 lg:col-span-8 max-w-prose space-y-6 md:space-y-7 text-base md:text-lg leading-[1.75] md:leading-[1.8] text-muted-foreground">
+          <div className="md:col-span-7 lg:col-span-8 max-w-prose space-y-7 md:space-y-8 text-lg md:text-xl leading-[1.75] md:leading-[1.8] text-muted-foreground">
             <p>
               <span className="text-foreground font-medium">Street Haus</span>{" "}
               parte de uma pergunta simples: o que aconteceria se a grade de
@@ -909,13 +909,13 @@ function Index() {
             <p>
               Adicionadas no meio do processo, as legendas em alemão herdam a tipografia Universal de Herbert Bayer.
             </p>
-            <p className="border-l-2 border-bauhaus-red pl-4 md:pl-6 space-y-2">
+            <p className="border-l-2 border-bauhaus-red pl-4 md:pl-6 space-y-3">
               <span className="block italic text-foreground">"Form folgt Funktion, Kunst trifft Nutzen."</span>
-              <span className="block text-sm md:text-base">(A forma segue a função, a arte encontra a utilidade).</span>
-              <span className="block italic text-foreground mt-2">"Architektur für den Körper, Ordnung für den Alltag."</span>
-              <span className="block text-sm md:text-base">(Arquitetura para o corpo, ordem para o cotidiano).</span>
-              <span className="block italic text-foreground mt-2">"Die Reinheit der Geometrie, die dem Leben dient."</span>
-              <span className="block text-sm md:text-base">(A pureza da geometria que serve à vida).</span>
+              <span className="block text-base md:text-lg">(A forma segue a função, a arte encontra a utilidade).</span>
+              <span className="block italic text-foreground mt-3">"Architektur für den Körper, Ordnung für den Alltag."</span>
+              <span className="block text-base md:text-lg">(Arquitetura para o corpo, ordem para o cotidiano).</span>
+              <span className="block italic text-foreground mt-3">"Die Reinheit der Geometrie, die dem Leben dient."</span>
+              <span className="block text-base md:text-lg">(A pureza da geometria que serve à vida).</span>
             </p>
             <p>
               Com isso, apesar da inspiração visual pertencer às composições geométricas de Piet Mondrian, a ligação com Bauhaus e Ulm é clara: com o uso de cores primárias e organização visual foi possível unir arte, funcionalidade e design em uma única peça.
@@ -932,13 +932,13 @@ function Index() {
         <div className="mx-auto max-w-6xl px-6 md:px-12 py-16 md:py-24 grid md:grid-cols-12 gap-8 md:gap-12 items-start">
           <div className="md:col-span-5 lg:col-span-4">
             <div className="md:sticky md:top-24">
-              <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-blue">
+              <p className="font-mono text-xs md:text-sm uppercase tracking-[0.3em] text-bauhaus-blue">
                 Processo criativo
               </p>
-              <h2 className="mt-6 font-display text-3xl sm:text-4xl md:text-5xl uppercase leading-[0.9] tracking-tight">
+              <h2 className="mt-6 font-display text-4xl sm:text-5xl md:text-6xl uppercase leading-[0.9] tracking-tight">
                 Da ideia à prática.
               </h2>
-              <p className="mt-6 max-w-sm text-base md:text-[15px] leading-[1.7] text-muted-foreground">
+              <p className="mt-6 max-w-sm text-lg md:text-xl leading-[1.7] text-muted-foreground">
                 Tradução do estudo em desenho técnico — base para o corte e a
                 montagem da peça, com a distribuição final dos blocos primários
                 e ortogonais.
