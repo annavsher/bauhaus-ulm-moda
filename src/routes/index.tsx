@@ -1538,6 +1538,21 @@ function Index() {
                 tema: "Gestalt",
                 url: "https://www.psicanaliseclinica.com/leis-da-gestalt/",
               },
+              {
+                tag: "10",
+                tema: "Pierre Cardin",
+                url: "https://www.theatlantic.com/entertainment/archive/2019/07/pierre-cardin-future-fashion-brooklyn-museum/594577/",
+              },
+              {
+                tag: "11",
+                tema: "The Triadic Ballet",
+                url: "https://www.theatlantic.com/entertainment/archive/2019/07/pierre-cardin-future-fashion-brooklyn-museum/594577/",
+              },
+              {
+                tag: "12",
+                tema: "YSL",
+                url: "https://kelseyyrose.substack.com/p/mondrian-ysl",
+              },
             ].map((ref) => (
               <article
                 key={ref.tag}
