@@ -211,7 +211,7 @@ function Index() {
         <div className="relative mx-auto max-w-6xl grid md:grid-cols-12 gap-0">
           {/* Side rail with oversized marker — vertical Bayer-style label */}
           <aside className="hidden lg:flex md:col-span-1 border-r border-bauhaus-black/30 items-start justify-center pt-10">
-            <SectionMarker n="00" label="Abertura" />
+            <SectionMarker label="Abertura" />
           </aside>
           <div className="md:col-span-7 lg:col-span-6 px-6 md:px-12 py-20 md:py-28 relative">
             {/* Block of red behind kicker */}
