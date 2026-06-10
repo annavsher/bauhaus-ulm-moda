@@ -901,14 +901,14 @@ ULM</span>
       <section className="border-b border-bauhaus-black bg-bauhaus-paper">
         <div className="mx-auto max-w-6xl px-6 md:px-12 py-16 md:py-24 grid md:grid-cols-12 gap-8 md:gap-12 items-start">
           <div className="md:col-span-5 lg:col-span-4">
-            <div className="md:sticky md:top-8">
+            <div className="md:sticky md:top-24">
               <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-blue">
                 Processo criativo
               </p>
-              <h2 className="mt-6 text-3xl md:text-5xl uppercase leading-[0.95]">
+              <h2 className="mt-6 font-display text-3xl sm:text-4xl md:text-5xl uppercase leading-[0.9] tracking-tight">
                 Da ideia à prática.
               </h2>
-              <p className="mt-6 max-w-sm text-base leading-relaxed text-muted-foreground">
+              <p className="mt-6 max-w-sm text-base md:text-[15px] leading-[1.7] text-muted-foreground">
                 Tradução do estudo em desenho técnico — base para o corte e a
                 montagem da peça, com a distribuição final dos blocos primários
                 e ortogonais.
