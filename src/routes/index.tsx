@@ -790,9 +790,8 @@ function Index() {
               Protótipo autoral · 2026
             </p>
             <h1 className="font-display uppercase leading-[0.85] tracking-tight text-[clamp(2.5rem,7vw,5.5rem)] text-bauhaus-paper">
-              <span className="block">ULM</span>
-              <span className="block" style={{ color: "var(--bauhaus-red)" }}>Mondrian</span>
-              <span className="block">System</span>
+              <span className="block">STREET</span>
+              <span className="block" style={{ color: "var(--bauhaus-red)" }}>HAUS</span>
             </h1>
           </div>
           {/* Imagem */}
