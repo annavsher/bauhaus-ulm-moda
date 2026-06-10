@@ -6,7 +6,7 @@ import { BauhausComposition, SectionMarker } from "@/components/BauhausCompositi
 import jaqueta from "@/assets/ulm-mondrian-system.png";
 import jaquetaSketch from "@/assets/jaqueta-sketch.jpeg.asset.json";
 import heroBauhaus from "@/assets/hero-bauhaus.jpg";
-import heroJaquetaModelo from "@/assets/hero-jaqueta-modelo.png.asset.json";
+
 import schlemmer1 from "@/assets/schlemmer-1.jpg";
 import schlemmer2 from "@/assets/schlemmer-2.jpg";
 import schlemmerFig from "@/assets/schlemmer-fig.jpg";
