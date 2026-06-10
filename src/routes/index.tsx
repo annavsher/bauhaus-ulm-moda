@@ -1344,53 +1344,8 @@ function Index() {
             Street Haus · Bauhaus + Ulm + Mondrian
           </figcaption>
         </div>
-
-        {/* CITAÇÕES EM DESTAQUE */}
-        <div className="mx-auto max-w-6xl px-6 md:px-12 pb-16 md:pb-24">
-          <div className="border-t border-bauhaus-black pt-10 md:pt-14">
-            <p className="font-mono text-xs md:text-sm uppercase tracking-[0.3em] text-bauhaus-red mb-10">
-              Manifesto · Frases-chave
-            </p>
-            <div className="grid md:grid-cols-3 gap-px bg-bauhaus-black border border-bauhaus-black">
-              {[
-                {
-                  color: "bg-bauhaus-red",
-                  de: "Form folgt Funktion, Kunst trifft Nutzen.",
-                  pt: "A forma segue a função, a arte encontra a utilidade.",
-                },
-                {
-                  color: "bg-bauhaus-blue",
-                  de: "Architektur für den Körper, Ordnung für den Alltag.",
-                  pt: "Arquitetura para o corpo, ordem para o cotidiano.",
-                },
-                {
-                  color: "bg-bauhaus-yellow",
-                  de: "Die Reinheit der Geometrie, die dem Leben dient.",
-                  pt: "A pureza da geometria que serve à vida.",
-                },
-              ].map((q, i) => (
-                <figure
-                  key={i}
-                  className="bg-bauhaus-paper p-8 md:p-10 flex flex-col justify-between gap-8"
-                >
-                  <div className="flex items-center gap-3">
-                    <span className={`h-3 w-3 ${q.color}`} aria-hidden="true" />
-                    <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-muted-foreground">
-                      0{i + 1} / 03
-                    </span>
-                  </div>
-                  <blockquote className="font-display text-xl md:text-2xl leading-[1.15] tracking-tight text-foreground">
-                    “{q.de}”
-                  </blockquote>
-                  <figcaption className="font-mono text-xs md:text-sm leading-relaxed text-muted-foreground border-t border-bauhaus-black pt-4">
-                    {q.pt}
-                  </figcaption>
-                </figure>
-              ))}
-            </div>
-          </div>
-        </div>
       </section>
+
 
 
       {/* VOLTAR AO INÍCIO */}
