@@ -275,8 +275,9 @@ ULM</span>
             <p>
               <span className="text-foreground font-medium">ULM Mondrian System</span>{" "}
               parte de uma pergunta simples: o que aconteceria se a grade de
-              Mondrian e o rigor sistêmico da Escola de Ulm fossem aplicados a
-              uma peça utilitária, vestida todos os dias?
+              Mondrian, o rigor sistêmico da Escola de Ulm e as cores primárias
+              e ângulos exatos de Bauhaus fossem aplicados a uma peça
+              utilitária, vestida todos os dias?
             </p>
             <p>
               A jaqueta é construída como uma{" "}
