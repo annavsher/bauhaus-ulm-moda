@@ -451,6 +451,33 @@ function Index() {
                 <p className="mt-6 font-mono text-[11px] uppercase tracking-[0.25em] text-bauhaus-blue">
                   Amersfoort · 1872 — 1944
                 </p>
+
+                {/* Portrait — small editorial visual beneath the title */}
+                <figure className="mt-8 max-w-[12rem] md:max-w-[14rem]">
+                  <div className="relative border-2 border-bauhaus-black bg-bauhaus-paper">
+                    <div
+                      className="pointer-events-none absolute -top-2 -left-2 h-3 w-3"
+                      style={{ backgroundColor: "var(--bauhaus-red)" }}
+                      aria-hidden
+                    />
+                    <div
+                      className="pointer-events-none absolute -bottom-2 -right-2 h-3 w-6"
+                      style={{ backgroundColor: "var(--bauhaus-yellow)" }}
+                      aria-hidden
+                    />
+                    <img
+                      src={mondrianPortrait.url}
+                      alt="Retrato em preto e branco de Piet Mondrian"
+                      width={448}
+                      height={560}
+                      loading="lazy"
+                      className="block w-full h-auto grayscale"
+                    />
+                  </div>
+                  <figcaption className="mt-3 font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground">
+                    Piet Mondrian · retrato
+                  </figcaption>
+                </figure>
               </div>
             </div>
 
