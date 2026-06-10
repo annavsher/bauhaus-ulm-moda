@@ -206,8 +206,9 @@ function JaquetaPage() {
             <p ref={p1.ref} className={`${revealBase} ${p1.visible ? shown : hidden}`}>
               <span className="text-foreground font-medium">ULM Mondrian System</span>{" "}
               parte de uma pergunta simples: o que aconteceria se a grade de
-              Mondrian e o rigor sistêmico da Escola de Ulm fossem aplicados a
-              uma peça utilitária, vestida todos os dias?
+              Mondrian, o rigor sistêmico da Escola de Ulm e as cores primárias
+              e ângulos exatos de Bauhaus fossem aplicados a uma peça
+              utilitária, vestida todos os dias?
             </p>
             <p ref={p2.ref} className={`${revealBase} delay-75 ${p2.visible ? shown : hidden}`}>
               A jaqueta é construída como uma <span className="text-foreground font-medium">grade modular</span> de
