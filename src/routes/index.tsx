@@ -813,10 +813,10 @@ function Index() {
       <section className="border-b border-bauhaus-black">
         <div className="mx-auto max-w-6xl px-6 md:px-12 py-16 md:py-24 grid md:grid-cols-12 gap-12">
           <div className="md:col-span-6">
-            <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-red">
+            <p className="font-mono text-xs md:text-sm uppercase tracking-[0.3em] text-bauhaus-red">
               Princípios
             </p>
-            <h2 className="mt-6 font-display text-3xl sm:text-4xl md:text-5xl uppercase leading-[0.9] tracking-tight">
+            <h2 className="mt-6 font-display text-4xl sm:text-5xl md:text-6xl uppercase leading-[0.9] tracking-tight">
               Cinco regras de projeto.
             </h2>
             {/* PROXIMIDADE: itens colados num único bloco; SEMELHANÇA: mesma forma+tamanho em todos */}
@@ -828,15 +828,15 @@ function Index() {
                 { c: "var(--bauhaus-paper)", t: "clareza visual", border: true },
                 { c: "var(--bauhaus-red)", t: "redução essencial" },
               ].map((p) => (
-                <li key={p.t} className="flex items-center gap-4 px-4 py-3 bg-background">
+                <li key={p.t} className="flex items-center gap-4 px-4 py-4 bg-background">
                   <span
-                    className="h-4 w-4 shrink-0"
+                    className="h-5 w-5 shrink-0"
                     style={{
                       backgroundColor: p.c,
                       boxShadow: p.border ? "inset 0 0 0 1px var(--bauhaus-black)" : undefined,
                     }}
                   />
-                  <span className="font-mono text-xs md:text-sm uppercase tracking-[0.2em]">
+                  <span className="font-mono text-sm md:text-base uppercase tracking-[0.2em]">
                     {p.t}
                   </span>
                 </li>
@@ -845,10 +845,10 @@ function Index() {
           </div>
 
           <div className="md:col-span-6">
-            <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-blue">
+            <p className="font-mono text-xs md:text-sm uppercase tracking-[0.3em] text-bauhaus-blue">
               Cores
             </p>
-            <h2 className="mt-6 font-display text-3xl sm:text-4xl md:text-5xl uppercase leading-[0.9] tracking-tight">
+            <h2 className="mt-6 font-display text-4xl sm:text-5xl md:text-6xl uppercase leading-[0.9] tracking-tight">
               Paleta restrita.
             </h2>
             {/* PROXIMIDADE: paleta como uma única banda contínua de amostras coladas */}
@@ -865,7 +865,7 @@ function Index() {
                     className="block aspect-square w-full"
                     style={{ backgroundColor: c.c }}
                   />
-                  <span className="font-mono text-[9px] md:text-[10px] uppercase tracking-[0.2em] text-center py-2 border-t border-bauhaus-black bg-background">
+                  <span className="font-mono text-[10px] md:text-xs uppercase tracking-[0.2em] text-center py-3 border-t border-bauhaus-black bg-background">
                     {c.n}
                   </span>
                 </li>
