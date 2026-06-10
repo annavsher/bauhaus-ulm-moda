@@ -363,16 +363,19 @@ function Index() {
       <BauhausRule n="​" label="Gestalt" tone="paper" />
 
       {/* GESTALT — 8 leis aplicadas com paleta Bauhaus */}
-      <section id="gestalt" className="scroll-mt-20 md:scroll-mt-24 border-b border-bauhaus-black bg-background">
-        <div className="mx-auto max-w-6xl px-6 md:px-10 py-16 md:py-24">
+      <section id="gestalt" className="relative overflow-hidden scroll-mt-20 md:scroll-mt-24 border-b border-bauhaus-black bg-background">
+        <BauhausComposition variant="e" pos="tr" opacity={18} />
+        <BauhausComposition variant="c" pos="bl" opacity={10} className="hidden md:block" />
+        <div className="relative mx-auto max-w-6xl px-6 md:px-10 py-16 md:py-24">
           <div className="grid md:grid-cols-12 gap-8 md:gap-12 lg:gap-16">
             <div className="md:col-span-5 lg:col-span-4">
               <div className="md:sticky md:top-24">
-                <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-red">
+                <SectionMarker n="03" label="Gestalt" tone="black" />
+                <p className="mt-6 font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-red">
                   Fundamentos
                 </p>
-                <h2 className="mt-6 font-display text-3xl sm:text-4xl md:text-5xl uppercase leading-[0.9] tracking-tight">
-                  As oito leis da Gestalt.
+                <h2 className="mt-4 font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl uppercase leading-[0.85] tracking-tight">
+                  As oito leis da <span style={{ color: "var(--bauhaus-red)" }}>Gestalt</span>.
                 </h2>
                 <p className="mt-6 font-mono text-[11px] uppercase tracking-[0.25em] text-bauhaus-blue">
                   Berlim · 1910 — 1930
