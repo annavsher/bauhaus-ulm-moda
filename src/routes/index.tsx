@@ -983,6 +983,62 @@ function Index() {
             </div>
           </div>
         </div>
+
+        {/* PROCESSO CRIATIVO — texto + nova imagem */}
+        <div className="border-t border-bauhaus-black/15">
+          <div className="mx-auto max-w-6xl px-6 md:px-12 py-16 md:py-24 grid md:grid-cols-12 gap-8 md:gap-12 items-start">
+            <div className="md:col-span-5 lg:col-span-4">
+              <div className="md:sticky md:top-24">
+                <p className="font-mono text-xs md:text-sm uppercase tracking-[0.3em] text-bauhaus-red">
+                  Conceito
+                </p>
+                <h2 className="mt-6 font-display text-4xl sm:text-5xl md:text-6xl uppercase leading-[0.9] tracking-tight">
+                  Processo<br />criativo.
+                </h2>
+                <div className="mt-6 flex items-center gap-2" aria-hidden="true">
+                  <span className="h-3 w-3 bg-bauhaus-red" />
+                  <span className="h-3 w-3 rounded-full bg-bauhaus-blue" />
+                  <span className="h-3 w-3 bg-bauhaus-yellow" />
+                </div>
+              </div>
+            </div>
+            <div className="md:col-span-7 lg:col-span-8 space-y-6 text-base md:text-lg leading-[1.8] text-muted-foreground max-w-prose">
+              <p>
+                A jaqueta <span className="text-foreground font-medium">Street Haus</span> materializa o conceito de
+                {" "}<span className="text-foreground font-medium">"arquitetura portátil"</span>, transformando a vestimenta
+                em um espaço onde a arte dialoga diretamente com a utilidade. O projeto converge a cultura urbana
+                e a sofisticação do design funcional, fundamentando-se em pilares da história da arte e do design moderno.
+              </p>
+              <p>
+                O nome surge da fusão sinérgica entre o estilo <span className="text-foreground font-medium">streetwear</span>
+                {" "}e <span className="text-foreground font-medium">Bauhaus</span>, escola alemã pioneira na unificação
+                entre arte, artesanato e indústria. A junção sintetiza a proposta de transpor o rigor do design
+                moderno para a fluidez das ruas.
+              </p>
+              <p>
+                Em sua composição, a identidade cromática apropria-se estritamente das cores primárias, uma
+                referência direta à obra <span className="italic text-foreground">Composição com Vermelho, Azul e Amarelo</span>,
+                de Piet Mondrian. E a estrutura visual conecta as teorias formais da Escola de Ulm e da Bauhaus
+                à tridimensionalidade do corpo humano.
+              </p>
+            </div>
+          </div>
+
+          <div className="mx-auto max-w-6xl px-6 md:px-12 pb-16 md:pb-24">
+            <figure className="relative w-full aspect-[16/10] overflow-hidden border border-bauhaus-black bg-bauhaus-paper">
+              <img
+                src={processoCriativo.url}
+                alt="Estudo do processo criativo da jaqueta Street Haus — referências Bauhaus, Ulm e Mondrian aplicadas à construção da peça"
+                className="absolute inset-0 h-full w-full object-cover"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figcaption className="mt-3 font-mono text-[11px] uppercase tracking-[0.3em] text-muted-foreground">
+              Street Haus · Bauhaus + Ulm + Mondrian
+            </figcaption>
+          </div>
+        </div>
       </section>
 
       {/* PRODUTO FINAL */}
