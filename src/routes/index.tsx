@@ -1495,35 +1495,48 @@ function Index() {
             {[
               {
                 tag: "01",
-                text: "DROSTE, Magdalena. Bauhaus, 1919-1933: reforma e vanguarda. Köln: Taschen, 2015.",
+                tema: "Bauhaus",
+                url: "https://www.todamateria.com.br/escola-de-bauhaus/",
               },
               {
                 tag: "02",
-                text: "WICK, Rainer K. Pedagogia da Bauhaus. São Paulo: Martins Fontes, 1989.",
+                tema: "Bauhaus",
+                url: "https://conhecimentocientifico.r7.com/movimento-bauhaus/",
               },
               {
                 tag: "03",
-                text: "BÜRDEK, Bernhard E. História, teoria e prática do design de produtos. São Paulo: Edgard Blücher, 2006.",
+                tema: "Escola de Ulm",
+                url: "https://enciclopedia.itaucultural.org.br/instituicoes/75180-hochschule-fur-gestaltung-ulm-hfg",
               },
               {
                 tag: "04",
-                text: "LINDINGER, Herbert (org.). Hochschule für Gestaltung Ulm: a moral dos objetos. Berlin: Ernst & Sohn, 1991.",
+                tema: "Piet Mondrian",
+                url: "https://www.todamateria.com.br/piet-mondrian-obras-biografia/",
               },
               {
                 tag: "05",
-                text: "MALDONADO, Tomás. Design industrial. Lisboa: Edições 70, 2006.",
+                tema: "Piet Mondrian",
+                url: "https://artsandculture.google.com/entity/piet-mondrian/m0crnb5?hl=pt-BR",
               },
               {
                 tag: "06",
-                text: "ITTEN, Johannes. Arte da cor: exercícios práticos para compreensão da teoria das cores. São Paulo: Martins Fontes, 2002.",
+                tema: "Piet Mondrian",
+                url: "https://arteeartistas.com.br/piet-mondrian-biografia-obras-analise-obras-primas",
               },
               {
                 tag: "07",
-                text: "KANDINSKY, Wassily. Ponto e linha sobre plano. São Paulo: Martins Fontes, 1997.",
+                tema: "Dieter Rams",
+                url: "https://abra.com.br/artigos/dieter-rams-o-homem-que-criou-os-principios-do-bom-design",
               },
               {
                 tag: "08",
-                text: "FIELL, Charlotte; FIELL, Peter. Design do século XX. Köln: Taschen, 2005.",
+                tema: "Gestalt",
+                url: "https://maestrovirtuale.com/teoria-da-gestalt-leis-e-principios-fundamentais/",
+              },
+              {
+                tag: "09",
+                tema: "Gestalt",
+                url: "https://www.psicanaliseclinica.com/leis-da-gestalt/",
               },
             ].map((ref) => (
               <article
@@ -1533,9 +1546,19 @@ function Index() {
                 <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground pt-1">
                   {ref.tag}
                 </span>
-                <p className="font-mono text-[12px] md:text-[13px] leading-relaxed text-bauhaus-black break-words hyphens-auto">
-                  {ref.text}
-                </p>
+                <div>
+                  <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-muted-foreground mb-1">
+                    {ref.tema}
+                  </p>
+                  <a
+                    href={ref.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-mono text-[12px] md:text-[13px] leading-relaxed text-bauhaus-black break-words underline decoration-bauhaus-black/30 hover:decoration-bauhaus-black transition-colors"
+                  >
+                    {ref.url}
+                  </a>
+                </div>
               </article>
             ))}
           </div>
