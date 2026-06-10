@@ -54,7 +54,7 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   const sections = [
-    { id: "escola", label: "Escola" },
+    { id: "escola", label: "Bauhaus" },
     { id: "ulm", label: "Ulm" },
     { id: "gestalt", label: "Gestalt" },
     { id: "schlemmer", label: "Schlemmer" },
