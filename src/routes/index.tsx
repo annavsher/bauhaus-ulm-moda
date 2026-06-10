@@ -637,7 +637,7 @@ function Index() {
             <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-bauhaus-blue">
               Yves Saint Laurent
             </p>
-            <h2 className="mt-6 text-4xl md:text-6xl uppercase">
+            <h2 className="mt-6 text-3xl sm:text-4xl uppercase leading-[0.95] md:text-xl">
               A coleção{" "}
               <span style={{ color: "var(--bauhaus-blue)" }}>Mondrian</span>.
             </h2>
