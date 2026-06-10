@@ -283,11 +283,10 @@ ULM</span>
               A jaqueta é construída como uma{" "}
               <span className="text-foreground font-medium">grade modular</span> de
               painéis brancos cortados por linhas pretas ortogonais. Utilizando
-              blocos de cor primária — vermelho, azul, amarelo.{" "}
+              blocos de cor primária — vermelho, azul, amarelo.{"\n\n\n\n"}
             </p>
             <p>
-              As legendas em alemão (adicionadas no meio do processo){" "}
-              herdam a tipografia Universal de Herbert Bayer.
+              Adicionadas no meio do processo, as legendas em alemão herdam a tipografia Universal de Herbert Bayer.
             </p>
             <p className="border-l-2 border-bauhaus-red pl-4 md:pl-6 space-y-2">
               <span className="block italic text-foreground">"Form folgt Funktion, Kunst trifft Nutzen."</span>
