@@ -909,49 +909,6 @@ function Index() {
         </div>
       </section>
 
-      {/* PROTÓTIPO — DA ESCOLA PARA O CORPO */}
-      <section className="border-b border-bauhaus-black bg-bauhaus-paper">
-        <div className="mx-auto max-w-6xl px-6 md:px-12 py-12 md:py-24 grid md:grid-cols-12 gap-8 md:gap-12">
-          <div className="md:col-span-5 lg:col-span-4">
-            <div className="md:sticky md:top-24">
-              <p className="font-mono text-xs md:text-sm uppercase tracking-[0.3em] text-bauhaus-red">
-                O projeto
-              </p>
-              <h2 className="mt-6 font-display text-4xl sm:text-5xl md:text-6xl uppercase leading-[0.9] tracking-tight">
-                Da escola para o corpo.
-              </h2>
-            </div>
-          </div>
-          <div className="md:col-span-7 lg:col-span-8 max-w-prose space-y-8 md:space-y-10 text-lg md:text-xl leading-[1.75] md:leading-[1.85] text-muted-foreground">
-            <p>
-              A jaqueta é projetada como um{" "}
-              <span className="text-foreground font-medium">sistema modular de painéis brancos</span>,
-              delimitados por eixos ortogonais pretos de alta definição. A
-              inserção estratégica de blocos em cores primárias (vermelho,
-              azul e amarelo) evoca diretamente o purismo visual de Piet
-              Mondrian. O corte prescinde de ornamentos supérfluos,
-              orientando-se estritamente pelos princípios de funcionalidade,
-              clareza formal e economia de elementos.
-            </p>
-            <p>
-              A influência da{" "}
-              <span className="text-foreground font-medium">Escola de Ulm</span>{" "}
-              manifesta-se na organização metodológica da grade. A busca por
-              ordem visual e a indissociabilidade entre estética e função
-              estrutural foram premissas determinantes para a viabilidade
-              técnica e a execução do protótipo. Não se trata de estampa, mas
-              de construção sistêmica.
-            </p>
-            <p>
-              Como camada final de leitura do objeto, as legendas técnicas em
-              alemão integram-se à peça, herdando a{" "}
-              <span className="text-foreground font-medium">tipografia Universal de Herbert Bayer</span>{" "}
-              (Bauhaus), um manifesto de racionalidade aplicado à comunicação
-              visual do produto.
-            </p>
-          </div>
-        </div>
-      </section>
 
       {/* PROTÓTIPO — SKETCH TÉCNICO */}
       <section className="border-b border-bauhaus-black bg-bauhaus-paper">
